@@ -1,0 +1,8 @@
+# my
+subseq/
+
+# mac
+.DS_Store
+
+# vs code
+.vscode/
