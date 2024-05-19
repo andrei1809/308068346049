@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<style>
+		a.class1:link {
+            color: black;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        
+        a.class1:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        
+        a.class1:visited {
+            color: purple;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a.class1:active {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        .collapsible {
+            background-color: #f1f1f1;
+            color: black;
+            cursor: pointer;
+            padding: 10px;
+            width: 30%;
+            border: none;
+            text-align: center;
+            outline: none;
+        }
+
+        .active, .collapsible:hover {
+            background-color: #dcdcdc;
+        }
+
+        .content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: white;
+        }
+
+        body {
+			overflow-y:scroll;
+		}
+	</style>
+
+    <head>
+        <link rel="icon" type="image/png" href="https://andrei1809.github.io/308068346049/favicon.ico"/>
+    </head>
+
+	<body align="center">
+        <title>Fantasy Sports Schedule (nba)</title>
+        <h1>Fantasy Sports Schedule (nba)</h1>
+			<button class="collapsible"><h2>Sports Brothers</h2></button>
+            <div class="content">
+            <h3 style="margin:0"><a href="https://andrei1809.github.io/308068346049/subseq/Sports Brothers (nba)/Pairs.html" style="text-decoration:none;">Pairs</a></h3>
+            <h3 style="margin:0"><a href="https://andrei1809.github.io/308068346049/subseq/Sports Brothers (nba)/Triples.html" style="text-decoration:none;">Triples</a></h3>
+            <h3 style="margin:0"><a href="https://andrei1809.github.io/308068346049/subseq/Sports Brothers (nba)/Quadruples.html" style="text-decoration:none;">Quadruples</a></h3>
+            <h3 style="margin:0"><a href="https://andrei1809.github.io/308068346049/subseq/Sports Brothers (nba)/ATL_BOS_DAL_NYK_PHI.html" style="text-decoration:none;">ATL/BOS/DAL/NYK/PHI</a></h3>
+            <h3 style="margin:0"><a href="https://andrei1809.github.io/308068346049/subseq/Sports Brothers (nba)/BOS_DAL_PHI.html" style="text-decoration:none;">BOS/DAL/PHI</a></h3>
+            </div>
+			<button class="collapsible"><h2>12 AM</h2></button>
+            <div class="content">
+            <h3 style="margin:0"><a href="https://andrei1809.github.io/308068346049/subseq/12 AM (nba)/Pairs.html" style="text-decoration:none;">Pairs</a></h3>
+            <h3 style="margin:0"><a href="https://andrei1809.github.io/308068346049/subseq/12 AM (nba)/Triples.html" style="text-decoration:none;">Triples</a></h3>
+            <h3 style="margin:0"><a href="https://andrei1809.github.io/308068346049/subseq/12 AM (nba)/Quadruples.html" style="text-decoration:none;">Quadruples</a></h3>
+            <h3 style="margin:0"><a href="https://andrei1809.github.io/308068346049/subseq/12 AM (nba)/BOS_DAL_PHI.html" style="text-decoration:none;">BOS/DAL/PHI</a></h3>
+            </div>
+			<button class="collapsible"><h2>Weeks</h2></button>
+            <div class="content">
+            <h3 style="margin:0"><a href="https://andrei1809.github.io/308068346049/subseq/Weeks (nba)/Pairs.html" style="text-decoration:none;">Pairs</a></h3>
+            <h3 style="margin:0"><a href="https://andrei1809.github.io/308068346049/subseq/Weeks (nba)/Triples.html" style="text-decoration:none;">Triples</a></h3>
+            <h3 style="margin:0"><a href="https://andrei1809.github.io/308068346049/subseq/Weeks (nba)/Quadruples.html" style="text-decoration:none;">Quadruples</a></h3>
+            <h3 style="margin:0"><a href="https://andrei1809.github.io/308068346049/subseq/Weeks (nba)/BOS_DAL_PHI.html" style="text-decoration:none;">BOS/DAL/PHI</a></h3>
+            </div>
+
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                  content.style.maxHeight = null;
+                } else {
+                  content.style.maxHeight = (content.scrollHeight + 100000) + "px";
+                }
+              });
+            }
+        </script>
+	</body>
+</html>
