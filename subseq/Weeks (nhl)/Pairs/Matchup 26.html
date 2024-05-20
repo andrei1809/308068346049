@@ -1,0 +1,1445 @@
+<!DOCTYPE html>
+<html>
+	<style>
+		.collapsible {
+            background-color: #f1f1f1;
+            color: black;
+            cursor: pointer;
+            padding: 10px;
+            width: 30%;
+            border: none;
+            text-align: center;
+            outline: none;
+        }
+
+        .active, .collapsible:hover {
+            background-color: #dcdcdc;
+        }
+
+        .content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: white;
+        }
+
+        div.away {
+            color: red;
+        }
+        div.home {
+            color: blue;
+        }
+
+	</style>
+	<head>
+		<link rel="icon" type="image/png" href="https://andrei1809.github.io/308068346049/favicon.ico"/>
+	</head>
+	<title>nhl, Weeks, subseq</title>
+	<h1><a href="" style="text-decoration:none;">Weeks</a></h1>
+	<h2>Subseq overall. Pairs</h2>
+	<body align="center">
+	&nbsp;
+	<button class="collapsible"><h3 title="Допустим, что от каждой команды из комбинации в строке таблицы слева&#10;имеется один игрок, и эти игроки должны быть размещены в составе.&#10;В таблице отображено количество игр, которые сможет получить фентези-игрок,&#10;если у него доступно 1 слотов, по матчапам.&#10;Лучшие значения обозначены зелёным цветом, худшие - красным.&#10;Цвета коррелируют между собой по столбцам таблицы, то есть&#10;цветом отмечаются лучшие и худшие команды для конкретного матчапа.&#10;В таблице представлена best выборка комбинаций размера 2.">Games with 1 slots: best - 1 next matchups</h3></button>
+	<div class="content" style="overflow-x:auto;">
+	<style type="text/css">
+#T_cf435 td:nth-child(1) {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  font-weight: bold;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+#T_cf435 td:first-child {
+  border-left: none;
+}
+#T_cf435 td:last-child {
+  border-right: none;
+}
+#T_cf435 th {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  background: #FFFFFF;
+}
+#T_cf435 td {
+  text-align: right;
+}
+#T_cf435 td {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  text-align: right;
+}
+#T_cf435_row0_col1, #T_cf435_row0_col2, #T_cf435_row1_col1, #T_cf435_row1_col2 {
+  background-color: green;
+}
+#T_cf435_row22_col1, #T_cf435_row22_col2, #T_cf435_row23_col1, #T_cf435_row23_col2, #T_cf435_row24_col1, #T_cf435_row24_col2 {
+  background-color: red;
+}
+</style>
+<table id="T_cf435" style="border-collapse: collapse; border: 1px solid black;" align="center"; class="sortable">
+  <thead>
+    <tr>
+      <th id="T_cf435_level0_col0" class="col_heading level0 col0" ></th>
+      <th id="T_cf435_level0_col1" class="col_heading level0 col1" >#26</th>
+      <th id="T_cf435_level0_col2" class="col_heading level0 col2" >Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td id="T_cf435_row0_col0" class="data row0 col0" >TBL VGK</td>
+      <td id="T_cf435_row0_col1" class="data row0 col1" >11</td>
+      <td id="T_cf435_row0_col2" class="data row0 col2" >11</td>
+    </tr>
+    <tr>
+      <td id="T_cf435_row1_col0" class="data row1 col0" >NYI VGK</td>
+      <td id="T_cf435_row1_col1" class="data row1 col1" >11</td>
+      <td id="T_cf435_row1_col2" class="data row1 col2" >11</td>
+    </tr>
+    <tr>
+      <td id="T_cf435_row2_col0" class="data row2 col0" >VGK WSH</td>
+      <td id="T_cf435_row2_col1" class="data row2 col1" >10</td>
+      <td id="T_cf435_row2_col2" class="data row2 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_cf435_row3_col0" class="data row3 col0" >TOR VGK</td>
+      <td id="T_cf435_row3_col1" class="data row3 col1" >10</td>
+      <td id="T_cf435_row3_col2" class="data row3 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_cf435_row4_col0" class="data row4 col0" >SJS VGK</td>
+      <td id="T_cf435_row4_col1" class="data row4 col1" >10</td>
+      <td id="T_cf435_row4_col2" class="data row4 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_cf435_row5_col0" class="data row5 col0" >PIT VGK</td>
+      <td id="T_cf435_row5_col1" class="data row5 col1" >10</td>
+      <td id="T_cf435_row5_col2" class="data row5 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_cf435_row6_col0" class="data row6 col0" >OTT VGK</td>
+      <td id="T_cf435_row6_col1" class="data row6 col1" >10</td>
+      <td id="T_cf435_row6_col2" class="data row6 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_cf435_row7_col0" class="data row7 col0" >NYR VGK</td>
+      <td id="T_cf435_row7_col1" class="data row7 col1" >10</td>
+      <td id="T_cf435_row7_col2" class="data row7 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_cf435_row8_col0" class="data row8 col0" >NJD VGK</td>
+      <td id="T_cf435_row8_col1" class="data row8 col1" >10</td>
+      <td id="T_cf435_row8_col2" class="data row8 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_cf435_row9_col0" class="data row9 col0" >MTL VGK</td>
+      <td id="T_cf435_row9_col1" class="data row9 col1" >10</td>
+      <td id="T_cf435_row9_col2" class="data row9 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_cf435_row10_col0" class="data row10 col0" >LAK VGK</td>
+      <td id="T_cf435_row10_col1" class="data row10 col1" >10</td>
+      <td id="T_cf435_row10_col2" class="data row10 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_cf435_row11_col0" class="data row11 col0" >EDM TOR</td>
+      <td id="T_cf435_row11_col1" class="data row11 col1" >10</td>
+      <td id="T_cf435_row11_col2" class="data row11 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_cf435_row12_col0" class="data row12 col0" >EDM SEA</td>
+      <td id="T_cf435_row12_col1" class="data row12 col1" >10</td>
+      <td id="T_cf435_row12_col2" class="data row12 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_cf435_row13_col0" class="data row13 col0" >DET VGK</td>
+      <td id="T_cf435_row13_col1" class="data row13 col1" >10</td>
+      <td id="T_cf435_row13_col2" class="data row13 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_cf435_row14_col0" class="data row14 col0" >DAL VGK</td>
+      <td id="T_cf435_row14_col1" class="data row14 col1" >10</td>
+      <td id="T_cf435_row14_col2" class="data row14 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_cf435_row15_col0" class="data row15 col0" >CHI TOR</td>
+      <td id="T_cf435_row15_col1" class="data row15 col1" >10</td>
+      <td id="T_cf435_row15_col2" class="data row15 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_cf435_row16_col0" class="data row16 col0" >CHI TBL</td>
+      <td id="T_cf435_row16_col1" class="data row16 col1" >10</td>
+      <td id="T_cf435_row16_col2" class="data row16 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_cf435_row17_col0" class="data row17 col0" >CHI PIT</td>
+      <td id="T_cf435_row17_col1" class="data row17 col1" >10</td>
+      <td id="T_cf435_row17_col2" class="data row17 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_cf435_row18_col0" class="data row18 col0" >CHI NYI</td>
+      <td id="T_cf435_row18_col1" class="data row18 col1" >10</td>
+      <td id="T_cf435_row18_col2" class="data row18 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_cf435_row19_col0" class="data row19 col0" >CGY PIT</td>
+      <td id="T_cf435_row19_col1" class="data row19 col1" >10</td>
+      <td id="T_cf435_row19_col2" class="data row19 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_cf435_row20_col0" class="data row20 col0" >CGY EDM</td>
+      <td id="T_cf435_row20_col1" class="data row20 col1" >10</td>
+      <td id="T_cf435_row20_col2" class="data row20 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_cf435_row21_col0" class="data row21 col0" >BUF VGK</td>
+      <td id="T_cf435_row21_col1" class="data row21 col1" >10</td>
+      <td id="T_cf435_row21_col2" class="data row21 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_cf435_row22_col0" class="data row22 col0" >VGK WPG</td>
+      <td id="T_cf435_row22_col1" class="data row22 col1" >9</td>
+      <td id="T_cf435_row22_col2" class="data row22 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_cf435_row23_col0" class="data row23 col0" >TBL VAN</td>
+      <td id="T_cf435_row23_col1" class="data row23 col1" >9</td>
+      <td id="T_cf435_row23_col2" class="data row23 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_cf435_row24_col0" class="data row24 col0" >STL WPG</td>
+      <td id="T_cf435_row24_col1" class="data row24 col1" >9</td>
+      <td id="T_cf435_row24_col2" class="data row24 col2" >9</td>
+    </tr>
+  </tbody>
+</table>
+
+	</div>
+	&nbsp;
+	<button class="collapsible"><h3 title="Допустим, что от каждой команды из комбинации в строке таблицы слева&#10;имеется один игрок, и эти игроки должны быть размещены в составе.&#10;В таблице отображено количество игр, которые сможет получить фентези-игрок,&#10;если у него доступно 1 слотов, по матчапам.&#10;Лучшие значения обозначены зелёным цветом, худшие - красным.&#10;Цвета коррелируют между собой по столбцам таблицы, то есть&#10;цветом отмечаются лучшие и худшие команды для конкретного матчапа.&#10;В таблице представлена worst выборка комбинаций размера 2.">Games with 1 slots: worst - 1 next matchups</h3></button>
+	<div class="content" style="overflow-x:auto;">
+	<style type="text/css">
+#T_3c5d1 td:nth-child(1) {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  font-weight: bold;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+#T_3c5d1 td:first-child {
+  border-left: none;
+}
+#T_3c5d1 td:last-child {
+  border-right: none;
+}
+#T_3c5d1 th {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  background: #FFFFFF;
+}
+#T_3c5d1 td {
+  text-align: right;
+}
+#T_3c5d1 td {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  text-align: right;
+}
+#T_3c5d1_row0_col1, #T_3c5d1_row0_col2, #T_3c5d1_row1_col1, #T_3c5d1_row1_col2, #T_3c5d1_row2_col1, #T_3c5d1_row2_col2, #T_3c5d1_row3_col1, #T_3c5d1_row3_col2, #T_3c5d1_row4_col1, #T_3c5d1_row4_col2, #T_3c5d1_row5_col1, #T_3c5d1_row5_col2 {
+  background-color: red;
+}
+</style>
+<table id="T_3c5d1" style="border-collapse: collapse; border: 1px solid black;" align="center"; class="sortable">
+  <thead>
+    <tr>
+      <th id="T_3c5d1_level0_col0" class="col_heading level0 col0" ></th>
+      <th id="T_3c5d1_level0_col1" class="col_heading level0 col1" >#26</th>
+      <th id="T_3c5d1_level0_col2" class="col_heading level0 col2" >Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td id="T_3c5d1_row0_col0" class="data row0 col0" >BUF NJD</td>
+      <td id="T_3c5d1_row0_col1" class="data row0 col1" >4</td>
+      <td id="T_3c5d1_row0_col2" class="data row0 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_3c5d1_row1_col0" class="data row1 col0" >BUF NYR</td>
+      <td id="T_3c5d1_row1_col1" class="data row1 col1" >4</td>
+      <td id="T_3c5d1_row1_col2" class="data row1 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_3c5d1_row2_col0" class="data row2 col0" >CBJ FLA</td>
+      <td id="T_3c5d1_row2_col1" class="data row2 col1" >4</td>
+      <td id="T_3c5d1_row2_col2" class="data row2 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_3c5d1_row3_col0" class="data row3 col0" >CBJ PHI</td>
+      <td id="T_3c5d1_row3_col1" class="data row3 col1" >4</td>
+      <td id="T_3c5d1_row3_col2" class="data row3 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_3c5d1_row4_col0" class="data row4 col0" >FLA PHI</td>
+      <td id="T_3c5d1_row4_col1" class="data row4 col1" >4</td>
+      <td id="T_3c5d1_row4_col2" class="data row4 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_3c5d1_row5_col0" class="data row5 col0" >NJD NYR</td>
+      <td id="T_3c5d1_row5_col1" class="data row5 col1" >4</td>
+      <td id="T_3c5d1_row5_col2" class="data row5 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_3c5d1_row6_col0" class="data row6 col0" >ANA COL</td>
+      <td id="T_3c5d1_row6_col1" class="data row6 col1" >5</td>
+      <td id="T_3c5d1_row6_col2" class="data row6 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_3c5d1_row7_col0" class="data row7 col0" >ANA MIN</td>
+      <td id="T_3c5d1_row7_col1" class="data row7 col1" >5</td>
+      <td id="T_3c5d1_row7_col2" class="data row7 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_3c5d1_row8_col0" class="data row8 col0" >ANA NSH</td>
+      <td id="T_3c5d1_row8_col1" class="data row8 col1" >5</td>
+      <td id="T_3c5d1_row8_col2" class="data row8 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_3c5d1_row9_col0" class="data row9 col0" >ARI STL</td>
+      <td id="T_3c5d1_row9_col1" class="data row9 col1" >5</td>
+      <td id="T_3c5d1_row9_col2" class="data row9 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_3c5d1_row10_col0" class="data row10 col0" >BOS BUF</td>
+      <td id="T_3c5d1_row10_col1" class="data row10 col1" >5</td>
+      <td id="T_3c5d1_row10_col2" class="data row10 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_3c5d1_row11_col0" class="data row11 col0" >BOS CBJ</td>
+      <td id="T_3c5d1_row11_col1" class="data row11 col1" >5</td>
+      <td id="T_3c5d1_row11_col2" class="data row11 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_3c5d1_row12_col0" class="data row12 col0" >BOS DET</td>
+      <td id="T_3c5d1_row12_col1" class="data row12 col1" >5</td>
+      <td id="T_3c5d1_row12_col2" class="data row12 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_3c5d1_row13_col0" class="data row13 col0" >BOS FLA</td>
+      <td id="T_3c5d1_row13_col1" class="data row13 col1" >5</td>
+      <td id="T_3c5d1_row13_col2" class="data row13 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_3c5d1_row14_col0" class="data row14 col0" >BOS MTL</td>
+      <td id="T_3c5d1_row14_col1" class="data row14 col1" >5</td>
+      <td id="T_3c5d1_row14_col2" class="data row14 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_3c5d1_row15_col0" class="data row15 col0" >BOS NSH</td>
+      <td id="T_3c5d1_row15_col1" class="data row15 col1" >5</td>
+      <td id="T_3c5d1_row15_col2" class="data row15 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_3c5d1_row16_col0" class="data row16 col0" >BOS NJD</td>
+      <td id="T_3c5d1_row16_col1" class="data row16 col1" >5</td>
+      <td id="T_3c5d1_row16_col2" class="data row16 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_3c5d1_row17_col0" class="data row17 col0" >BOS NYR</td>
+      <td id="T_3c5d1_row17_col1" class="data row17 col1" >5</td>
+      <td id="T_3c5d1_row17_col2" class="data row17 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_3c5d1_row18_col0" class="data row18 col0" >BOS OTT</td>
+      <td id="T_3c5d1_row18_col1" class="data row18 col1" >5</td>
+      <td id="T_3c5d1_row18_col2" class="data row18 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_3c5d1_row19_col0" class="data row19 col0" >BOS PHI</td>
+      <td id="T_3c5d1_row19_col1" class="data row19 col1" >5</td>
+      <td id="T_3c5d1_row19_col2" class="data row19 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_3c5d1_row20_col0" class="data row20 col0" >BOS WSH</td>
+      <td id="T_3c5d1_row20_col1" class="data row20 col1" >5</td>
+      <td id="T_3c5d1_row20_col2" class="data row20 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_3c5d1_row21_col0" class="data row21 col0" >BUF CBJ</td>
+      <td id="T_3c5d1_row21_col1" class="data row21 col1" >5</td>
+      <td id="T_3c5d1_row21_col2" class="data row21 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_3c5d1_row22_col0" class="data row22 col0" >BUF DAL</td>
+      <td id="T_3c5d1_row22_col1" class="data row22 col1" >5</td>
+      <td id="T_3c5d1_row22_col2" class="data row22 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_3c5d1_row23_col0" class="data row23 col0" >BUF DET</td>
+      <td id="T_3c5d1_row23_col1" class="data row23 col1" >5</td>
+      <td id="T_3c5d1_row23_col2" class="data row23 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_3c5d1_row24_col0" class="data row24 col0" >BUF FLA</td>
+      <td id="T_3c5d1_row24_col1" class="data row24 col1" >5</td>
+      <td id="T_3c5d1_row24_col2" class="data row24 col2" >5</td>
+    </tr>
+  </tbody>
+</table>
+
+	</div>
+	&nbsp;
+	<button class="collapsible"><h3 title="Допустим, что от каждой команды из комбинации в строке таблицы слева&#10;имеется один игрок, и эти игроки должны быть размещены в составе.&#10;В таблице отображено количество игр, которые сможет получить фентези-игрок,&#10;если у него доступно 1 слотов, по матчапам.&#10;Лучшие значения обозначены зелёным цветом, худшие - красным.&#10;Цвета коррелируют между собой по столбцам таблицы, то есть&#10;цветом отмечаются лучшие и худшие команды для конкретного матчапа.&#10;В таблице представлена best выборка комбинаций размера 2.">Games with 1 slots: best - 1 next matchups</h3></button>
+	<div class="content" style="overflow-x:auto;">
+	<style type="text/css">
+#T_d4f60 td:nth-child(1) {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  font-weight: bold;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+#T_d4f60 td:first-child {
+  border-left: none;
+}
+#T_d4f60 td:last-child {
+  border-right: none;
+}
+#T_d4f60 th {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  background: #FFFFFF;
+}
+#T_d4f60 td {
+  text-align: right;
+}
+#T_d4f60 td {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  text-align: right;
+}
+#T_d4f60_row0_col1, #T_d4f60_row0_col2, #T_d4f60_row1_col1, #T_d4f60_row1_col2 {
+  background-color: green;
+}
+#T_d4f60_row22_col1, #T_d4f60_row22_col2, #T_d4f60_row23_col1, #T_d4f60_row23_col2, #T_d4f60_row24_col1, #T_d4f60_row24_col2 {
+  background-color: red;
+}
+</style>
+<table id="T_d4f60" style="border-collapse: collapse; border: 1px solid black;" align="center"; class="sortable">
+  <thead>
+    <tr>
+      <th id="T_d4f60_level0_col0" class="col_heading level0 col0" ></th>
+      <th id="T_d4f60_level0_col1" class="col_heading level0 col1" >#26</th>
+      <th id="T_d4f60_level0_col2" class="col_heading level0 col2" >Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td id="T_d4f60_row0_col0" class="data row0 col0" >TBL VGK</td>
+      <td id="T_d4f60_row0_col1" class="data row0 col1" >11</td>
+      <td id="T_d4f60_row0_col2" class="data row0 col2" >11</td>
+    </tr>
+    <tr>
+      <td id="T_d4f60_row1_col0" class="data row1 col0" >NYI VGK</td>
+      <td id="T_d4f60_row1_col1" class="data row1 col1" >11</td>
+      <td id="T_d4f60_row1_col2" class="data row1 col2" >11</td>
+    </tr>
+    <tr>
+      <td id="T_d4f60_row2_col0" class="data row2 col0" >VGK WSH</td>
+      <td id="T_d4f60_row2_col1" class="data row2 col1" >10</td>
+      <td id="T_d4f60_row2_col2" class="data row2 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_d4f60_row3_col0" class="data row3 col0" >TOR VGK</td>
+      <td id="T_d4f60_row3_col1" class="data row3 col1" >10</td>
+      <td id="T_d4f60_row3_col2" class="data row3 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_d4f60_row4_col0" class="data row4 col0" >SJS VGK</td>
+      <td id="T_d4f60_row4_col1" class="data row4 col1" >10</td>
+      <td id="T_d4f60_row4_col2" class="data row4 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_d4f60_row5_col0" class="data row5 col0" >PIT VGK</td>
+      <td id="T_d4f60_row5_col1" class="data row5 col1" >10</td>
+      <td id="T_d4f60_row5_col2" class="data row5 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_d4f60_row6_col0" class="data row6 col0" >OTT VGK</td>
+      <td id="T_d4f60_row6_col1" class="data row6 col1" >10</td>
+      <td id="T_d4f60_row6_col2" class="data row6 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_d4f60_row7_col0" class="data row7 col0" >NYR VGK</td>
+      <td id="T_d4f60_row7_col1" class="data row7 col1" >10</td>
+      <td id="T_d4f60_row7_col2" class="data row7 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_d4f60_row8_col0" class="data row8 col0" >NJD VGK</td>
+      <td id="T_d4f60_row8_col1" class="data row8 col1" >10</td>
+      <td id="T_d4f60_row8_col2" class="data row8 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_d4f60_row9_col0" class="data row9 col0" >MTL VGK</td>
+      <td id="T_d4f60_row9_col1" class="data row9 col1" >10</td>
+      <td id="T_d4f60_row9_col2" class="data row9 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_d4f60_row10_col0" class="data row10 col0" >LAK VGK</td>
+      <td id="T_d4f60_row10_col1" class="data row10 col1" >10</td>
+      <td id="T_d4f60_row10_col2" class="data row10 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_d4f60_row11_col0" class="data row11 col0" >EDM TOR</td>
+      <td id="T_d4f60_row11_col1" class="data row11 col1" >10</td>
+      <td id="T_d4f60_row11_col2" class="data row11 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_d4f60_row12_col0" class="data row12 col0" >EDM SEA</td>
+      <td id="T_d4f60_row12_col1" class="data row12 col1" >10</td>
+      <td id="T_d4f60_row12_col2" class="data row12 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_d4f60_row13_col0" class="data row13 col0" >DET VGK</td>
+      <td id="T_d4f60_row13_col1" class="data row13 col1" >10</td>
+      <td id="T_d4f60_row13_col2" class="data row13 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_d4f60_row14_col0" class="data row14 col0" >DAL VGK</td>
+      <td id="T_d4f60_row14_col1" class="data row14 col1" >10</td>
+      <td id="T_d4f60_row14_col2" class="data row14 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_d4f60_row15_col0" class="data row15 col0" >CHI TOR</td>
+      <td id="T_d4f60_row15_col1" class="data row15 col1" >10</td>
+      <td id="T_d4f60_row15_col2" class="data row15 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_d4f60_row16_col0" class="data row16 col0" >CHI TBL</td>
+      <td id="T_d4f60_row16_col1" class="data row16 col1" >10</td>
+      <td id="T_d4f60_row16_col2" class="data row16 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_d4f60_row17_col0" class="data row17 col0" >CHI PIT</td>
+      <td id="T_d4f60_row17_col1" class="data row17 col1" >10</td>
+      <td id="T_d4f60_row17_col2" class="data row17 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_d4f60_row18_col0" class="data row18 col0" >CHI NYI</td>
+      <td id="T_d4f60_row18_col1" class="data row18 col1" >10</td>
+      <td id="T_d4f60_row18_col2" class="data row18 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_d4f60_row19_col0" class="data row19 col0" >CGY PIT</td>
+      <td id="T_d4f60_row19_col1" class="data row19 col1" >10</td>
+      <td id="T_d4f60_row19_col2" class="data row19 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_d4f60_row20_col0" class="data row20 col0" >CGY EDM</td>
+      <td id="T_d4f60_row20_col1" class="data row20 col1" >10</td>
+      <td id="T_d4f60_row20_col2" class="data row20 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_d4f60_row21_col0" class="data row21 col0" >BUF VGK</td>
+      <td id="T_d4f60_row21_col1" class="data row21 col1" >10</td>
+      <td id="T_d4f60_row21_col2" class="data row21 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_d4f60_row22_col0" class="data row22 col0" >VGK WPG</td>
+      <td id="T_d4f60_row22_col1" class="data row22 col1" >9</td>
+      <td id="T_d4f60_row22_col2" class="data row22 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_d4f60_row23_col0" class="data row23 col0" >TBL VAN</td>
+      <td id="T_d4f60_row23_col1" class="data row23 col1" >9</td>
+      <td id="T_d4f60_row23_col2" class="data row23 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_d4f60_row24_col0" class="data row24 col0" >STL WPG</td>
+      <td id="T_d4f60_row24_col1" class="data row24 col1" >9</td>
+      <td id="T_d4f60_row24_col2" class="data row24 col2" >9</td>
+    </tr>
+  </tbody>
+</table>
+
+	</div>
+	&nbsp;
+	<button class="collapsible"><h3 title="Допустим, что от каждой команды из комбинации в строке таблицы слева&#10;имеется один игрок, и эти игроки должны быть размещены в составе.&#10;В таблице отображено количество игр, которые сможет получить фентези-игрок,&#10;если у него доступно 1 слотов, по матчапам.&#10;Лучшие значения обозначены зелёным цветом, худшие - красным.&#10;Цвета коррелируют между собой по столбцам таблицы, то есть&#10;цветом отмечаются лучшие и худшие команды для конкретного матчапа.&#10;В таблице представлена worst выборка комбинаций размера 2.">Games with 1 slots: worst - 1 next matchups</h3></button>
+	<div class="content" style="overflow-x:auto;">
+	<style type="text/css">
+#T_7048a td:nth-child(1) {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  font-weight: bold;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+#T_7048a td:first-child {
+  border-left: none;
+}
+#T_7048a td:last-child {
+  border-right: none;
+}
+#T_7048a th {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  background: #FFFFFF;
+}
+#T_7048a td {
+  text-align: right;
+}
+#T_7048a td {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  text-align: right;
+}
+#T_7048a_row0_col1, #T_7048a_row0_col2, #T_7048a_row1_col1, #T_7048a_row1_col2, #T_7048a_row2_col1, #T_7048a_row2_col2, #T_7048a_row3_col1, #T_7048a_row3_col2, #T_7048a_row4_col1, #T_7048a_row4_col2, #T_7048a_row5_col1, #T_7048a_row5_col2 {
+  background-color: red;
+}
+</style>
+<table id="T_7048a" style="border-collapse: collapse; border: 1px solid black;" align="center"; class="sortable">
+  <thead>
+    <tr>
+      <th id="T_7048a_level0_col0" class="col_heading level0 col0" ></th>
+      <th id="T_7048a_level0_col1" class="col_heading level0 col1" >#26</th>
+      <th id="T_7048a_level0_col2" class="col_heading level0 col2" >Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td id="T_7048a_row0_col0" class="data row0 col0" >BUF NJD</td>
+      <td id="T_7048a_row0_col1" class="data row0 col1" >4</td>
+      <td id="T_7048a_row0_col2" class="data row0 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_7048a_row1_col0" class="data row1 col0" >BUF NYR</td>
+      <td id="T_7048a_row1_col1" class="data row1 col1" >4</td>
+      <td id="T_7048a_row1_col2" class="data row1 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_7048a_row2_col0" class="data row2 col0" >CBJ FLA</td>
+      <td id="T_7048a_row2_col1" class="data row2 col1" >4</td>
+      <td id="T_7048a_row2_col2" class="data row2 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_7048a_row3_col0" class="data row3 col0" >CBJ PHI</td>
+      <td id="T_7048a_row3_col1" class="data row3 col1" >4</td>
+      <td id="T_7048a_row3_col2" class="data row3 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_7048a_row4_col0" class="data row4 col0" >FLA PHI</td>
+      <td id="T_7048a_row4_col1" class="data row4 col1" >4</td>
+      <td id="T_7048a_row4_col2" class="data row4 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_7048a_row5_col0" class="data row5 col0" >NJD NYR</td>
+      <td id="T_7048a_row5_col1" class="data row5 col1" >4</td>
+      <td id="T_7048a_row5_col2" class="data row5 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_7048a_row6_col0" class="data row6 col0" >ANA COL</td>
+      <td id="T_7048a_row6_col1" class="data row6 col1" >5</td>
+      <td id="T_7048a_row6_col2" class="data row6 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_7048a_row7_col0" class="data row7 col0" >ANA MIN</td>
+      <td id="T_7048a_row7_col1" class="data row7 col1" >5</td>
+      <td id="T_7048a_row7_col2" class="data row7 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_7048a_row8_col0" class="data row8 col0" >ANA NSH</td>
+      <td id="T_7048a_row8_col1" class="data row8 col1" >5</td>
+      <td id="T_7048a_row8_col2" class="data row8 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_7048a_row9_col0" class="data row9 col0" >ARI STL</td>
+      <td id="T_7048a_row9_col1" class="data row9 col1" >5</td>
+      <td id="T_7048a_row9_col2" class="data row9 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_7048a_row10_col0" class="data row10 col0" >BOS BUF</td>
+      <td id="T_7048a_row10_col1" class="data row10 col1" >5</td>
+      <td id="T_7048a_row10_col2" class="data row10 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_7048a_row11_col0" class="data row11 col0" >BOS CBJ</td>
+      <td id="T_7048a_row11_col1" class="data row11 col1" >5</td>
+      <td id="T_7048a_row11_col2" class="data row11 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_7048a_row12_col0" class="data row12 col0" >BOS DET</td>
+      <td id="T_7048a_row12_col1" class="data row12 col1" >5</td>
+      <td id="T_7048a_row12_col2" class="data row12 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_7048a_row13_col0" class="data row13 col0" >BOS FLA</td>
+      <td id="T_7048a_row13_col1" class="data row13 col1" >5</td>
+      <td id="T_7048a_row13_col2" class="data row13 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_7048a_row14_col0" class="data row14 col0" >BOS MTL</td>
+      <td id="T_7048a_row14_col1" class="data row14 col1" >5</td>
+      <td id="T_7048a_row14_col2" class="data row14 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_7048a_row15_col0" class="data row15 col0" >BOS NSH</td>
+      <td id="T_7048a_row15_col1" class="data row15 col1" >5</td>
+      <td id="T_7048a_row15_col2" class="data row15 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_7048a_row16_col0" class="data row16 col0" >BOS NJD</td>
+      <td id="T_7048a_row16_col1" class="data row16 col1" >5</td>
+      <td id="T_7048a_row16_col2" class="data row16 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_7048a_row17_col0" class="data row17 col0" >BOS NYR</td>
+      <td id="T_7048a_row17_col1" class="data row17 col1" >5</td>
+      <td id="T_7048a_row17_col2" class="data row17 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_7048a_row18_col0" class="data row18 col0" >BOS OTT</td>
+      <td id="T_7048a_row18_col1" class="data row18 col1" >5</td>
+      <td id="T_7048a_row18_col2" class="data row18 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_7048a_row19_col0" class="data row19 col0" >BOS PHI</td>
+      <td id="T_7048a_row19_col1" class="data row19 col1" >5</td>
+      <td id="T_7048a_row19_col2" class="data row19 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_7048a_row20_col0" class="data row20 col0" >BOS WSH</td>
+      <td id="T_7048a_row20_col1" class="data row20 col1" >5</td>
+      <td id="T_7048a_row20_col2" class="data row20 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_7048a_row21_col0" class="data row21 col0" >BUF CBJ</td>
+      <td id="T_7048a_row21_col1" class="data row21 col1" >5</td>
+      <td id="T_7048a_row21_col2" class="data row21 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_7048a_row22_col0" class="data row22 col0" >BUF DAL</td>
+      <td id="T_7048a_row22_col1" class="data row22 col1" >5</td>
+      <td id="T_7048a_row22_col2" class="data row22 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_7048a_row23_col0" class="data row23 col0" >BUF DET</td>
+      <td id="T_7048a_row23_col1" class="data row23 col1" >5</td>
+      <td id="T_7048a_row23_col2" class="data row23 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_7048a_row24_col0" class="data row24 col0" >BUF FLA</td>
+      <td id="T_7048a_row24_col1" class="data row24 col1" >5</td>
+      <td id="T_7048a_row24_col2" class="data row24 col2" >5</td>
+    </tr>
+  </tbody>
+</table>
+
+	</div>
+	&nbsp;
+	<button class="collapsible"><h3 title="Допустим, что от каждой команды из комбинации в строке таблицы слева&#10;имеется один игрок, и эти игроки должны быть размещены в составе.&#10;В таблице отображено количество игр, которые сможет получить фентези-игрок,&#10;если у него доступно 2 слотов, по матчапам.&#10;Лучшие значения обозначены зелёным цветом, худшие - красным.&#10;Цвета коррелируют между собой по столбцам таблицы, то есть&#10;цветом отмечаются лучшие и худшие команды для конкретного матчапа.&#10;В таблице представлена best выборка комбинаций размера 2.">Games with 2 slots: best - 1 next matchups</h3></button>
+	<div class="content" style="overflow-x:auto;">
+	<style type="text/css">
+#T_47228 td:nth-child(1) {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  font-weight: bold;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+#T_47228 td:first-child {
+  border-left: none;
+}
+#T_47228 td:last-child {
+  border-right: none;
+}
+#T_47228 th {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  background: #FFFFFF;
+}
+#T_47228 td {
+  text-align: right;
+}
+#T_47228 td {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  text-align: right;
+}
+#T_47228_row0_col1, #T_47228_row0_col2, #T_47228_row1_col1, #T_47228_row1_col2, #T_47228_row2_col1, #T_47228_row2_col2, #T_47228_row3_col1, #T_47228_row3_col2, #T_47228_row4_col1, #T_47228_row4_col2, #T_47228_row5_col1, #T_47228_row5_col2, #T_47228_row6_col1, #T_47228_row6_col2, #T_47228_row7_col1, #T_47228_row7_col2, #T_47228_row8_col1, #T_47228_row8_col2, #T_47228_row9_col1, #T_47228_row9_col2 {
+  background-color: green;
+}
+</style>
+<table id="T_47228" style="border-collapse: collapse; border: 1px solid black;" align="center"; class="sortable">
+  <thead>
+    <tr>
+      <th id="T_47228_level0_col0" class="col_heading level0 col0" ></th>
+      <th id="T_47228_level0_col1" class="col_heading level0 col1" >#26</th>
+      <th id="T_47228_level0_col2" class="col_heading level0 col2" >Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td id="T_47228_row0_col0" class="data row0 col0" >TOR VGK</td>
+      <td id="T_47228_row0_col1" class="data row0 col1" >12</td>
+      <td id="T_47228_row0_col2" class="data row0 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_47228_row1_col0" class="data row1 col0" >SEA VGK</td>
+      <td id="T_47228_row1_col1" class="data row1 col1" >12</td>
+      <td id="T_47228_row1_col2" class="data row1 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_47228_row2_col0" class="data row2 col0" >SEA TOR</td>
+      <td id="T_47228_row2_col1" class="data row2 col1" >12</td>
+      <td id="T_47228_row2_col2" class="data row2 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_47228_row3_col0" class="data row3 col0" >EDM VGK</td>
+      <td id="T_47228_row3_col1" class="data row3 col1" >12</td>
+      <td id="T_47228_row3_col2" class="data row3 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_47228_row4_col0" class="data row4 col0" >EDM TOR</td>
+      <td id="T_47228_row4_col1" class="data row4 col1" >12</td>
+      <td id="T_47228_row4_col2" class="data row4 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_47228_row5_col0" class="data row5 col0" >EDM SEA</td>
+      <td id="T_47228_row5_col1" class="data row5 col1" >12</td>
+      <td id="T_47228_row5_col2" class="data row5 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_47228_row6_col0" class="data row6 col0" >CGY VGK</td>
+      <td id="T_47228_row6_col1" class="data row6 col1" >12</td>
+      <td id="T_47228_row6_col2" class="data row6 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_47228_row7_col0" class="data row7 col0" >CGY TOR</td>
+      <td id="T_47228_row7_col1" class="data row7 col1" >12</td>
+      <td id="T_47228_row7_col2" class="data row7 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_47228_row8_col0" class="data row8 col0" >CGY SEA</td>
+      <td id="T_47228_row8_col1" class="data row8 col1" >12</td>
+      <td id="T_47228_row8_col2" class="data row8 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_47228_row9_col0" class="data row9 col0" >CGY EDM</td>
+      <td id="T_47228_row9_col1" class="data row9 col1" >12</td>
+      <td id="T_47228_row9_col2" class="data row9 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_47228_row10_col0" class="data row10 col0" >VGK WPG</td>
+      <td id="T_47228_row10_col1" class="data row10 col1" >11</td>
+      <td id="T_47228_row10_col2" class="data row10 col2" >11</td>
+    </tr>
+    <tr>
+      <td id="T_47228_row11_col0" class="data row11 col0" >VGK WSH</td>
+      <td id="T_47228_row11_col1" class="data row11 col1" >11</td>
+      <td id="T_47228_row11_col2" class="data row11 col2" >11</td>
+    </tr>
+    <tr>
+      <td id="T_47228_row12_col0" class="data row12 col0" >VAN VGK</td>
+      <td id="T_47228_row12_col1" class="data row12 col1" >11</td>
+      <td id="T_47228_row12_col2" class="data row12 col2" >11</td>
+    </tr>
+    <tr>
+      <td id="T_47228_row13_col0" class="data row13 col0" >TOR WPG</td>
+      <td id="T_47228_row13_col1" class="data row13 col1" >11</td>
+      <td id="T_47228_row13_col2" class="data row13 col2" >11</td>
+    </tr>
+    <tr>
+      <td id="T_47228_row14_col0" class="data row14 col0" >TOR WSH</td>
+      <td id="T_47228_row14_col1" class="data row14 col1" >11</td>
+      <td id="T_47228_row14_col2" class="data row14 col2" >11</td>
+    </tr>
+    <tr>
+      <td id="T_47228_row15_col0" class="data row15 col0" >TOR VAN</td>
+      <td id="T_47228_row15_col1" class="data row15 col1" >11</td>
+      <td id="T_47228_row15_col2" class="data row15 col2" >11</td>
+    </tr>
+    <tr>
+      <td id="T_47228_row16_col0" class="data row16 col0" >TBL VGK</td>
+      <td id="T_47228_row16_col1" class="data row16 col1" >11</td>
+      <td id="T_47228_row16_col2" class="data row16 col2" >11</td>
+    </tr>
+    <tr>
+      <td id="T_47228_row17_col0" class="data row17 col0" >TBL TOR</td>
+      <td id="T_47228_row17_col1" class="data row17 col1" >11</td>
+      <td id="T_47228_row17_col2" class="data row17 col2" >11</td>
+    </tr>
+    <tr>
+      <td id="T_47228_row18_col0" class="data row18 col0" >SEA WPG</td>
+      <td id="T_47228_row18_col1" class="data row18 col1" >11</td>
+      <td id="T_47228_row18_col2" class="data row18 col2" >11</td>
+    </tr>
+    <tr>
+      <td id="T_47228_row19_col0" class="data row19 col0" >SEA WSH</td>
+      <td id="T_47228_row19_col1" class="data row19 col1" >11</td>
+      <td id="T_47228_row19_col2" class="data row19 col2" >11</td>
+    </tr>
+    <tr>
+      <td id="T_47228_row20_col0" class="data row20 col0" >SEA VAN</td>
+      <td id="T_47228_row20_col1" class="data row20 col1" >11</td>
+      <td id="T_47228_row20_col2" class="data row20 col2" >11</td>
+    </tr>
+    <tr>
+      <td id="T_47228_row21_col0" class="data row21 col0" >SEA TBL</td>
+      <td id="T_47228_row21_col1" class="data row21 col1" >11</td>
+      <td id="T_47228_row21_col2" class="data row21 col2" >11</td>
+    </tr>
+    <tr>
+      <td id="T_47228_row22_col0" class="data row22 col0" >SJS VGK</td>
+      <td id="T_47228_row22_col1" class="data row22 col1" >11</td>
+      <td id="T_47228_row22_col2" class="data row22 col2" >11</td>
+    </tr>
+    <tr>
+      <td id="T_47228_row23_col0" class="data row23 col0" >SJS TOR</td>
+      <td id="T_47228_row23_col1" class="data row23 col1" >11</td>
+      <td id="T_47228_row23_col2" class="data row23 col2" >11</td>
+    </tr>
+    <tr>
+      <td id="T_47228_row24_col0" class="data row24 col0" >SJS SEA</td>
+      <td id="T_47228_row24_col1" class="data row24 col1" >11</td>
+      <td id="T_47228_row24_col2" class="data row24 col2" >11</td>
+    </tr>
+  </tbody>
+</table>
+
+	</div>
+	&nbsp;
+	<button class="collapsible"><h3 title="Допустим, что от каждой команды из комбинации в строке таблицы слева&#10;имеется один игрок, и эти игроки должны быть размещены в составе.&#10;В таблице отображено количество игр, которые сможет получить фентези-игрок,&#10;если у него доступно 2 слотов, по матчапам.&#10;Лучшие значения обозначены зелёным цветом, худшие - красным.&#10;Цвета коррелируют между собой по столбцам таблицы, то есть&#10;цветом отмечаются лучшие и худшие команды для конкретного матчапа.&#10;В таблице представлена worst выборка комбинаций размера 2.">Games with 2 slots: worst - 1 next matchups</h3></button>
+	<div class="content" style="overflow-x:auto;">
+	<style type="text/css">
+#T_a7d38 td:nth-child(1) {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  font-weight: bold;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+#T_a7d38 td:first-child {
+  border-left: none;
+}
+#T_a7d38 td:last-child {
+  border-right: none;
+}
+#T_a7d38 th {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  background: #FFFFFF;
+}
+#T_a7d38 td {
+  text-align: right;
+}
+#T_a7d38 td {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  text-align: right;
+}
+</style>
+<table id="T_a7d38" style="border-collapse: collapse; border: 1px solid black;" align="center"; class="sortable">
+  <thead>
+    <tr>
+      <th id="T_a7d38_level0_col0" class="col_heading level0 col0" ></th>
+      <th id="T_a7d38_level0_col1" class="col_heading level0 col1" >#26</th>
+      <th id="T_a7d38_level0_col2" class="col_heading level0 col2" >Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td id="T_a7d38_row0_col0" class="data row0 col0" >ANA BOS</td>
+      <td id="T_a7d38_row0_col1" class="data row0 col1" >8</td>
+      <td id="T_a7d38_row0_col2" class="data row0 col2" >8</td>
+    </tr>
+    <tr>
+      <td id="T_a7d38_row1_col0" class="data row1 col0" >ANA BUF</td>
+      <td id="T_a7d38_row1_col1" class="data row1 col1" >8</td>
+      <td id="T_a7d38_row1_col2" class="data row1 col2" >8</td>
+    </tr>
+    <tr>
+      <td id="T_a7d38_row2_col0" class="data row2 col0" >ANA CAR</td>
+      <td id="T_a7d38_row2_col1" class="data row2 col1" >8</td>
+      <td id="T_a7d38_row2_col2" class="data row2 col2" >8</td>
+    </tr>
+    <tr>
+      <td id="T_a7d38_row3_col0" class="data row3 col0" >ANA COL</td>
+      <td id="T_a7d38_row3_col1" class="data row3 col1" >8</td>
+      <td id="T_a7d38_row3_col2" class="data row3 col2" >8</td>
+    </tr>
+    <tr>
+      <td id="T_a7d38_row4_col0" class="data row4 col0" >ANA CBJ</td>
+      <td id="T_a7d38_row4_col1" class="data row4 col1" >8</td>
+      <td id="T_a7d38_row4_col2" class="data row4 col2" >8</td>
+    </tr>
+    <tr>
+      <td id="T_a7d38_row5_col0" class="data row5 col0" >ANA DAL</td>
+      <td id="T_a7d38_row5_col1" class="data row5 col1" >8</td>
+      <td id="T_a7d38_row5_col2" class="data row5 col2" >8</td>
+    </tr>
+    <tr>
+      <td id="T_a7d38_row6_col0" class="data row6 col0" >ANA FLA</td>
+      <td id="T_a7d38_row6_col1" class="data row6 col1" >8</td>
+      <td id="T_a7d38_row6_col2" class="data row6 col2" >8</td>
+    </tr>
+    <tr>
+      <td id="T_a7d38_row7_col0" class="data row7 col0" >ANA NSH</td>
+      <td id="T_a7d38_row7_col1" class="data row7 col1" >8</td>
+      <td id="T_a7d38_row7_col2" class="data row7 col2" >8</td>
+    </tr>
+    <tr>
+      <td id="T_a7d38_row8_col0" class="data row8 col0" >ANA NJD</td>
+      <td id="T_a7d38_row8_col1" class="data row8 col1" >8</td>
+      <td id="T_a7d38_row8_col2" class="data row8 col2" >8</td>
+    </tr>
+    <tr>
+      <td id="T_a7d38_row9_col0" class="data row9 col0" >ANA NYR</td>
+      <td id="T_a7d38_row9_col1" class="data row9 col1" >8</td>
+      <td id="T_a7d38_row9_col2" class="data row9 col2" >8</td>
+    </tr>
+    <tr>
+      <td id="T_a7d38_row10_col0" class="data row10 col0" >ANA PHI</td>
+      <td id="T_a7d38_row10_col1" class="data row10 col1" >8</td>
+      <td id="T_a7d38_row10_col2" class="data row10 col2" >8</td>
+    </tr>
+    <tr>
+      <td id="T_a7d38_row11_col0" class="data row11 col0" >ANA STL</td>
+      <td id="T_a7d38_row11_col1" class="data row11 col1" >8</td>
+      <td id="T_a7d38_row11_col2" class="data row11 col2" >8</td>
+    </tr>
+    <tr>
+      <td id="T_a7d38_row12_col0" class="data row12 col0" >BOS BUF</td>
+      <td id="T_a7d38_row12_col1" class="data row12 col1" >8</td>
+      <td id="T_a7d38_row12_col2" class="data row12 col2" >8</td>
+    </tr>
+    <tr>
+      <td id="T_a7d38_row13_col0" class="data row13 col0" >BOS CAR</td>
+      <td id="T_a7d38_row13_col1" class="data row13 col1" >8</td>
+      <td id="T_a7d38_row13_col2" class="data row13 col2" >8</td>
+    </tr>
+    <tr>
+      <td id="T_a7d38_row14_col0" class="data row14 col0" >BOS COL</td>
+      <td id="T_a7d38_row14_col1" class="data row14 col1" >8</td>
+      <td id="T_a7d38_row14_col2" class="data row14 col2" >8</td>
+    </tr>
+    <tr>
+      <td id="T_a7d38_row15_col0" class="data row15 col0" >BOS CBJ</td>
+      <td id="T_a7d38_row15_col1" class="data row15 col1" >8</td>
+      <td id="T_a7d38_row15_col2" class="data row15 col2" >8</td>
+    </tr>
+    <tr>
+      <td id="T_a7d38_row16_col0" class="data row16 col0" >BOS DAL</td>
+      <td id="T_a7d38_row16_col1" class="data row16 col1" >8</td>
+      <td id="T_a7d38_row16_col2" class="data row16 col2" >8</td>
+    </tr>
+    <tr>
+      <td id="T_a7d38_row17_col0" class="data row17 col0" >BOS FLA</td>
+      <td id="T_a7d38_row17_col1" class="data row17 col1" >8</td>
+      <td id="T_a7d38_row17_col2" class="data row17 col2" >8</td>
+    </tr>
+    <tr>
+      <td id="T_a7d38_row18_col0" class="data row18 col0" >BOS NSH</td>
+      <td id="T_a7d38_row18_col1" class="data row18 col1" >8</td>
+      <td id="T_a7d38_row18_col2" class="data row18 col2" >8</td>
+    </tr>
+    <tr>
+      <td id="T_a7d38_row19_col0" class="data row19 col0" >BOS NJD</td>
+      <td id="T_a7d38_row19_col1" class="data row19 col1" >8</td>
+      <td id="T_a7d38_row19_col2" class="data row19 col2" >8</td>
+    </tr>
+    <tr>
+      <td id="T_a7d38_row20_col0" class="data row20 col0" >BOS NYR</td>
+      <td id="T_a7d38_row20_col1" class="data row20 col1" >8</td>
+      <td id="T_a7d38_row20_col2" class="data row20 col2" >8</td>
+    </tr>
+    <tr>
+      <td id="T_a7d38_row21_col0" class="data row21 col0" >BOS PHI</td>
+      <td id="T_a7d38_row21_col1" class="data row21 col1" >8</td>
+      <td id="T_a7d38_row21_col2" class="data row21 col2" >8</td>
+    </tr>
+    <tr>
+      <td id="T_a7d38_row22_col0" class="data row22 col0" >BOS STL</td>
+      <td id="T_a7d38_row22_col1" class="data row22 col1" >8</td>
+      <td id="T_a7d38_row22_col2" class="data row22 col2" >8</td>
+    </tr>
+    <tr>
+      <td id="T_a7d38_row23_col0" class="data row23 col0" >BUF CAR</td>
+      <td id="T_a7d38_row23_col1" class="data row23 col1" >8</td>
+      <td id="T_a7d38_row23_col2" class="data row23 col2" >8</td>
+    </tr>
+    <tr>
+      <td id="T_a7d38_row24_col0" class="data row24 col0" >BUF COL</td>
+      <td id="T_a7d38_row24_col1" class="data row24 col1" >8</td>
+      <td id="T_a7d38_row24_col2" class="data row24 col2" >8</td>
+    </tr>
+  </tbody>
+</table>
+
+	</div>
+	&nbsp;
+	<button class="collapsible"><h3 title="Допустим, что от каждой команды из комбинации в строке таблицы слева&#10;имеется один игрок, и эти игроки должны быть размещены в составе.&#10;В таблице отображено количество игр, которые сможет получить фентези-игрок,&#10;если у него доступно 2 слотов, по матчапам.&#10;Лучшие значения обозначены зелёным цветом, худшие - красным.&#10;Цвета коррелируют между собой по столбцам таблицы, то есть&#10;цветом отмечаются лучшие и худшие команды для конкретного матчапа.&#10;В таблице представлена best выборка комбинаций размера 2.">Games with 2 slots: best - 1 next matchups</h3></button>
+	<div class="content" style="overflow-x:auto;">
+	<style type="text/css">
+#T_c154f td:nth-child(1) {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  font-weight: bold;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+#T_c154f td:first-child {
+  border-left: none;
+}
+#T_c154f td:last-child {
+  border-right: none;
+}
+#T_c154f th {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  background: #FFFFFF;
+}
+#T_c154f td {
+  text-align: right;
+}
+#T_c154f td {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  text-align: right;
+}
+#T_c154f_row0_col1, #T_c154f_row0_col2, #T_c154f_row1_col1, #T_c154f_row1_col2, #T_c154f_row2_col1, #T_c154f_row2_col2, #T_c154f_row3_col1, #T_c154f_row3_col2, #T_c154f_row4_col1, #T_c154f_row4_col2, #T_c154f_row5_col1, #T_c154f_row5_col2, #T_c154f_row6_col1, #T_c154f_row6_col2, #T_c154f_row7_col1, #T_c154f_row7_col2, #T_c154f_row8_col1, #T_c154f_row8_col2, #T_c154f_row9_col1, #T_c154f_row9_col2 {
+  background-color: green;
+}
+</style>
+<table id="T_c154f" style="border-collapse: collapse; border: 1px solid black;" align="center"; class="sortable">
+  <thead>
+    <tr>
+      <th id="T_c154f_level0_col0" class="col_heading level0 col0" ></th>
+      <th id="T_c154f_level0_col1" class="col_heading level0 col1" >#26</th>
+      <th id="T_c154f_level0_col2" class="col_heading level0 col2" >Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td id="T_c154f_row0_col0" class="data row0 col0" >TOR VGK</td>
+      <td id="T_c154f_row0_col1" class="data row0 col1" >12</td>
+      <td id="T_c154f_row0_col2" class="data row0 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_c154f_row1_col0" class="data row1 col0" >SEA VGK</td>
+      <td id="T_c154f_row1_col1" class="data row1 col1" >12</td>
+      <td id="T_c154f_row1_col2" class="data row1 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_c154f_row2_col0" class="data row2 col0" >SEA TOR</td>
+      <td id="T_c154f_row2_col1" class="data row2 col1" >12</td>
+      <td id="T_c154f_row2_col2" class="data row2 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_c154f_row3_col0" class="data row3 col0" >EDM VGK</td>
+      <td id="T_c154f_row3_col1" class="data row3 col1" >12</td>
+      <td id="T_c154f_row3_col2" class="data row3 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_c154f_row4_col0" class="data row4 col0" >EDM TOR</td>
+      <td id="T_c154f_row4_col1" class="data row4 col1" >12</td>
+      <td id="T_c154f_row4_col2" class="data row4 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_c154f_row5_col0" class="data row5 col0" >EDM SEA</td>
+      <td id="T_c154f_row5_col1" class="data row5 col1" >12</td>
+      <td id="T_c154f_row5_col2" class="data row5 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_c154f_row6_col0" class="data row6 col0" >CGY VGK</td>
+      <td id="T_c154f_row6_col1" class="data row6 col1" >12</td>
+      <td id="T_c154f_row6_col2" class="data row6 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_c154f_row7_col0" class="data row7 col0" >CGY TOR</td>
+      <td id="T_c154f_row7_col1" class="data row7 col1" >12</td>
+      <td id="T_c154f_row7_col2" class="data row7 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_c154f_row8_col0" class="data row8 col0" >CGY SEA</td>
+      <td id="T_c154f_row8_col1" class="data row8 col1" >12</td>
+      <td id="T_c154f_row8_col2" class="data row8 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_c154f_row9_col0" class="data row9 col0" >CGY EDM</td>
+      <td id="T_c154f_row9_col1" class="data row9 col1" >12</td>
+      <td id="T_c154f_row9_col2" class="data row9 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_c154f_row10_col0" class="data row10 col0" >VGK WPG</td>
+      <td id="T_c154f_row10_col1" class="data row10 col1" >11</td>
+      <td id="T_c154f_row10_col2" class="data row10 col2" >11</td>
+    </tr>
+    <tr>
+      <td id="T_c154f_row11_col0" class="data row11 col0" >VGK WSH</td>
+      <td id="T_c154f_row11_col1" class="data row11 col1" >11</td>
+      <td id="T_c154f_row11_col2" class="data row11 col2" >11</td>
+    </tr>
+    <tr>
+      <td id="T_c154f_row12_col0" class="data row12 col0" >VAN VGK</td>
+      <td id="T_c154f_row12_col1" class="data row12 col1" >11</td>
+      <td id="T_c154f_row12_col2" class="data row12 col2" >11</td>
+    </tr>
+    <tr>
+      <td id="T_c154f_row13_col0" class="data row13 col0" >TOR WPG</td>
+      <td id="T_c154f_row13_col1" class="data row13 col1" >11</td>
+      <td id="T_c154f_row13_col2" class="data row13 col2" >11</td>
+    </tr>
+    <tr>
+      <td id="T_c154f_row14_col0" class="data row14 col0" >TOR WSH</td>
+      <td id="T_c154f_row14_col1" class="data row14 col1" >11</td>
+      <td id="T_c154f_row14_col2" class="data row14 col2" >11</td>
+    </tr>
+    <tr>
+      <td id="T_c154f_row15_col0" class="data row15 col0" >TOR VAN</td>
+      <td id="T_c154f_row15_col1" class="data row15 col1" >11</td>
+      <td id="T_c154f_row15_col2" class="data row15 col2" >11</td>
+    </tr>
+    <tr>
+      <td id="T_c154f_row16_col0" class="data row16 col0" >TBL VGK</td>
+      <td id="T_c154f_row16_col1" class="data row16 col1" >11</td>
+      <td id="T_c154f_row16_col2" class="data row16 col2" >11</td>
+    </tr>
+    <tr>
+      <td id="T_c154f_row17_col0" class="data row17 col0" >TBL TOR</td>
+      <td id="T_c154f_row17_col1" class="data row17 col1" >11</td>
+      <td id="T_c154f_row17_col2" class="data row17 col2" >11</td>
+    </tr>
+    <tr>
+      <td id="T_c154f_row18_col0" class="data row18 col0" >SEA WPG</td>
+      <td id="T_c154f_row18_col1" class="data row18 col1" >11</td>
+      <td id="T_c154f_row18_col2" class="data row18 col2" >11</td>
+    </tr>
+    <tr>
+      <td id="T_c154f_row19_col0" class="data row19 col0" >SEA WSH</td>
+      <td id="T_c154f_row19_col1" class="data row19 col1" >11</td>
+      <td id="T_c154f_row19_col2" class="data row19 col2" >11</td>
+    </tr>
+    <tr>
+      <td id="T_c154f_row20_col0" class="data row20 col0" >SEA VAN</td>
+      <td id="T_c154f_row20_col1" class="data row20 col1" >11</td>
+      <td id="T_c154f_row20_col2" class="data row20 col2" >11</td>
+    </tr>
+    <tr>
+      <td id="T_c154f_row21_col0" class="data row21 col0" >SEA TBL</td>
+      <td id="T_c154f_row21_col1" class="data row21 col1" >11</td>
+      <td id="T_c154f_row21_col2" class="data row21 col2" >11</td>
+    </tr>
+    <tr>
+      <td id="T_c154f_row22_col0" class="data row22 col0" >SJS VGK</td>
+      <td id="T_c154f_row22_col1" class="data row22 col1" >11</td>
+      <td id="T_c154f_row22_col2" class="data row22 col2" >11</td>
+    </tr>
+    <tr>
+      <td id="T_c154f_row23_col0" class="data row23 col0" >SJS TOR</td>
+      <td id="T_c154f_row23_col1" class="data row23 col1" >11</td>
+      <td id="T_c154f_row23_col2" class="data row23 col2" >11</td>
+    </tr>
+    <tr>
+      <td id="T_c154f_row24_col0" class="data row24 col0" >SJS SEA</td>
+      <td id="T_c154f_row24_col1" class="data row24 col1" >11</td>
+      <td id="T_c154f_row24_col2" class="data row24 col2" >11</td>
+    </tr>
+  </tbody>
+</table>
+
+	</div>
+	&nbsp;
+	<button class="collapsible"><h3 title="Допустим, что от каждой команды из комбинации в строке таблицы слева&#10;имеется один игрок, и эти игроки должны быть размещены в составе.&#10;В таблице отображено количество игр, которые сможет получить фентези-игрок,&#10;если у него доступно 2 слотов, по матчапам.&#10;Лучшие значения обозначены зелёным цветом, худшие - красным.&#10;Цвета коррелируют между собой по столбцам таблицы, то есть&#10;цветом отмечаются лучшие и худшие команды для конкретного матчапа.&#10;В таблице представлена worst выборка комбинаций размера 2.">Games with 2 slots: worst - 1 next matchups</h3></button>
+	<div class="content" style="overflow-x:auto;">
+	<style type="text/css">
+#T_b7867 td:nth-child(1) {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  font-weight: bold;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+#T_b7867 td:first-child {
+  border-left: none;
+}
+#T_b7867 td:last-child {
+  border-right: none;
+}
+#T_b7867 th {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  background: #FFFFFF;
+}
+#T_b7867 td {
+  text-align: right;
+}
+#T_b7867 td {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  text-align: right;
+}
+</style>
+<table id="T_b7867" style="border-collapse: collapse; border: 1px solid black;" align="center"; class="sortable">
+  <thead>
+    <tr>
+      <th id="T_b7867_level0_col0" class="col_heading level0 col0" ></th>
+      <th id="T_b7867_level0_col1" class="col_heading level0 col1" >#26</th>
+      <th id="T_b7867_level0_col2" class="col_heading level0 col2" >Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td id="T_b7867_row0_col0" class="data row0 col0" >ANA BOS</td>
+      <td id="T_b7867_row0_col1" class="data row0 col1" >8</td>
+      <td id="T_b7867_row0_col2" class="data row0 col2" >8</td>
+    </tr>
+    <tr>
+      <td id="T_b7867_row1_col0" class="data row1 col0" >ANA BUF</td>
+      <td id="T_b7867_row1_col1" class="data row1 col1" >8</td>
+      <td id="T_b7867_row1_col2" class="data row1 col2" >8</td>
+    </tr>
+    <tr>
+      <td id="T_b7867_row2_col0" class="data row2 col0" >ANA CAR</td>
+      <td id="T_b7867_row2_col1" class="data row2 col1" >8</td>
+      <td id="T_b7867_row2_col2" class="data row2 col2" >8</td>
+    </tr>
+    <tr>
+      <td id="T_b7867_row3_col0" class="data row3 col0" >ANA COL</td>
+      <td id="T_b7867_row3_col1" class="data row3 col1" >8</td>
+      <td id="T_b7867_row3_col2" class="data row3 col2" >8</td>
+    </tr>
+    <tr>
+      <td id="T_b7867_row4_col0" class="data row4 col0" >ANA CBJ</td>
+      <td id="T_b7867_row4_col1" class="data row4 col1" >8</td>
+      <td id="T_b7867_row4_col2" class="data row4 col2" >8</td>
+    </tr>
+    <tr>
+      <td id="T_b7867_row5_col0" class="data row5 col0" >ANA DAL</td>
+      <td id="T_b7867_row5_col1" class="data row5 col1" >8</td>
+      <td id="T_b7867_row5_col2" class="data row5 col2" >8</td>
+    </tr>
+    <tr>
+      <td id="T_b7867_row6_col0" class="data row6 col0" >ANA FLA</td>
+      <td id="T_b7867_row6_col1" class="data row6 col1" >8</td>
+      <td id="T_b7867_row6_col2" class="data row6 col2" >8</td>
+    </tr>
+    <tr>
+      <td id="T_b7867_row7_col0" class="data row7 col0" >ANA NSH</td>
+      <td id="T_b7867_row7_col1" class="data row7 col1" >8</td>
+      <td id="T_b7867_row7_col2" class="data row7 col2" >8</td>
+    </tr>
+    <tr>
+      <td id="T_b7867_row8_col0" class="data row8 col0" >ANA NJD</td>
+      <td id="T_b7867_row8_col1" class="data row8 col1" >8</td>
+      <td id="T_b7867_row8_col2" class="data row8 col2" >8</td>
+    </tr>
+    <tr>
+      <td id="T_b7867_row9_col0" class="data row9 col0" >ANA NYR</td>
+      <td id="T_b7867_row9_col1" class="data row9 col1" >8</td>
+      <td id="T_b7867_row9_col2" class="data row9 col2" >8</td>
+    </tr>
+    <tr>
+      <td id="T_b7867_row10_col0" class="data row10 col0" >ANA PHI</td>
+      <td id="T_b7867_row10_col1" class="data row10 col1" >8</td>
+      <td id="T_b7867_row10_col2" class="data row10 col2" >8</td>
+    </tr>
+    <tr>
+      <td id="T_b7867_row11_col0" class="data row11 col0" >ANA STL</td>
+      <td id="T_b7867_row11_col1" class="data row11 col1" >8</td>
+      <td id="T_b7867_row11_col2" class="data row11 col2" >8</td>
+    </tr>
+    <tr>
+      <td id="T_b7867_row12_col0" class="data row12 col0" >BOS BUF</td>
+      <td id="T_b7867_row12_col1" class="data row12 col1" >8</td>
+      <td id="T_b7867_row12_col2" class="data row12 col2" >8</td>
+    </tr>
+    <tr>
+      <td id="T_b7867_row13_col0" class="data row13 col0" >BOS CAR</td>
+      <td id="T_b7867_row13_col1" class="data row13 col1" >8</td>
+      <td id="T_b7867_row13_col2" class="data row13 col2" >8</td>
+    </tr>
+    <tr>
+      <td id="T_b7867_row14_col0" class="data row14 col0" >BOS COL</td>
+      <td id="T_b7867_row14_col1" class="data row14 col1" >8</td>
+      <td id="T_b7867_row14_col2" class="data row14 col2" >8</td>
+    </tr>
+    <tr>
+      <td id="T_b7867_row15_col0" class="data row15 col0" >BOS CBJ</td>
+      <td id="T_b7867_row15_col1" class="data row15 col1" >8</td>
+      <td id="T_b7867_row15_col2" class="data row15 col2" >8</td>
+    </tr>
+    <tr>
+      <td id="T_b7867_row16_col0" class="data row16 col0" >BOS DAL</td>
+      <td id="T_b7867_row16_col1" class="data row16 col1" >8</td>
+      <td id="T_b7867_row16_col2" class="data row16 col2" >8</td>
+    </tr>
+    <tr>
+      <td id="T_b7867_row17_col0" class="data row17 col0" >BOS FLA</td>
+      <td id="T_b7867_row17_col1" class="data row17 col1" >8</td>
+      <td id="T_b7867_row17_col2" class="data row17 col2" >8</td>
+    </tr>
+    <tr>
+      <td id="T_b7867_row18_col0" class="data row18 col0" >BOS NSH</td>
+      <td id="T_b7867_row18_col1" class="data row18 col1" >8</td>
+      <td id="T_b7867_row18_col2" class="data row18 col2" >8</td>
+    </tr>
+    <tr>
+      <td id="T_b7867_row19_col0" class="data row19 col0" >BOS NJD</td>
+      <td id="T_b7867_row19_col1" class="data row19 col1" >8</td>
+      <td id="T_b7867_row19_col2" class="data row19 col2" >8</td>
+    </tr>
+    <tr>
+      <td id="T_b7867_row20_col0" class="data row20 col0" >BOS NYR</td>
+      <td id="T_b7867_row20_col1" class="data row20 col1" >8</td>
+      <td id="T_b7867_row20_col2" class="data row20 col2" >8</td>
+    </tr>
+    <tr>
+      <td id="T_b7867_row21_col0" class="data row21 col0" >BOS PHI</td>
+      <td id="T_b7867_row21_col1" class="data row21 col1" >8</td>
+      <td id="T_b7867_row21_col2" class="data row21 col2" >8</td>
+    </tr>
+    <tr>
+      <td id="T_b7867_row22_col0" class="data row22 col0" >BOS STL</td>
+      <td id="T_b7867_row22_col1" class="data row22 col1" >8</td>
+      <td id="T_b7867_row22_col2" class="data row22 col2" >8</td>
+    </tr>
+    <tr>
+      <td id="T_b7867_row23_col0" class="data row23 col0" >BUF CAR</td>
+      <td id="T_b7867_row23_col1" class="data row23 col1" >8</td>
+      <td id="T_b7867_row23_col2" class="data row23 col2" >8</td>
+    </tr>
+    <tr>
+      <td id="T_b7867_row24_col0" class="data row24 col0" >BUF COL</td>
+      <td id="T_b7867_row24_col1" class="data row24 col1" >8</td>
+      <td id="T_b7867_row24_col2" class="data row24 col2" >8</td>
+    </tr>
+  </tbody>
+</table>
+
+	</div>
+
+	<script>
+		var coll = document.getElementsByClassName("collapsible");
+		var i;
+		
+		for (i = 0; i < coll.length; i++) {
+		coll[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var content = this.nextElementSibling;
+			if (content.style.maxHeight){
+			content.style.maxHeight = null;
+			} else {
+			content.style.maxHeight = (content.scrollHeight + 100000) + "px";
+			}
+		});
+		}
+	</script>
+	<script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+	</body>
+</html>

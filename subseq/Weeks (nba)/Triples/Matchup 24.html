@@ -1,0 +1,3619 @@
+<!DOCTYPE html>
+<html>
+	<style>
+		.collapsible {
+            background-color: #f1f1f1;
+            color: black;
+            cursor: pointer;
+            padding: 10px;
+            width: 30%;
+            border: none;
+            text-align: center;
+            outline: none;
+        }
+
+        .active, .collapsible:hover {
+            background-color: #dcdcdc;
+        }
+
+        .content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: white;
+        }
+
+        div.away {
+            color: red;
+        }
+        div.home {
+            color: blue;
+        }
+
+	</style>
+	<head>
+		<link rel="icon" type="image/png" href="https://andrei1809.github.io/308068346049/favicon.ico"/>
+	</head>
+	<title>nba, Weeks, subseq</title>
+	<h1><a href="" style="text-decoration:none;">Weeks</a></h1>
+	<h2>Subseq overall. Triples</h2>
+	<body align="center">
+	&nbsp;
+	<button class="collapsible"><h3 title="Допустим, что от каждой команды из комбинации в строке таблицы слева&#10;имеется один игрок, и эти игроки должны быть размещены в составе.&#10;В таблице отображено количество игр, которые сможет получить фентези-игрок,&#10;если у него доступно 1 слотов, по матчапам.&#10;Лучшие значения обозначены зелёным цветом, худшие - красным.&#10;Цвета коррелируют между собой по столбцам таблицы, то есть&#10;цветом отмечаются лучшие и худшие команды для конкретного матчапа.&#10;В таблице представлена best выборка комбинаций размера 3.">Games with 1 slots: best - 1 next matchups</h3></button>
+	<div class="content" style="overflow-x:auto;">
+	<style type="text/css">
+#T_1fd32 td:nth-child(1) {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  font-weight: bold;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+#T_1fd32 td:first-child {
+  border-left: none;
+}
+#T_1fd32 td:last-child {
+  border-right: none;
+}
+#T_1fd32 th {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  background: #FFFFFF;
+}
+#T_1fd32 td {
+  text-align: right;
+}
+#T_1fd32 td {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  text-align: right;
+}
+</style>
+<table id="T_1fd32" style="border-collapse: collapse; border: 1px solid black;" align="center"; class="sortable">
+  <thead>
+    <tr>
+      <th id="T_1fd32_level0_col0" class="col_heading level0 col0" ></th>
+      <th id="T_1fd32_level0_col1" class="col_heading level0 col1" >#24</th>
+      <th id="T_1fd32_level0_col2" class="col_heading level0 col2" >Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td id="T_1fd32_row0_col0" class="data row0 col0" >TOR UTA WAS</td>
+      <td id="T_1fd32_row0_col1" class="data row0 col1" >5</td>
+      <td id="T_1fd32_row0_col2" class="data row0 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_1fd32_row1_col0" class="data row1 col0" >SAS UTA WAS</td>
+      <td id="T_1fd32_row1_col1" class="data row1 col1" >5</td>
+      <td id="T_1fd32_row1_col2" class="data row1 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_1fd32_row2_col0" class="data row2 col0" >SAS TOR UTA</td>
+      <td id="T_1fd32_row2_col1" class="data row2 col1" >5</td>
+      <td id="T_1fd32_row2_col2" class="data row2 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_1fd32_row3_col0" class="data row3 col0" >SAC TOR WAS</td>
+      <td id="T_1fd32_row3_col1" class="data row3 col1" >5</td>
+      <td id="T_1fd32_row3_col2" class="data row3 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_1fd32_row4_col0" class="data row4 col0" >SAC TOR UTA</td>
+      <td id="T_1fd32_row4_col1" class="data row4 col1" >5</td>
+      <td id="T_1fd32_row4_col2" class="data row4 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_1fd32_row5_col0" class="data row5 col0" >SAC SAS WAS</td>
+      <td id="T_1fd32_row5_col1" class="data row5 col1" >5</td>
+      <td id="T_1fd32_row5_col2" class="data row5 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_1fd32_row6_col0" class="data row6 col0" >SAC SAS UTA</td>
+      <td id="T_1fd32_row6_col1" class="data row6 col1" >5</td>
+      <td id="T_1fd32_row6_col2" class="data row6 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_1fd32_row7_col0" class="data row7 col0" >SAC SAS TOR</td>
+      <td id="T_1fd32_row7_col1" class="data row7 col1" >5</td>
+      <td id="T_1fd32_row7_col2" class="data row7 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_1fd32_row8_col0" class="data row8 col0" >POR TOR WAS</td>
+      <td id="T_1fd32_row8_col1" class="data row8 col1" >5</td>
+      <td id="T_1fd32_row8_col2" class="data row8 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_1fd32_row9_col0" class="data row9 col0" >POR TOR UTA</td>
+      <td id="T_1fd32_row9_col1" class="data row9 col1" >5</td>
+      <td id="T_1fd32_row9_col2" class="data row9 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_1fd32_row10_col0" class="data row10 col0" >POR SAS WAS</td>
+      <td id="T_1fd32_row10_col1" class="data row10 col1" >5</td>
+      <td id="T_1fd32_row10_col2" class="data row10 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_1fd32_row11_col0" class="data row11 col0" >POR SAS UTA</td>
+      <td id="T_1fd32_row11_col1" class="data row11 col1" >5</td>
+      <td id="T_1fd32_row11_col2" class="data row11 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_1fd32_row12_col0" class="data row12 col0" >POR SAS TOR</td>
+      <td id="T_1fd32_row12_col1" class="data row12 col1" >5</td>
+      <td id="T_1fd32_row12_col2" class="data row12 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_1fd32_row13_col0" class="data row13 col0" >POR SAC TOR</td>
+      <td id="T_1fd32_row13_col1" class="data row13 col1" >5</td>
+      <td id="T_1fd32_row13_col2" class="data row13 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_1fd32_row14_col0" class="data row14 col0" >POR SAC SAS</td>
+      <td id="T_1fd32_row14_col1" class="data row14 col1" >5</td>
+      <td id="T_1fd32_row14_col2" class="data row14 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_1fd32_row15_col0" class="data row15 col0" >PHX UTA WAS</td>
+      <td id="T_1fd32_row15_col1" class="data row15 col1" >5</td>
+      <td id="T_1fd32_row15_col2" class="data row15 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_1fd32_row16_col0" class="data row16 col0" >PHX TOR UTA</td>
+      <td id="T_1fd32_row16_col1" class="data row16 col1" >5</td>
+      <td id="T_1fd32_row16_col2" class="data row16 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_1fd32_row17_col0" class="data row17 col0" >PHX SAS UTA</td>
+      <td id="T_1fd32_row17_col1" class="data row17 col1" >5</td>
+      <td id="T_1fd32_row17_col2" class="data row17 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_1fd32_row18_col0" class="data row18 col0" >PHX SAC WAS</td>
+      <td id="T_1fd32_row18_col1" class="data row18 col1" >5</td>
+      <td id="T_1fd32_row18_col2" class="data row18 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_1fd32_row19_col0" class="data row19 col0" >PHX SAC UTA</td>
+      <td id="T_1fd32_row19_col1" class="data row19 col1" >5</td>
+      <td id="T_1fd32_row19_col2" class="data row19 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_1fd32_row20_col0" class="data row20 col0" >PHX SAC TOR</td>
+      <td id="T_1fd32_row20_col1" class="data row20 col1" >5</td>
+      <td id="T_1fd32_row20_col2" class="data row20 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_1fd32_row21_col0" class="data row21 col0" >PHX SAC SAS</td>
+      <td id="T_1fd32_row21_col1" class="data row21 col1" >5</td>
+      <td id="T_1fd32_row21_col2" class="data row21 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_1fd32_row22_col0" class="data row22 col0" >PHX POR WAS</td>
+      <td id="T_1fd32_row22_col1" class="data row22 col1" >5</td>
+      <td id="T_1fd32_row22_col2" class="data row22 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_1fd32_row23_col0" class="data row23 col0" >PHX POR UTA</td>
+      <td id="T_1fd32_row23_col1" class="data row23 col1" >5</td>
+      <td id="T_1fd32_row23_col2" class="data row23 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_1fd32_row24_col0" class="data row24 col0" >PHX POR TOR</td>
+      <td id="T_1fd32_row24_col1" class="data row24 col1" >5</td>
+      <td id="T_1fd32_row24_col2" class="data row24 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_1fd32_row25_col0" class="data row25 col0" >PHX POR SAS</td>
+      <td id="T_1fd32_row25_col1" class="data row25 col1" >5</td>
+      <td id="T_1fd32_row25_col2" class="data row25 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_1fd32_row26_col0" class="data row26 col0" >PHX POR SAC</td>
+      <td id="T_1fd32_row26_col1" class="data row26 col1" >5</td>
+      <td id="T_1fd32_row26_col2" class="data row26 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_1fd32_row27_col0" class="data row27 col0" >PHI TOR UTA</td>
+      <td id="T_1fd32_row27_col1" class="data row27 col1" >5</td>
+      <td id="T_1fd32_row27_col2" class="data row27 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_1fd32_row28_col0" class="data row28 col0" >PHI SAS UTA</td>
+      <td id="T_1fd32_row28_col1" class="data row28 col1" >5</td>
+      <td id="T_1fd32_row28_col2" class="data row28 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_1fd32_row29_col0" class="data row29 col0" >PHI SAC TOR</td>
+      <td id="T_1fd32_row29_col1" class="data row29 col1" >5</td>
+      <td id="T_1fd32_row29_col2" class="data row29 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_1fd32_row30_col0" class="data row30 col0" >PHI SAC SAS</td>
+      <td id="T_1fd32_row30_col1" class="data row30 col1" >5</td>
+      <td id="T_1fd32_row30_col2" class="data row30 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_1fd32_row31_col0" class="data row31 col0" >PHI POR TOR</td>
+      <td id="T_1fd32_row31_col1" class="data row31 col1" >5</td>
+      <td id="T_1fd32_row31_col2" class="data row31 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_1fd32_row32_col0" class="data row32 col0" >PHI POR SAS</td>
+      <td id="T_1fd32_row32_col1" class="data row32 col1" >5</td>
+      <td id="T_1fd32_row32_col2" class="data row32 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_1fd32_row33_col0" class="data row33 col0" >PHI PHX UTA</td>
+      <td id="T_1fd32_row33_col1" class="data row33 col1" >5</td>
+      <td id="T_1fd32_row33_col2" class="data row33 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_1fd32_row34_col0" class="data row34 col0" >PHI PHX SAC</td>
+      <td id="T_1fd32_row34_col1" class="data row34 col1" >5</td>
+      <td id="T_1fd32_row34_col2" class="data row34 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_1fd32_row35_col0" class="data row35 col0" >PHI PHX POR</td>
+      <td id="T_1fd32_row35_col1" class="data row35 col1" >5</td>
+      <td id="T_1fd32_row35_col2" class="data row35 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_1fd32_row36_col0" class="data row36 col0" >ORL UTA WAS</td>
+      <td id="T_1fd32_row36_col1" class="data row36 col1" >5</td>
+      <td id="T_1fd32_row36_col2" class="data row36 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_1fd32_row37_col0" class="data row37 col0" >ORL TOR UTA</td>
+      <td id="T_1fd32_row37_col1" class="data row37 col1" >5</td>
+      <td id="T_1fd32_row37_col2" class="data row37 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_1fd32_row38_col0" class="data row38 col0" >ORL SAS UTA</td>
+      <td id="T_1fd32_row38_col1" class="data row38 col1" >5</td>
+      <td id="T_1fd32_row38_col2" class="data row38 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_1fd32_row39_col0" class="data row39 col0" >ORL SAC WAS</td>
+      <td id="T_1fd32_row39_col1" class="data row39 col1" >5</td>
+      <td id="T_1fd32_row39_col2" class="data row39 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_1fd32_row40_col0" class="data row40 col0" >ORL SAC UTA</td>
+      <td id="T_1fd32_row40_col1" class="data row40 col1" >5</td>
+      <td id="T_1fd32_row40_col2" class="data row40 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_1fd32_row41_col0" class="data row41 col0" >ORL SAC TOR</td>
+      <td id="T_1fd32_row41_col1" class="data row41 col1" >5</td>
+      <td id="T_1fd32_row41_col2" class="data row41 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_1fd32_row42_col0" class="data row42 col0" >ORL SAC SAS</td>
+      <td id="T_1fd32_row42_col1" class="data row42 col1" >5</td>
+      <td id="T_1fd32_row42_col2" class="data row42 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_1fd32_row43_col0" class="data row43 col0" >ORL POR WAS</td>
+      <td id="T_1fd32_row43_col1" class="data row43 col1" >5</td>
+      <td id="T_1fd32_row43_col2" class="data row43 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_1fd32_row44_col0" class="data row44 col0" >ORL POR UTA</td>
+      <td id="T_1fd32_row44_col1" class="data row44 col1" >5</td>
+      <td id="T_1fd32_row44_col2" class="data row44 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_1fd32_row45_col0" class="data row45 col0" >ORL POR TOR</td>
+      <td id="T_1fd32_row45_col1" class="data row45 col1" >5</td>
+      <td id="T_1fd32_row45_col2" class="data row45 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_1fd32_row46_col0" class="data row46 col0" >ORL POR SAS</td>
+      <td id="T_1fd32_row46_col1" class="data row46 col1" >5</td>
+      <td id="T_1fd32_row46_col2" class="data row46 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_1fd32_row47_col0" class="data row47 col0" >ORL POR SAC</td>
+      <td id="T_1fd32_row47_col1" class="data row47 col1" >5</td>
+      <td id="T_1fd32_row47_col2" class="data row47 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_1fd32_row48_col0" class="data row48 col0" >ORL PHX UTA</td>
+      <td id="T_1fd32_row48_col1" class="data row48 col1" >5</td>
+      <td id="T_1fd32_row48_col2" class="data row48 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_1fd32_row49_col0" class="data row49 col0" >ORL PHX SAC</td>
+      <td id="T_1fd32_row49_col1" class="data row49 col1" >5</td>
+      <td id="T_1fd32_row49_col2" class="data row49 col2" >5</td>
+    </tr>
+  </tbody>
+</table>
+
+	</div>
+	&nbsp;
+	<button class="collapsible"><h3 title="Допустим, что от каждой команды из комбинации в строке таблицы слева&#10;имеется один игрок, и эти игроки должны быть размещены в составе.&#10;В таблице отображено количество игр, которые сможет получить фентези-игрок,&#10;если у него доступно 1 слотов, по матчапам.&#10;Лучшие значения обозначены зелёным цветом, худшие - красным.&#10;Цвета коррелируют между собой по столбцам таблицы, то есть&#10;цветом отмечаются лучшие и худшие команды для конкретного матчапа.&#10;В таблице представлена worst выборка комбинаций размера 3.">Games with 1 slots: worst - 1 next matchups</h3></button>
+	<div class="content" style="overflow-x:auto;">
+	<style type="text/css">
+#T_0b209 td:nth-child(1) {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  font-weight: bold;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+#T_0b209 td:first-child {
+  border-left: none;
+}
+#T_0b209 td:last-child {
+  border-right: none;
+}
+#T_0b209 th {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  background: #FFFFFF;
+}
+#T_0b209 td {
+  text-align: right;
+}
+#T_0b209 td {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  text-align: right;
+}
+#T_0b209_row0_col1, #T_0b209_row0_col2, #T_0b209_row1_col1, #T_0b209_row1_col2, #T_0b209_row2_col1, #T_0b209_row2_col2, #T_0b209_row3_col1, #T_0b209_row3_col2 {
+  background-color: red;
+}
+</style>
+<table id="T_0b209" style="border-collapse: collapse; border: 1px solid black;" align="center"; class="sortable">
+  <thead>
+    <tr>
+      <th id="T_0b209_level0_col0" class="col_heading level0 col0" ></th>
+      <th id="T_0b209_level0_col1" class="col_heading level0 col1" >#24</th>
+      <th id="T_0b209_level0_col2" class="col_heading level0 col2" >Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td id="T_0b209_row0_col0" class="data row0 col0" >IND LAL PHI</td>
+      <td id="T_0b209_row0_col1" class="data row0 col1" >3</td>
+      <td id="T_0b209_row0_col2" class="data row0 col2" >3</td>
+    </tr>
+    <tr>
+      <td id="T_0b209_row1_col0" class="data row1 col0" >IND LAL WAS</td>
+      <td id="T_0b209_row1_col1" class="data row1 col1" >3</td>
+      <td id="T_0b209_row1_col2" class="data row1 col2" >3</td>
+    </tr>
+    <tr>
+      <td id="T_0b209_row2_col0" class="data row2 col0" >IND PHI WAS</td>
+      <td id="T_0b209_row2_col1" class="data row2 col1" >3</td>
+      <td id="T_0b209_row2_col2" class="data row2 col2" >3</td>
+    </tr>
+    <tr>
+      <td id="T_0b209_row3_col0" class="data row3 col0" >LAL PHI WAS</td>
+      <td id="T_0b209_row3_col1" class="data row3 col1" >3</td>
+      <td id="T_0b209_row3_col2" class="data row3 col2" >3</td>
+    </tr>
+    <tr>
+      <td id="T_0b209_row4_col0" class="data row4 col0" >ATL BKN CHA</td>
+      <td id="T_0b209_row4_col1" class="data row4 col1" >4</td>
+      <td id="T_0b209_row4_col2" class="data row4 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_0b209_row5_col0" class="data row5 col0" >ATL BKN CLE</td>
+      <td id="T_0b209_row5_col1" class="data row5 col1" >4</td>
+      <td id="T_0b209_row5_col2" class="data row5 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_0b209_row6_col0" class="data row6 col0" >ATL BKN DAL</td>
+      <td id="T_0b209_row6_col1" class="data row6 col1" >4</td>
+      <td id="T_0b209_row6_col2" class="data row6 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_0b209_row7_col0" class="data row7 col0" >ATL BKN DEN</td>
+      <td id="T_0b209_row7_col1" class="data row7 col1" >4</td>
+      <td id="T_0b209_row7_col2" class="data row7 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_0b209_row8_col0" class="data row8 col0" >ATL BKN IND</td>
+      <td id="T_0b209_row8_col1" class="data row8 col1" >4</td>
+      <td id="T_0b209_row8_col2" class="data row8 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_0b209_row9_col0" class="data row9 col0" >ATL BKN LAC</td>
+      <td id="T_0b209_row9_col1" class="data row9 col1" >4</td>
+      <td id="T_0b209_row9_col2" class="data row9 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_0b209_row10_col0" class="data row10 col0" >ATL BKN LAL</td>
+      <td id="T_0b209_row10_col1" class="data row10 col1" >4</td>
+      <td id="T_0b209_row10_col2" class="data row10 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_0b209_row11_col0" class="data row11 col0" >ATL BKN MEM</td>
+      <td id="T_0b209_row11_col1" class="data row11 col1" >4</td>
+      <td id="T_0b209_row11_col2" class="data row11 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_0b209_row12_col0" class="data row12 col0" >ATL BKN MIA</td>
+      <td id="T_0b209_row12_col1" class="data row12 col1" >4</td>
+      <td id="T_0b209_row12_col2" class="data row12 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_0b209_row13_col0" class="data row13 col0" >ATL BKN MIL</td>
+      <td id="T_0b209_row13_col1" class="data row13 col1" >4</td>
+      <td id="T_0b209_row13_col2" class="data row13 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_0b209_row14_col0" class="data row14 col0" >ATL BKN MIN</td>
+      <td id="T_0b209_row14_col1" class="data row14 col1" >4</td>
+      <td id="T_0b209_row14_col2" class="data row14 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_0b209_row15_col0" class="data row15 col0" >ATL BKN OKC</td>
+      <td id="T_0b209_row15_col1" class="data row15 col1" >4</td>
+      <td id="T_0b209_row15_col2" class="data row15 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_0b209_row16_col0" class="data row16 col0" >ATL BKN ORL</td>
+      <td id="T_0b209_row16_col1" class="data row16 col1" >4</td>
+      <td id="T_0b209_row16_col2" class="data row16 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_0b209_row17_col0" class="data row17 col0" >ATL BKN PHI</td>
+      <td id="T_0b209_row17_col1" class="data row17 col1" >4</td>
+      <td id="T_0b209_row17_col2" class="data row17 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_0b209_row18_col0" class="data row18 col0" >ATL BKN PHX</td>
+      <td id="T_0b209_row18_col1" class="data row18 col1" >4</td>
+      <td id="T_0b209_row18_col2" class="data row18 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_0b209_row19_col0" class="data row19 col0" >ATL BKN SAS</td>
+      <td id="T_0b209_row19_col1" class="data row19 col1" >4</td>
+      <td id="T_0b209_row19_col2" class="data row19 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_0b209_row20_col0" class="data row20 col0" >ATL BKN TOR</td>
+      <td id="T_0b209_row20_col1" class="data row20 col1" >4</td>
+      <td id="T_0b209_row20_col2" class="data row20 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_0b209_row21_col0" class="data row21 col0" >ATL BKN WAS</td>
+      <td id="T_0b209_row21_col1" class="data row21 col1" >4</td>
+      <td id="T_0b209_row21_col2" class="data row21 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_0b209_row22_col0" class="data row22 col0" >ATL CHA CLE</td>
+      <td id="T_0b209_row22_col1" class="data row22 col1" >4</td>
+      <td id="T_0b209_row22_col2" class="data row22 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_0b209_row23_col0" class="data row23 col0" >ATL CHA DAL</td>
+      <td id="T_0b209_row23_col1" class="data row23 col1" >4</td>
+      <td id="T_0b209_row23_col2" class="data row23 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_0b209_row24_col0" class="data row24 col0" >ATL CHA DEN</td>
+      <td id="T_0b209_row24_col1" class="data row24 col1" >4</td>
+      <td id="T_0b209_row24_col2" class="data row24 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_0b209_row25_col0" class="data row25 col0" >ATL CHA IND</td>
+      <td id="T_0b209_row25_col1" class="data row25 col1" >4</td>
+      <td id="T_0b209_row25_col2" class="data row25 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_0b209_row26_col0" class="data row26 col0" >ATL CHA LAC</td>
+      <td id="T_0b209_row26_col1" class="data row26 col1" >4</td>
+      <td id="T_0b209_row26_col2" class="data row26 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_0b209_row27_col0" class="data row27 col0" >ATL CHA LAL</td>
+      <td id="T_0b209_row27_col1" class="data row27 col1" >4</td>
+      <td id="T_0b209_row27_col2" class="data row27 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_0b209_row28_col0" class="data row28 col0" >ATL CHA MEM</td>
+      <td id="T_0b209_row28_col1" class="data row28 col1" >4</td>
+      <td id="T_0b209_row28_col2" class="data row28 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_0b209_row29_col0" class="data row29 col0" >ATL CHA MIA</td>
+      <td id="T_0b209_row29_col1" class="data row29 col1" >4</td>
+      <td id="T_0b209_row29_col2" class="data row29 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_0b209_row30_col0" class="data row30 col0" >ATL CHA MIL</td>
+      <td id="T_0b209_row30_col1" class="data row30 col1" >4</td>
+      <td id="T_0b209_row30_col2" class="data row30 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_0b209_row31_col0" class="data row31 col0" >ATL CHA MIN</td>
+      <td id="T_0b209_row31_col1" class="data row31 col1" >4</td>
+      <td id="T_0b209_row31_col2" class="data row31 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_0b209_row32_col0" class="data row32 col0" >ATL CHA OKC</td>
+      <td id="T_0b209_row32_col1" class="data row32 col1" >4</td>
+      <td id="T_0b209_row32_col2" class="data row32 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_0b209_row33_col0" class="data row33 col0" >ATL CHA ORL</td>
+      <td id="T_0b209_row33_col1" class="data row33 col1" >4</td>
+      <td id="T_0b209_row33_col2" class="data row33 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_0b209_row34_col0" class="data row34 col0" >ATL CHA PHI</td>
+      <td id="T_0b209_row34_col1" class="data row34 col1" >4</td>
+      <td id="T_0b209_row34_col2" class="data row34 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_0b209_row35_col0" class="data row35 col0" >ATL CHA PHX</td>
+      <td id="T_0b209_row35_col1" class="data row35 col1" >4</td>
+      <td id="T_0b209_row35_col2" class="data row35 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_0b209_row36_col0" class="data row36 col0" >ATL CHA SAS</td>
+      <td id="T_0b209_row36_col1" class="data row36 col1" >4</td>
+      <td id="T_0b209_row36_col2" class="data row36 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_0b209_row37_col0" class="data row37 col0" >ATL CHA TOR</td>
+      <td id="T_0b209_row37_col1" class="data row37 col1" >4</td>
+      <td id="T_0b209_row37_col2" class="data row37 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_0b209_row38_col0" class="data row38 col0" >ATL CHA WAS</td>
+      <td id="T_0b209_row38_col1" class="data row38 col1" >4</td>
+      <td id="T_0b209_row38_col2" class="data row38 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_0b209_row39_col0" class="data row39 col0" >ATL CLE DAL</td>
+      <td id="T_0b209_row39_col1" class="data row39 col1" >4</td>
+      <td id="T_0b209_row39_col2" class="data row39 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_0b209_row40_col0" class="data row40 col0" >ATL CLE DEN</td>
+      <td id="T_0b209_row40_col1" class="data row40 col1" >4</td>
+      <td id="T_0b209_row40_col2" class="data row40 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_0b209_row41_col0" class="data row41 col0" >ATL CLE IND</td>
+      <td id="T_0b209_row41_col1" class="data row41 col1" >4</td>
+      <td id="T_0b209_row41_col2" class="data row41 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_0b209_row42_col0" class="data row42 col0" >ATL CLE LAC</td>
+      <td id="T_0b209_row42_col1" class="data row42 col1" >4</td>
+      <td id="T_0b209_row42_col2" class="data row42 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_0b209_row43_col0" class="data row43 col0" >ATL CLE LAL</td>
+      <td id="T_0b209_row43_col1" class="data row43 col1" >4</td>
+      <td id="T_0b209_row43_col2" class="data row43 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_0b209_row44_col0" class="data row44 col0" >ATL CLE MEM</td>
+      <td id="T_0b209_row44_col1" class="data row44 col1" >4</td>
+      <td id="T_0b209_row44_col2" class="data row44 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_0b209_row45_col0" class="data row45 col0" >ATL CLE MIA</td>
+      <td id="T_0b209_row45_col1" class="data row45 col1" >4</td>
+      <td id="T_0b209_row45_col2" class="data row45 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_0b209_row46_col0" class="data row46 col0" >ATL CLE MIL</td>
+      <td id="T_0b209_row46_col1" class="data row46 col1" >4</td>
+      <td id="T_0b209_row46_col2" class="data row46 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_0b209_row47_col0" class="data row47 col0" >ATL CLE MIN</td>
+      <td id="T_0b209_row47_col1" class="data row47 col1" >4</td>
+      <td id="T_0b209_row47_col2" class="data row47 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_0b209_row48_col0" class="data row48 col0" >ATL CLE OKC</td>
+      <td id="T_0b209_row48_col1" class="data row48 col1" >4</td>
+      <td id="T_0b209_row48_col2" class="data row48 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_0b209_row49_col0" class="data row49 col0" >ATL CLE ORL</td>
+      <td id="T_0b209_row49_col1" class="data row49 col1" >4</td>
+      <td id="T_0b209_row49_col2" class="data row49 col2" >4</td>
+    </tr>
+  </tbody>
+</table>
+
+	</div>
+	&nbsp;
+	<button class="collapsible"><h3 title="Допустим, что от каждой команды из комбинации в строке таблицы слева&#10;имеется один игрок, и эти игроки должны быть размещены в составе.&#10;В таблице отображено количество игр, которые сможет получить фентези-игрок,&#10;если у него доступно 1 слотов, по матчапам.&#10;Лучшие значения обозначены зелёным цветом, худшие - красным.&#10;Цвета коррелируют между собой по столбцам таблицы, то есть&#10;цветом отмечаются лучшие и худшие команды для конкретного матчапа.&#10;В таблице представлена best выборка комбинаций размера 3.">Games with 1 slots: best - 1 next matchups</h3></button>
+	<div class="content" style="overflow-x:auto;">
+	<style type="text/css">
+#T_aa4c0 td:nth-child(1) {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  font-weight: bold;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+#T_aa4c0 td:first-child {
+  border-left: none;
+}
+#T_aa4c0 td:last-child {
+  border-right: none;
+}
+#T_aa4c0 th {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  background: #FFFFFF;
+}
+#T_aa4c0 td {
+  text-align: right;
+}
+#T_aa4c0 td {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  text-align: right;
+}
+</style>
+<table id="T_aa4c0" style="border-collapse: collapse; border: 1px solid black;" align="center"; class="sortable">
+  <thead>
+    <tr>
+      <th id="T_aa4c0_level0_col0" class="col_heading level0 col0" ></th>
+      <th id="T_aa4c0_level0_col1" class="col_heading level0 col1" >#24</th>
+      <th id="T_aa4c0_level0_col2" class="col_heading level0 col2" >Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td id="T_aa4c0_row0_col0" class="data row0 col0" >TOR UTA WAS</td>
+      <td id="T_aa4c0_row0_col1" class="data row0 col1" >5</td>
+      <td id="T_aa4c0_row0_col2" class="data row0 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_aa4c0_row1_col0" class="data row1 col0" >SAS UTA WAS</td>
+      <td id="T_aa4c0_row1_col1" class="data row1 col1" >5</td>
+      <td id="T_aa4c0_row1_col2" class="data row1 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_aa4c0_row2_col0" class="data row2 col0" >SAS TOR UTA</td>
+      <td id="T_aa4c0_row2_col1" class="data row2 col1" >5</td>
+      <td id="T_aa4c0_row2_col2" class="data row2 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_aa4c0_row3_col0" class="data row3 col0" >SAC TOR WAS</td>
+      <td id="T_aa4c0_row3_col1" class="data row3 col1" >5</td>
+      <td id="T_aa4c0_row3_col2" class="data row3 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_aa4c0_row4_col0" class="data row4 col0" >SAC TOR UTA</td>
+      <td id="T_aa4c0_row4_col1" class="data row4 col1" >5</td>
+      <td id="T_aa4c0_row4_col2" class="data row4 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_aa4c0_row5_col0" class="data row5 col0" >SAC SAS WAS</td>
+      <td id="T_aa4c0_row5_col1" class="data row5 col1" >5</td>
+      <td id="T_aa4c0_row5_col2" class="data row5 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_aa4c0_row6_col0" class="data row6 col0" >SAC SAS UTA</td>
+      <td id="T_aa4c0_row6_col1" class="data row6 col1" >5</td>
+      <td id="T_aa4c0_row6_col2" class="data row6 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_aa4c0_row7_col0" class="data row7 col0" >SAC SAS TOR</td>
+      <td id="T_aa4c0_row7_col1" class="data row7 col1" >5</td>
+      <td id="T_aa4c0_row7_col2" class="data row7 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_aa4c0_row8_col0" class="data row8 col0" >POR TOR WAS</td>
+      <td id="T_aa4c0_row8_col1" class="data row8 col1" >5</td>
+      <td id="T_aa4c0_row8_col2" class="data row8 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_aa4c0_row9_col0" class="data row9 col0" >POR TOR UTA</td>
+      <td id="T_aa4c0_row9_col1" class="data row9 col1" >5</td>
+      <td id="T_aa4c0_row9_col2" class="data row9 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_aa4c0_row10_col0" class="data row10 col0" >POR SAS WAS</td>
+      <td id="T_aa4c0_row10_col1" class="data row10 col1" >5</td>
+      <td id="T_aa4c0_row10_col2" class="data row10 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_aa4c0_row11_col0" class="data row11 col0" >POR SAS UTA</td>
+      <td id="T_aa4c0_row11_col1" class="data row11 col1" >5</td>
+      <td id="T_aa4c0_row11_col2" class="data row11 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_aa4c0_row12_col0" class="data row12 col0" >POR SAS TOR</td>
+      <td id="T_aa4c0_row12_col1" class="data row12 col1" >5</td>
+      <td id="T_aa4c0_row12_col2" class="data row12 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_aa4c0_row13_col0" class="data row13 col0" >POR SAC TOR</td>
+      <td id="T_aa4c0_row13_col1" class="data row13 col1" >5</td>
+      <td id="T_aa4c0_row13_col2" class="data row13 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_aa4c0_row14_col0" class="data row14 col0" >POR SAC SAS</td>
+      <td id="T_aa4c0_row14_col1" class="data row14 col1" >5</td>
+      <td id="T_aa4c0_row14_col2" class="data row14 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_aa4c0_row15_col0" class="data row15 col0" >PHX UTA WAS</td>
+      <td id="T_aa4c0_row15_col1" class="data row15 col1" >5</td>
+      <td id="T_aa4c0_row15_col2" class="data row15 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_aa4c0_row16_col0" class="data row16 col0" >PHX TOR UTA</td>
+      <td id="T_aa4c0_row16_col1" class="data row16 col1" >5</td>
+      <td id="T_aa4c0_row16_col2" class="data row16 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_aa4c0_row17_col0" class="data row17 col0" >PHX SAS UTA</td>
+      <td id="T_aa4c0_row17_col1" class="data row17 col1" >5</td>
+      <td id="T_aa4c0_row17_col2" class="data row17 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_aa4c0_row18_col0" class="data row18 col0" >PHX SAC WAS</td>
+      <td id="T_aa4c0_row18_col1" class="data row18 col1" >5</td>
+      <td id="T_aa4c0_row18_col2" class="data row18 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_aa4c0_row19_col0" class="data row19 col0" >PHX SAC UTA</td>
+      <td id="T_aa4c0_row19_col1" class="data row19 col1" >5</td>
+      <td id="T_aa4c0_row19_col2" class="data row19 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_aa4c0_row20_col0" class="data row20 col0" >PHX SAC TOR</td>
+      <td id="T_aa4c0_row20_col1" class="data row20 col1" >5</td>
+      <td id="T_aa4c0_row20_col2" class="data row20 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_aa4c0_row21_col0" class="data row21 col0" >PHX SAC SAS</td>
+      <td id="T_aa4c0_row21_col1" class="data row21 col1" >5</td>
+      <td id="T_aa4c0_row21_col2" class="data row21 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_aa4c0_row22_col0" class="data row22 col0" >PHX POR WAS</td>
+      <td id="T_aa4c0_row22_col1" class="data row22 col1" >5</td>
+      <td id="T_aa4c0_row22_col2" class="data row22 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_aa4c0_row23_col0" class="data row23 col0" >PHX POR UTA</td>
+      <td id="T_aa4c0_row23_col1" class="data row23 col1" >5</td>
+      <td id="T_aa4c0_row23_col2" class="data row23 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_aa4c0_row24_col0" class="data row24 col0" >PHX POR TOR</td>
+      <td id="T_aa4c0_row24_col1" class="data row24 col1" >5</td>
+      <td id="T_aa4c0_row24_col2" class="data row24 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_aa4c0_row25_col0" class="data row25 col0" >PHX POR SAS</td>
+      <td id="T_aa4c0_row25_col1" class="data row25 col1" >5</td>
+      <td id="T_aa4c0_row25_col2" class="data row25 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_aa4c0_row26_col0" class="data row26 col0" >PHX POR SAC</td>
+      <td id="T_aa4c0_row26_col1" class="data row26 col1" >5</td>
+      <td id="T_aa4c0_row26_col2" class="data row26 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_aa4c0_row27_col0" class="data row27 col0" >PHI TOR UTA</td>
+      <td id="T_aa4c0_row27_col1" class="data row27 col1" >5</td>
+      <td id="T_aa4c0_row27_col2" class="data row27 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_aa4c0_row28_col0" class="data row28 col0" >PHI SAS UTA</td>
+      <td id="T_aa4c0_row28_col1" class="data row28 col1" >5</td>
+      <td id="T_aa4c0_row28_col2" class="data row28 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_aa4c0_row29_col0" class="data row29 col0" >PHI SAC TOR</td>
+      <td id="T_aa4c0_row29_col1" class="data row29 col1" >5</td>
+      <td id="T_aa4c0_row29_col2" class="data row29 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_aa4c0_row30_col0" class="data row30 col0" >PHI SAC SAS</td>
+      <td id="T_aa4c0_row30_col1" class="data row30 col1" >5</td>
+      <td id="T_aa4c0_row30_col2" class="data row30 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_aa4c0_row31_col0" class="data row31 col0" >PHI POR TOR</td>
+      <td id="T_aa4c0_row31_col1" class="data row31 col1" >5</td>
+      <td id="T_aa4c0_row31_col2" class="data row31 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_aa4c0_row32_col0" class="data row32 col0" >PHI POR SAS</td>
+      <td id="T_aa4c0_row32_col1" class="data row32 col1" >5</td>
+      <td id="T_aa4c0_row32_col2" class="data row32 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_aa4c0_row33_col0" class="data row33 col0" >PHI PHX UTA</td>
+      <td id="T_aa4c0_row33_col1" class="data row33 col1" >5</td>
+      <td id="T_aa4c0_row33_col2" class="data row33 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_aa4c0_row34_col0" class="data row34 col0" >PHI PHX SAC</td>
+      <td id="T_aa4c0_row34_col1" class="data row34 col1" >5</td>
+      <td id="T_aa4c0_row34_col2" class="data row34 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_aa4c0_row35_col0" class="data row35 col0" >PHI PHX POR</td>
+      <td id="T_aa4c0_row35_col1" class="data row35 col1" >5</td>
+      <td id="T_aa4c0_row35_col2" class="data row35 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_aa4c0_row36_col0" class="data row36 col0" >ORL UTA WAS</td>
+      <td id="T_aa4c0_row36_col1" class="data row36 col1" >5</td>
+      <td id="T_aa4c0_row36_col2" class="data row36 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_aa4c0_row37_col0" class="data row37 col0" >ORL TOR UTA</td>
+      <td id="T_aa4c0_row37_col1" class="data row37 col1" >5</td>
+      <td id="T_aa4c0_row37_col2" class="data row37 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_aa4c0_row38_col0" class="data row38 col0" >ORL SAS UTA</td>
+      <td id="T_aa4c0_row38_col1" class="data row38 col1" >5</td>
+      <td id="T_aa4c0_row38_col2" class="data row38 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_aa4c0_row39_col0" class="data row39 col0" >ORL SAC WAS</td>
+      <td id="T_aa4c0_row39_col1" class="data row39 col1" >5</td>
+      <td id="T_aa4c0_row39_col2" class="data row39 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_aa4c0_row40_col0" class="data row40 col0" >ORL SAC UTA</td>
+      <td id="T_aa4c0_row40_col1" class="data row40 col1" >5</td>
+      <td id="T_aa4c0_row40_col2" class="data row40 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_aa4c0_row41_col0" class="data row41 col0" >ORL SAC TOR</td>
+      <td id="T_aa4c0_row41_col1" class="data row41 col1" >5</td>
+      <td id="T_aa4c0_row41_col2" class="data row41 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_aa4c0_row42_col0" class="data row42 col0" >ORL SAC SAS</td>
+      <td id="T_aa4c0_row42_col1" class="data row42 col1" >5</td>
+      <td id="T_aa4c0_row42_col2" class="data row42 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_aa4c0_row43_col0" class="data row43 col0" >ORL POR WAS</td>
+      <td id="T_aa4c0_row43_col1" class="data row43 col1" >5</td>
+      <td id="T_aa4c0_row43_col2" class="data row43 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_aa4c0_row44_col0" class="data row44 col0" >ORL POR UTA</td>
+      <td id="T_aa4c0_row44_col1" class="data row44 col1" >5</td>
+      <td id="T_aa4c0_row44_col2" class="data row44 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_aa4c0_row45_col0" class="data row45 col0" >ORL POR TOR</td>
+      <td id="T_aa4c0_row45_col1" class="data row45 col1" >5</td>
+      <td id="T_aa4c0_row45_col2" class="data row45 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_aa4c0_row46_col0" class="data row46 col0" >ORL POR SAS</td>
+      <td id="T_aa4c0_row46_col1" class="data row46 col1" >5</td>
+      <td id="T_aa4c0_row46_col2" class="data row46 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_aa4c0_row47_col0" class="data row47 col0" >ORL POR SAC</td>
+      <td id="T_aa4c0_row47_col1" class="data row47 col1" >5</td>
+      <td id="T_aa4c0_row47_col2" class="data row47 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_aa4c0_row48_col0" class="data row48 col0" >ORL PHX UTA</td>
+      <td id="T_aa4c0_row48_col1" class="data row48 col1" >5</td>
+      <td id="T_aa4c0_row48_col2" class="data row48 col2" >5</td>
+    </tr>
+    <tr>
+      <td id="T_aa4c0_row49_col0" class="data row49 col0" >ORL PHX SAC</td>
+      <td id="T_aa4c0_row49_col1" class="data row49 col1" >5</td>
+      <td id="T_aa4c0_row49_col2" class="data row49 col2" >5</td>
+    </tr>
+  </tbody>
+</table>
+
+	</div>
+	&nbsp;
+	<button class="collapsible"><h3 title="Допустим, что от каждой команды из комбинации в строке таблицы слева&#10;имеется один игрок, и эти игроки должны быть размещены в составе.&#10;В таблице отображено количество игр, которые сможет получить фентези-игрок,&#10;если у него доступно 1 слотов, по матчапам.&#10;Лучшие значения обозначены зелёным цветом, худшие - красным.&#10;Цвета коррелируют между собой по столбцам таблицы, то есть&#10;цветом отмечаются лучшие и худшие команды для конкретного матчапа.&#10;В таблице представлена worst выборка комбинаций размера 3.">Games with 1 slots: worst - 1 next matchups</h3></button>
+	<div class="content" style="overflow-x:auto;">
+	<style type="text/css">
+#T_7df6f td:nth-child(1) {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  font-weight: bold;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+#T_7df6f td:first-child {
+  border-left: none;
+}
+#T_7df6f td:last-child {
+  border-right: none;
+}
+#T_7df6f th {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  background: #FFFFFF;
+}
+#T_7df6f td {
+  text-align: right;
+}
+#T_7df6f td {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  text-align: right;
+}
+#T_7df6f_row0_col1, #T_7df6f_row0_col2, #T_7df6f_row1_col1, #T_7df6f_row1_col2, #T_7df6f_row2_col1, #T_7df6f_row2_col2, #T_7df6f_row3_col1, #T_7df6f_row3_col2 {
+  background-color: red;
+}
+</style>
+<table id="T_7df6f" style="border-collapse: collapse; border: 1px solid black;" align="center"; class="sortable">
+  <thead>
+    <tr>
+      <th id="T_7df6f_level0_col0" class="col_heading level0 col0" ></th>
+      <th id="T_7df6f_level0_col1" class="col_heading level0 col1" >#24</th>
+      <th id="T_7df6f_level0_col2" class="col_heading level0 col2" >Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td id="T_7df6f_row0_col0" class="data row0 col0" >IND LAL PHI</td>
+      <td id="T_7df6f_row0_col1" class="data row0 col1" >3</td>
+      <td id="T_7df6f_row0_col2" class="data row0 col2" >3</td>
+    </tr>
+    <tr>
+      <td id="T_7df6f_row1_col0" class="data row1 col0" >IND LAL WAS</td>
+      <td id="T_7df6f_row1_col1" class="data row1 col1" >3</td>
+      <td id="T_7df6f_row1_col2" class="data row1 col2" >3</td>
+    </tr>
+    <tr>
+      <td id="T_7df6f_row2_col0" class="data row2 col0" >IND PHI WAS</td>
+      <td id="T_7df6f_row2_col1" class="data row2 col1" >3</td>
+      <td id="T_7df6f_row2_col2" class="data row2 col2" >3</td>
+    </tr>
+    <tr>
+      <td id="T_7df6f_row3_col0" class="data row3 col0" >LAL PHI WAS</td>
+      <td id="T_7df6f_row3_col1" class="data row3 col1" >3</td>
+      <td id="T_7df6f_row3_col2" class="data row3 col2" >3</td>
+    </tr>
+    <tr>
+      <td id="T_7df6f_row4_col0" class="data row4 col0" >ATL BKN CHA</td>
+      <td id="T_7df6f_row4_col1" class="data row4 col1" >4</td>
+      <td id="T_7df6f_row4_col2" class="data row4 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_7df6f_row5_col0" class="data row5 col0" >ATL BKN CLE</td>
+      <td id="T_7df6f_row5_col1" class="data row5 col1" >4</td>
+      <td id="T_7df6f_row5_col2" class="data row5 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_7df6f_row6_col0" class="data row6 col0" >ATL BKN DAL</td>
+      <td id="T_7df6f_row6_col1" class="data row6 col1" >4</td>
+      <td id="T_7df6f_row6_col2" class="data row6 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_7df6f_row7_col0" class="data row7 col0" >ATL BKN DEN</td>
+      <td id="T_7df6f_row7_col1" class="data row7 col1" >4</td>
+      <td id="T_7df6f_row7_col2" class="data row7 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_7df6f_row8_col0" class="data row8 col0" >ATL BKN IND</td>
+      <td id="T_7df6f_row8_col1" class="data row8 col1" >4</td>
+      <td id="T_7df6f_row8_col2" class="data row8 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_7df6f_row9_col0" class="data row9 col0" >ATL BKN LAC</td>
+      <td id="T_7df6f_row9_col1" class="data row9 col1" >4</td>
+      <td id="T_7df6f_row9_col2" class="data row9 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_7df6f_row10_col0" class="data row10 col0" >ATL BKN LAL</td>
+      <td id="T_7df6f_row10_col1" class="data row10 col1" >4</td>
+      <td id="T_7df6f_row10_col2" class="data row10 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_7df6f_row11_col0" class="data row11 col0" >ATL BKN MEM</td>
+      <td id="T_7df6f_row11_col1" class="data row11 col1" >4</td>
+      <td id="T_7df6f_row11_col2" class="data row11 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_7df6f_row12_col0" class="data row12 col0" >ATL BKN MIA</td>
+      <td id="T_7df6f_row12_col1" class="data row12 col1" >4</td>
+      <td id="T_7df6f_row12_col2" class="data row12 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_7df6f_row13_col0" class="data row13 col0" >ATL BKN MIL</td>
+      <td id="T_7df6f_row13_col1" class="data row13 col1" >4</td>
+      <td id="T_7df6f_row13_col2" class="data row13 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_7df6f_row14_col0" class="data row14 col0" >ATL BKN MIN</td>
+      <td id="T_7df6f_row14_col1" class="data row14 col1" >4</td>
+      <td id="T_7df6f_row14_col2" class="data row14 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_7df6f_row15_col0" class="data row15 col0" >ATL BKN OKC</td>
+      <td id="T_7df6f_row15_col1" class="data row15 col1" >4</td>
+      <td id="T_7df6f_row15_col2" class="data row15 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_7df6f_row16_col0" class="data row16 col0" >ATL BKN ORL</td>
+      <td id="T_7df6f_row16_col1" class="data row16 col1" >4</td>
+      <td id="T_7df6f_row16_col2" class="data row16 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_7df6f_row17_col0" class="data row17 col0" >ATL BKN PHI</td>
+      <td id="T_7df6f_row17_col1" class="data row17 col1" >4</td>
+      <td id="T_7df6f_row17_col2" class="data row17 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_7df6f_row18_col0" class="data row18 col0" >ATL BKN PHX</td>
+      <td id="T_7df6f_row18_col1" class="data row18 col1" >4</td>
+      <td id="T_7df6f_row18_col2" class="data row18 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_7df6f_row19_col0" class="data row19 col0" >ATL BKN SAS</td>
+      <td id="T_7df6f_row19_col1" class="data row19 col1" >4</td>
+      <td id="T_7df6f_row19_col2" class="data row19 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_7df6f_row20_col0" class="data row20 col0" >ATL BKN TOR</td>
+      <td id="T_7df6f_row20_col1" class="data row20 col1" >4</td>
+      <td id="T_7df6f_row20_col2" class="data row20 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_7df6f_row21_col0" class="data row21 col0" >ATL BKN WAS</td>
+      <td id="T_7df6f_row21_col1" class="data row21 col1" >4</td>
+      <td id="T_7df6f_row21_col2" class="data row21 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_7df6f_row22_col0" class="data row22 col0" >ATL CHA CLE</td>
+      <td id="T_7df6f_row22_col1" class="data row22 col1" >4</td>
+      <td id="T_7df6f_row22_col2" class="data row22 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_7df6f_row23_col0" class="data row23 col0" >ATL CHA DAL</td>
+      <td id="T_7df6f_row23_col1" class="data row23 col1" >4</td>
+      <td id="T_7df6f_row23_col2" class="data row23 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_7df6f_row24_col0" class="data row24 col0" >ATL CHA DEN</td>
+      <td id="T_7df6f_row24_col1" class="data row24 col1" >4</td>
+      <td id="T_7df6f_row24_col2" class="data row24 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_7df6f_row25_col0" class="data row25 col0" >ATL CHA IND</td>
+      <td id="T_7df6f_row25_col1" class="data row25 col1" >4</td>
+      <td id="T_7df6f_row25_col2" class="data row25 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_7df6f_row26_col0" class="data row26 col0" >ATL CHA LAC</td>
+      <td id="T_7df6f_row26_col1" class="data row26 col1" >4</td>
+      <td id="T_7df6f_row26_col2" class="data row26 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_7df6f_row27_col0" class="data row27 col0" >ATL CHA LAL</td>
+      <td id="T_7df6f_row27_col1" class="data row27 col1" >4</td>
+      <td id="T_7df6f_row27_col2" class="data row27 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_7df6f_row28_col0" class="data row28 col0" >ATL CHA MEM</td>
+      <td id="T_7df6f_row28_col1" class="data row28 col1" >4</td>
+      <td id="T_7df6f_row28_col2" class="data row28 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_7df6f_row29_col0" class="data row29 col0" >ATL CHA MIA</td>
+      <td id="T_7df6f_row29_col1" class="data row29 col1" >4</td>
+      <td id="T_7df6f_row29_col2" class="data row29 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_7df6f_row30_col0" class="data row30 col0" >ATL CHA MIL</td>
+      <td id="T_7df6f_row30_col1" class="data row30 col1" >4</td>
+      <td id="T_7df6f_row30_col2" class="data row30 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_7df6f_row31_col0" class="data row31 col0" >ATL CHA MIN</td>
+      <td id="T_7df6f_row31_col1" class="data row31 col1" >4</td>
+      <td id="T_7df6f_row31_col2" class="data row31 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_7df6f_row32_col0" class="data row32 col0" >ATL CHA OKC</td>
+      <td id="T_7df6f_row32_col1" class="data row32 col1" >4</td>
+      <td id="T_7df6f_row32_col2" class="data row32 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_7df6f_row33_col0" class="data row33 col0" >ATL CHA ORL</td>
+      <td id="T_7df6f_row33_col1" class="data row33 col1" >4</td>
+      <td id="T_7df6f_row33_col2" class="data row33 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_7df6f_row34_col0" class="data row34 col0" >ATL CHA PHI</td>
+      <td id="T_7df6f_row34_col1" class="data row34 col1" >4</td>
+      <td id="T_7df6f_row34_col2" class="data row34 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_7df6f_row35_col0" class="data row35 col0" >ATL CHA PHX</td>
+      <td id="T_7df6f_row35_col1" class="data row35 col1" >4</td>
+      <td id="T_7df6f_row35_col2" class="data row35 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_7df6f_row36_col0" class="data row36 col0" >ATL CHA SAS</td>
+      <td id="T_7df6f_row36_col1" class="data row36 col1" >4</td>
+      <td id="T_7df6f_row36_col2" class="data row36 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_7df6f_row37_col0" class="data row37 col0" >ATL CHA TOR</td>
+      <td id="T_7df6f_row37_col1" class="data row37 col1" >4</td>
+      <td id="T_7df6f_row37_col2" class="data row37 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_7df6f_row38_col0" class="data row38 col0" >ATL CHA WAS</td>
+      <td id="T_7df6f_row38_col1" class="data row38 col1" >4</td>
+      <td id="T_7df6f_row38_col2" class="data row38 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_7df6f_row39_col0" class="data row39 col0" >ATL CLE DAL</td>
+      <td id="T_7df6f_row39_col1" class="data row39 col1" >4</td>
+      <td id="T_7df6f_row39_col2" class="data row39 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_7df6f_row40_col0" class="data row40 col0" >ATL CLE DEN</td>
+      <td id="T_7df6f_row40_col1" class="data row40 col1" >4</td>
+      <td id="T_7df6f_row40_col2" class="data row40 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_7df6f_row41_col0" class="data row41 col0" >ATL CLE IND</td>
+      <td id="T_7df6f_row41_col1" class="data row41 col1" >4</td>
+      <td id="T_7df6f_row41_col2" class="data row41 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_7df6f_row42_col0" class="data row42 col0" >ATL CLE LAC</td>
+      <td id="T_7df6f_row42_col1" class="data row42 col1" >4</td>
+      <td id="T_7df6f_row42_col2" class="data row42 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_7df6f_row43_col0" class="data row43 col0" >ATL CLE LAL</td>
+      <td id="T_7df6f_row43_col1" class="data row43 col1" >4</td>
+      <td id="T_7df6f_row43_col2" class="data row43 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_7df6f_row44_col0" class="data row44 col0" >ATL CLE MEM</td>
+      <td id="T_7df6f_row44_col1" class="data row44 col1" >4</td>
+      <td id="T_7df6f_row44_col2" class="data row44 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_7df6f_row45_col0" class="data row45 col0" >ATL CLE MIA</td>
+      <td id="T_7df6f_row45_col1" class="data row45 col1" >4</td>
+      <td id="T_7df6f_row45_col2" class="data row45 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_7df6f_row46_col0" class="data row46 col0" >ATL CLE MIL</td>
+      <td id="T_7df6f_row46_col1" class="data row46 col1" >4</td>
+      <td id="T_7df6f_row46_col2" class="data row46 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_7df6f_row47_col0" class="data row47 col0" >ATL CLE MIN</td>
+      <td id="T_7df6f_row47_col1" class="data row47 col1" >4</td>
+      <td id="T_7df6f_row47_col2" class="data row47 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_7df6f_row48_col0" class="data row48 col0" >ATL CLE OKC</td>
+      <td id="T_7df6f_row48_col1" class="data row48 col1" >4</td>
+      <td id="T_7df6f_row48_col2" class="data row48 col2" >4</td>
+    </tr>
+    <tr>
+      <td id="T_7df6f_row49_col0" class="data row49 col0" >ATL CLE ORL</td>
+      <td id="T_7df6f_row49_col1" class="data row49 col1" >4</td>
+      <td id="T_7df6f_row49_col2" class="data row49 col2" >4</td>
+    </tr>
+  </tbody>
+</table>
+
+	</div>
+	&nbsp;
+	<button class="collapsible"><h3 title="Допустим, что от каждой команды из комбинации в строке таблицы слева&#10;имеется один игрок, и эти игроки должны быть размещены в составе.&#10;В таблице отображено количество игр, которые сможет получить фентези-игрок,&#10;если у него доступно 2 слотов, по матчапам.&#10;Лучшие значения обозначены зелёным цветом, худшие - красным.&#10;Цвета коррелируют между собой по столбцам таблицы, то есть&#10;цветом отмечаются лучшие и худшие команды для конкретного матчапа.&#10;В таблице представлена best выборка комбинаций размера 3.">Games with 2 slots: best - 1 next matchups</h3></button>
+	<div class="content" style="overflow-x:auto;">
+	<style type="text/css">
+#T_1de1d td:nth-child(1) {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  font-weight: bold;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+#T_1de1d td:first-child {
+  border-left: none;
+}
+#T_1de1d td:last-child {
+  border-right: none;
+}
+#T_1de1d th {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  background: #FFFFFF;
+}
+#T_1de1d td {
+  text-align: right;
+}
+#T_1de1d td {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  text-align: right;
+}
+</style>
+<table id="T_1de1d" style="border-collapse: collapse; border: 1px solid black;" align="center"; class="sortable">
+  <thead>
+    <tr>
+      <th id="T_1de1d_level0_col0" class="col_heading level0 col0" ></th>
+      <th id="T_1de1d_level0_col1" class="col_heading level0 col1" >#24</th>
+      <th id="T_1de1d_level0_col2" class="col_heading level0 col2" >Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td id="T_1de1d_row0_col0" class="data row0 col0" >SAS TOR UTA</td>
+      <td id="T_1de1d_row0_col1" class="data row0 col1" >9</td>
+      <td id="T_1de1d_row0_col2" class="data row0 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_1de1d_row1_col0" class="data row1 col0" >SAC TOR UTA</td>
+      <td id="T_1de1d_row1_col1" class="data row1 col1" >9</td>
+      <td id="T_1de1d_row1_col2" class="data row1 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_1de1d_row2_col0" class="data row2 col0" >SAC SAS UTA</td>
+      <td id="T_1de1d_row2_col1" class="data row2 col1" >9</td>
+      <td id="T_1de1d_row2_col2" class="data row2 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_1de1d_row3_col0" class="data row3 col0" >SAC SAS TOR</td>
+      <td id="T_1de1d_row3_col1" class="data row3 col1" >9</td>
+      <td id="T_1de1d_row3_col2" class="data row3 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_1de1d_row4_col0" class="data row4 col0" >POR TOR UTA</td>
+      <td id="T_1de1d_row4_col1" class="data row4 col1" >9</td>
+      <td id="T_1de1d_row4_col2" class="data row4 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_1de1d_row5_col0" class="data row5 col0" >POR SAS UTA</td>
+      <td id="T_1de1d_row5_col1" class="data row5 col1" >9</td>
+      <td id="T_1de1d_row5_col2" class="data row5 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_1de1d_row6_col0" class="data row6 col0" >POR SAS TOR</td>
+      <td id="T_1de1d_row6_col1" class="data row6 col1" >9</td>
+      <td id="T_1de1d_row6_col2" class="data row6 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_1de1d_row7_col0" class="data row7 col0" >POR SAC TOR</td>
+      <td id="T_1de1d_row7_col1" class="data row7 col1" >9</td>
+      <td id="T_1de1d_row7_col2" class="data row7 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_1de1d_row8_col0" class="data row8 col0" >POR SAC SAS</td>
+      <td id="T_1de1d_row8_col1" class="data row8 col1" >9</td>
+      <td id="T_1de1d_row8_col2" class="data row8 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_1de1d_row9_col0" class="data row9 col0" >PHX TOR UTA</td>
+      <td id="T_1de1d_row9_col1" class="data row9 col1" >9</td>
+      <td id="T_1de1d_row9_col2" class="data row9 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_1de1d_row10_col0" class="data row10 col0" >PHX SAS UTA</td>
+      <td id="T_1de1d_row10_col1" class="data row10 col1" >9</td>
+      <td id="T_1de1d_row10_col2" class="data row10 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_1de1d_row11_col0" class="data row11 col0" >PHX SAC UTA</td>
+      <td id="T_1de1d_row11_col1" class="data row11 col1" >9</td>
+      <td id="T_1de1d_row11_col2" class="data row11 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_1de1d_row12_col0" class="data row12 col0" >PHX SAC TOR</td>
+      <td id="T_1de1d_row12_col1" class="data row12 col1" >9</td>
+      <td id="T_1de1d_row12_col2" class="data row12 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_1de1d_row13_col0" class="data row13 col0" >PHX SAC SAS</td>
+      <td id="T_1de1d_row13_col1" class="data row13 col1" >9</td>
+      <td id="T_1de1d_row13_col2" class="data row13 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_1de1d_row14_col0" class="data row14 col0" >PHX POR UTA</td>
+      <td id="T_1de1d_row14_col1" class="data row14 col1" >9</td>
+      <td id="T_1de1d_row14_col2" class="data row14 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_1de1d_row15_col0" class="data row15 col0" >PHX POR TOR</td>
+      <td id="T_1de1d_row15_col1" class="data row15 col1" >9</td>
+      <td id="T_1de1d_row15_col2" class="data row15 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_1de1d_row16_col0" class="data row16 col0" >PHX POR SAS</td>
+      <td id="T_1de1d_row16_col1" class="data row16 col1" >9</td>
+      <td id="T_1de1d_row16_col2" class="data row16 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_1de1d_row17_col0" class="data row17 col0" >PHX POR SAC</td>
+      <td id="T_1de1d_row17_col1" class="data row17 col1" >9</td>
+      <td id="T_1de1d_row17_col2" class="data row17 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_1de1d_row18_col0" class="data row18 col0" >ORL TOR UTA</td>
+      <td id="T_1de1d_row18_col1" class="data row18 col1" >9</td>
+      <td id="T_1de1d_row18_col2" class="data row18 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_1de1d_row19_col0" class="data row19 col0" >ORL SAS UTA</td>
+      <td id="T_1de1d_row19_col1" class="data row19 col1" >9</td>
+      <td id="T_1de1d_row19_col2" class="data row19 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_1de1d_row20_col0" class="data row20 col0" >ORL SAC UTA</td>
+      <td id="T_1de1d_row20_col1" class="data row20 col1" >9</td>
+      <td id="T_1de1d_row20_col2" class="data row20 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_1de1d_row21_col0" class="data row21 col0" >ORL SAC TOR</td>
+      <td id="T_1de1d_row21_col1" class="data row21 col1" >9</td>
+      <td id="T_1de1d_row21_col2" class="data row21 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_1de1d_row22_col0" class="data row22 col0" >ORL SAC SAS</td>
+      <td id="T_1de1d_row22_col1" class="data row22 col1" >9</td>
+      <td id="T_1de1d_row22_col2" class="data row22 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_1de1d_row23_col0" class="data row23 col0" >ORL POR UTA</td>
+      <td id="T_1de1d_row23_col1" class="data row23 col1" >9</td>
+      <td id="T_1de1d_row23_col2" class="data row23 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_1de1d_row24_col0" class="data row24 col0" >ORL POR TOR</td>
+      <td id="T_1de1d_row24_col1" class="data row24 col1" >9</td>
+      <td id="T_1de1d_row24_col2" class="data row24 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_1de1d_row25_col0" class="data row25 col0" >ORL POR SAS</td>
+      <td id="T_1de1d_row25_col1" class="data row25 col1" >9</td>
+      <td id="T_1de1d_row25_col2" class="data row25 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_1de1d_row26_col0" class="data row26 col0" >ORL POR SAC</td>
+      <td id="T_1de1d_row26_col1" class="data row26 col1" >9</td>
+      <td id="T_1de1d_row26_col2" class="data row26 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_1de1d_row27_col0" class="data row27 col0" >ORL PHX UTA</td>
+      <td id="T_1de1d_row27_col1" class="data row27 col1" >9</td>
+      <td id="T_1de1d_row27_col2" class="data row27 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_1de1d_row28_col0" class="data row28 col0" >ORL PHX SAC</td>
+      <td id="T_1de1d_row28_col1" class="data row28 col1" >9</td>
+      <td id="T_1de1d_row28_col2" class="data row28 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_1de1d_row29_col0" class="data row29 col0" >ORL PHX POR</td>
+      <td id="T_1de1d_row29_col1" class="data row29 col1" >9</td>
+      <td id="T_1de1d_row29_col2" class="data row29 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_1de1d_row30_col0" class="data row30 col0" >OKC TOR UTA</td>
+      <td id="T_1de1d_row30_col1" class="data row30 col1" >9</td>
+      <td id="T_1de1d_row30_col2" class="data row30 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_1de1d_row31_col0" class="data row31 col0" >OKC SAS UTA</td>
+      <td id="T_1de1d_row31_col1" class="data row31 col1" >9</td>
+      <td id="T_1de1d_row31_col2" class="data row31 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_1de1d_row32_col0" class="data row32 col0" >OKC SAC UTA</td>
+      <td id="T_1de1d_row32_col1" class="data row32 col1" >9</td>
+      <td id="T_1de1d_row32_col2" class="data row32 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_1de1d_row33_col0" class="data row33 col0" >OKC SAC TOR</td>
+      <td id="T_1de1d_row33_col1" class="data row33 col1" >9</td>
+      <td id="T_1de1d_row33_col2" class="data row33 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_1de1d_row34_col0" class="data row34 col0" >OKC SAC SAS</td>
+      <td id="T_1de1d_row34_col1" class="data row34 col1" >9</td>
+      <td id="T_1de1d_row34_col2" class="data row34 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_1de1d_row35_col0" class="data row35 col0" >OKC POR UTA</td>
+      <td id="T_1de1d_row35_col1" class="data row35 col1" >9</td>
+      <td id="T_1de1d_row35_col2" class="data row35 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_1de1d_row36_col0" class="data row36 col0" >OKC POR TOR</td>
+      <td id="T_1de1d_row36_col1" class="data row36 col1" >9</td>
+      <td id="T_1de1d_row36_col2" class="data row36 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_1de1d_row37_col0" class="data row37 col0" >OKC POR SAS</td>
+      <td id="T_1de1d_row37_col1" class="data row37 col1" >9</td>
+      <td id="T_1de1d_row37_col2" class="data row37 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_1de1d_row38_col0" class="data row38 col0" >OKC POR SAC</td>
+      <td id="T_1de1d_row38_col1" class="data row38 col1" >9</td>
+      <td id="T_1de1d_row38_col2" class="data row38 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_1de1d_row39_col0" class="data row39 col0" >OKC PHX UTA</td>
+      <td id="T_1de1d_row39_col1" class="data row39 col1" >9</td>
+      <td id="T_1de1d_row39_col2" class="data row39 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_1de1d_row40_col0" class="data row40 col0" >OKC PHX SAC</td>
+      <td id="T_1de1d_row40_col1" class="data row40 col1" >9</td>
+      <td id="T_1de1d_row40_col2" class="data row40 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_1de1d_row41_col0" class="data row41 col0" >OKC PHX POR</td>
+      <td id="T_1de1d_row41_col1" class="data row41 col1" >9</td>
+      <td id="T_1de1d_row41_col2" class="data row41 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_1de1d_row42_col0" class="data row42 col0" >OKC ORL UTA</td>
+      <td id="T_1de1d_row42_col1" class="data row42 col1" >9</td>
+      <td id="T_1de1d_row42_col2" class="data row42 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_1de1d_row43_col0" class="data row43 col0" >OKC ORL SAC</td>
+      <td id="T_1de1d_row43_col1" class="data row43 col1" >9</td>
+      <td id="T_1de1d_row43_col2" class="data row43 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_1de1d_row44_col0" class="data row44 col0" >OKC ORL POR</td>
+      <td id="T_1de1d_row44_col1" class="data row44 col1" >9</td>
+      <td id="T_1de1d_row44_col2" class="data row44 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_1de1d_row45_col0" class="data row45 col0" >NYK TOR UTA</td>
+      <td id="T_1de1d_row45_col1" class="data row45 col1" >9</td>
+      <td id="T_1de1d_row45_col2" class="data row45 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_1de1d_row46_col0" class="data row46 col0" >NYK SAS UTA</td>
+      <td id="T_1de1d_row46_col1" class="data row46 col1" >9</td>
+      <td id="T_1de1d_row46_col2" class="data row46 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_1de1d_row47_col0" class="data row47 col0" >NYK SAS TOR</td>
+      <td id="T_1de1d_row47_col1" class="data row47 col1" >9</td>
+      <td id="T_1de1d_row47_col2" class="data row47 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_1de1d_row48_col0" class="data row48 col0" >NYK SAC TOR</td>
+      <td id="T_1de1d_row48_col1" class="data row48 col1" >9</td>
+      <td id="T_1de1d_row48_col2" class="data row48 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_1de1d_row49_col0" class="data row49 col0" >NYK SAC SAS</td>
+      <td id="T_1de1d_row49_col1" class="data row49 col1" >9</td>
+      <td id="T_1de1d_row49_col2" class="data row49 col2" >9</td>
+    </tr>
+  </tbody>
+</table>
+
+	</div>
+	&nbsp;
+	<button class="collapsible"><h3 title="Допустим, что от каждой команды из комбинации в строке таблицы слева&#10;имеется один игрок, и эти игроки должны быть размещены в составе.&#10;В таблице отображено количество игр, которые сможет получить фентези-игрок,&#10;если у него доступно 2 слотов, по матчапам.&#10;Лучшие значения обозначены зелёным цветом, худшие - красным.&#10;Цвета коррелируют между собой по столбцам таблицы, то есть&#10;цветом отмечаются лучшие и худшие команды для конкретного матчапа.&#10;В таблице представлена worst выборка комбинаций размера 3.">Games with 2 slots: worst - 1 next matchups</h3></button>
+	<div class="content" style="overflow-x:auto;">
+	<style type="text/css">
+#T_7f4cc td:nth-child(1) {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  font-weight: bold;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+#T_7f4cc td:first-child {
+  border-left: none;
+}
+#T_7f4cc td:last-child {
+  border-right: none;
+}
+#T_7f4cc th {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  background: #FFFFFF;
+}
+#T_7f4cc td {
+  text-align: right;
+}
+#T_7f4cc td {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  text-align: right;
+}
+#T_7f4cc_row0_col1, #T_7f4cc_row0_col2, #T_7f4cc_row1_col1, #T_7f4cc_row1_col2, #T_7f4cc_row2_col1, #T_7f4cc_row2_col2, #T_7f4cc_row3_col1, #T_7f4cc_row3_col2 {
+  background-color: red;
+}
+</style>
+<table id="T_7f4cc" style="border-collapse: collapse; border: 1px solid black;" align="center"; class="sortable">
+  <thead>
+    <tr>
+      <th id="T_7f4cc_level0_col0" class="col_heading level0 col0" ></th>
+      <th id="T_7f4cc_level0_col1" class="col_heading level0 col1" >#24</th>
+      <th id="T_7f4cc_level0_col2" class="col_heading level0 col2" >Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td id="T_7f4cc_row0_col0" class="data row0 col0" >IND LAL PHI</td>
+      <td id="T_7f4cc_row0_col1" class="data row0 col1" >6</td>
+      <td id="T_7f4cc_row0_col2" class="data row0 col2" >6</td>
+    </tr>
+    <tr>
+      <td id="T_7f4cc_row1_col0" class="data row1 col0" >IND LAL WAS</td>
+      <td id="T_7f4cc_row1_col1" class="data row1 col1" >6</td>
+      <td id="T_7f4cc_row1_col2" class="data row1 col2" >6</td>
+    </tr>
+    <tr>
+      <td id="T_7f4cc_row2_col0" class="data row2 col0" >IND PHI WAS</td>
+      <td id="T_7f4cc_row2_col1" class="data row2 col1" >6</td>
+      <td id="T_7f4cc_row2_col2" class="data row2 col2" >6</td>
+    </tr>
+    <tr>
+      <td id="T_7f4cc_row3_col0" class="data row3 col0" >LAL PHI WAS</td>
+      <td id="T_7f4cc_row3_col1" class="data row3 col1" >6</td>
+      <td id="T_7f4cc_row3_col2" class="data row3 col2" >6</td>
+    </tr>
+    <tr>
+      <td id="T_7f4cc_row4_col0" class="data row4 col0" >ATL BKN CLE</td>
+      <td id="T_7f4cc_row4_col1" class="data row4 col1" >7</td>
+      <td id="T_7f4cc_row4_col2" class="data row4 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7f4cc_row5_col0" class="data row5 col0" >ATL IND LAL</td>
+      <td id="T_7f4cc_row5_col1" class="data row5 col1" >7</td>
+      <td id="T_7f4cc_row5_col2" class="data row5 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7f4cc_row6_col0" class="data row6 col0" >ATL IND PHI</td>
+      <td id="T_7f4cc_row6_col1" class="data row6 col1" >7</td>
+      <td id="T_7f4cc_row6_col2" class="data row6 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7f4cc_row7_col0" class="data row7 col0" >ATL IND WAS</td>
+      <td id="T_7f4cc_row7_col1" class="data row7 col1" >7</td>
+      <td id="T_7f4cc_row7_col2" class="data row7 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7f4cc_row8_col0" class="data row8 col0" >ATL LAL PHI</td>
+      <td id="T_7f4cc_row8_col1" class="data row8 col1" >7</td>
+      <td id="T_7f4cc_row8_col2" class="data row8 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7f4cc_row9_col0" class="data row9 col0" >ATL LAL WAS</td>
+      <td id="T_7f4cc_row9_col1" class="data row9 col1" >7</td>
+      <td id="T_7f4cc_row9_col2" class="data row9 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7f4cc_row10_col0" class="data row10 col0" >ATL PHI WAS</td>
+      <td id="T_7f4cc_row10_col1" class="data row10 col1" >7</td>
+      <td id="T_7f4cc_row10_col2" class="data row10 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7f4cc_row11_col0" class="data row11 col0" >BOS IND LAL</td>
+      <td id="T_7f4cc_row11_col1" class="data row11 col1" >7</td>
+      <td id="T_7f4cc_row11_col2" class="data row11 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7f4cc_row12_col0" class="data row12 col0" >BOS IND PHI</td>
+      <td id="T_7f4cc_row12_col1" class="data row12 col1" >7</td>
+      <td id="T_7f4cc_row12_col2" class="data row12 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7f4cc_row13_col0" class="data row13 col0" >BOS IND WAS</td>
+      <td id="T_7f4cc_row13_col1" class="data row13 col1" >7</td>
+      <td id="T_7f4cc_row13_col2" class="data row13 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7f4cc_row14_col0" class="data row14 col0" >BOS LAL PHI</td>
+      <td id="T_7f4cc_row14_col1" class="data row14 col1" >7</td>
+      <td id="T_7f4cc_row14_col2" class="data row14 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7f4cc_row15_col0" class="data row15 col0" >BOS LAL WAS</td>
+      <td id="T_7f4cc_row15_col1" class="data row15 col1" >7</td>
+      <td id="T_7f4cc_row15_col2" class="data row15 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7f4cc_row16_col0" class="data row16 col0" >BOS PHI WAS</td>
+      <td id="T_7f4cc_row16_col1" class="data row16 col1" >7</td>
+      <td id="T_7f4cc_row16_col2" class="data row16 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7f4cc_row17_col0" class="data row17 col0" >BKN CHA CLE</td>
+      <td id="T_7f4cc_row17_col1" class="data row17 col1" >7</td>
+      <td id="T_7f4cc_row17_col2" class="data row17 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7f4cc_row18_col0" class="data row18 col0" >BKN CLE DAL</td>
+      <td id="T_7f4cc_row18_col1" class="data row18 col1" >7</td>
+      <td id="T_7f4cc_row18_col2" class="data row18 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7f4cc_row19_col0" class="data row19 col0" >BKN CLE DEN</td>
+      <td id="T_7f4cc_row19_col1" class="data row19 col1" >7</td>
+      <td id="T_7f4cc_row19_col2" class="data row19 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7f4cc_row20_col0" class="data row20 col0" >BKN CLE IND</td>
+      <td id="T_7f4cc_row20_col1" class="data row20 col1" >7</td>
+      <td id="T_7f4cc_row20_col2" class="data row20 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7f4cc_row21_col0" class="data row21 col0" >BKN CLE LAC</td>
+      <td id="T_7f4cc_row21_col1" class="data row21 col1" >7</td>
+      <td id="T_7f4cc_row21_col2" class="data row21 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7f4cc_row22_col0" class="data row22 col0" >BKN CLE LAL</td>
+      <td id="T_7f4cc_row22_col1" class="data row22 col1" >7</td>
+      <td id="T_7f4cc_row22_col2" class="data row22 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7f4cc_row23_col0" class="data row23 col0" >BKN CLE MEM</td>
+      <td id="T_7f4cc_row23_col1" class="data row23 col1" >7</td>
+      <td id="T_7f4cc_row23_col2" class="data row23 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7f4cc_row24_col0" class="data row24 col0" >BKN CLE MIA</td>
+      <td id="T_7f4cc_row24_col1" class="data row24 col1" >7</td>
+      <td id="T_7f4cc_row24_col2" class="data row24 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7f4cc_row25_col0" class="data row25 col0" >BKN CLE MIL</td>
+      <td id="T_7f4cc_row25_col1" class="data row25 col1" >7</td>
+      <td id="T_7f4cc_row25_col2" class="data row25 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7f4cc_row26_col0" class="data row26 col0" >BKN CLE MIN</td>
+      <td id="T_7f4cc_row26_col1" class="data row26 col1" >7</td>
+      <td id="T_7f4cc_row26_col2" class="data row26 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7f4cc_row27_col0" class="data row27 col0" >BKN CLE OKC</td>
+      <td id="T_7f4cc_row27_col1" class="data row27 col1" >7</td>
+      <td id="T_7f4cc_row27_col2" class="data row27 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7f4cc_row28_col0" class="data row28 col0" >BKN CLE ORL</td>
+      <td id="T_7f4cc_row28_col1" class="data row28 col1" >7</td>
+      <td id="T_7f4cc_row28_col2" class="data row28 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7f4cc_row29_col0" class="data row29 col0" >BKN CLE PHI</td>
+      <td id="T_7f4cc_row29_col1" class="data row29 col1" >7</td>
+      <td id="T_7f4cc_row29_col2" class="data row29 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7f4cc_row30_col0" class="data row30 col0" >BKN CLE PHX</td>
+      <td id="T_7f4cc_row30_col1" class="data row30 col1" >7</td>
+      <td id="T_7f4cc_row30_col2" class="data row30 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7f4cc_row31_col0" class="data row31 col0" >BKN CLE SAS</td>
+      <td id="T_7f4cc_row31_col1" class="data row31 col1" >7</td>
+      <td id="T_7f4cc_row31_col2" class="data row31 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7f4cc_row32_col0" class="data row32 col0" >BKN CLE TOR</td>
+      <td id="T_7f4cc_row32_col1" class="data row32 col1" >7</td>
+      <td id="T_7f4cc_row32_col2" class="data row32 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7f4cc_row33_col0" class="data row33 col0" >BKN CLE WAS</td>
+      <td id="T_7f4cc_row33_col1" class="data row33 col1" >7</td>
+      <td id="T_7f4cc_row33_col2" class="data row33 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7f4cc_row34_col0" class="data row34 col0" >BKN IND LAL</td>
+      <td id="T_7f4cc_row34_col1" class="data row34 col1" >7</td>
+      <td id="T_7f4cc_row34_col2" class="data row34 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7f4cc_row35_col0" class="data row35 col0" >BKN IND PHI</td>
+      <td id="T_7f4cc_row35_col1" class="data row35 col1" >7</td>
+      <td id="T_7f4cc_row35_col2" class="data row35 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7f4cc_row36_col0" class="data row36 col0" >BKN IND WAS</td>
+      <td id="T_7f4cc_row36_col1" class="data row36 col1" >7</td>
+      <td id="T_7f4cc_row36_col2" class="data row36 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7f4cc_row37_col0" class="data row37 col0" >BKN LAL PHI</td>
+      <td id="T_7f4cc_row37_col1" class="data row37 col1" >7</td>
+      <td id="T_7f4cc_row37_col2" class="data row37 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7f4cc_row38_col0" class="data row38 col0" >BKN LAL WAS</td>
+      <td id="T_7f4cc_row38_col1" class="data row38 col1" >7</td>
+      <td id="T_7f4cc_row38_col2" class="data row38 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7f4cc_row39_col0" class="data row39 col0" >BKN PHI WAS</td>
+      <td id="T_7f4cc_row39_col1" class="data row39 col1" >7</td>
+      <td id="T_7f4cc_row39_col2" class="data row39 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7f4cc_row40_col0" class="data row40 col0" >CHA IND LAL</td>
+      <td id="T_7f4cc_row40_col1" class="data row40 col1" >7</td>
+      <td id="T_7f4cc_row40_col2" class="data row40 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7f4cc_row41_col0" class="data row41 col0" >CHA IND PHI</td>
+      <td id="T_7f4cc_row41_col1" class="data row41 col1" >7</td>
+      <td id="T_7f4cc_row41_col2" class="data row41 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7f4cc_row42_col0" class="data row42 col0" >CHA IND WAS</td>
+      <td id="T_7f4cc_row42_col1" class="data row42 col1" >7</td>
+      <td id="T_7f4cc_row42_col2" class="data row42 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7f4cc_row43_col0" class="data row43 col0" >CHA LAL PHI</td>
+      <td id="T_7f4cc_row43_col1" class="data row43 col1" >7</td>
+      <td id="T_7f4cc_row43_col2" class="data row43 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7f4cc_row44_col0" class="data row44 col0" >CHA LAL WAS</td>
+      <td id="T_7f4cc_row44_col1" class="data row44 col1" >7</td>
+      <td id="T_7f4cc_row44_col2" class="data row44 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7f4cc_row45_col0" class="data row45 col0" >CHA PHI WAS</td>
+      <td id="T_7f4cc_row45_col1" class="data row45 col1" >7</td>
+      <td id="T_7f4cc_row45_col2" class="data row45 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7f4cc_row46_col0" class="data row46 col0" >CHI IND LAL</td>
+      <td id="T_7f4cc_row46_col1" class="data row46 col1" >7</td>
+      <td id="T_7f4cc_row46_col2" class="data row46 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7f4cc_row47_col0" class="data row47 col0" >CHI IND PHI</td>
+      <td id="T_7f4cc_row47_col1" class="data row47 col1" >7</td>
+      <td id="T_7f4cc_row47_col2" class="data row47 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7f4cc_row48_col0" class="data row48 col0" >CHI IND WAS</td>
+      <td id="T_7f4cc_row48_col1" class="data row48 col1" >7</td>
+      <td id="T_7f4cc_row48_col2" class="data row48 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7f4cc_row49_col0" class="data row49 col0" >CHI LAL PHI</td>
+      <td id="T_7f4cc_row49_col1" class="data row49 col1" >7</td>
+      <td id="T_7f4cc_row49_col2" class="data row49 col2" >7</td>
+    </tr>
+  </tbody>
+</table>
+
+	</div>
+	&nbsp;
+	<button class="collapsible"><h3 title="Допустим, что от каждой команды из комбинации в строке таблицы слева&#10;имеется один игрок, и эти игроки должны быть размещены в составе.&#10;В таблице отображено количество игр, которые сможет получить фентези-игрок,&#10;если у него доступно 2 слотов, по матчапам.&#10;Лучшие значения обозначены зелёным цветом, худшие - красным.&#10;Цвета коррелируют между собой по столбцам таблицы, то есть&#10;цветом отмечаются лучшие и худшие команды для конкретного матчапа.&#10;В таблице представлена best выборка комбинаций размера 3.">Games with 2 slots: best - 1 next matchups</h3></button>
+	<div class="content" style="overflow-x:auto;">
+	<style type="text/css">
+#T_29c24 td:nth-child(1) {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  font-weight: bold;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+#T_29c24 td:first-child {
+  border-left: none;
+}
+#T_29c24 td:last-child {
+  border-right: none;
+}
+#T_29c24 th {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  background: #FFFFFF;
+}
+#T_29c24 td {
+  text-align: right;
+}
+#T_29c24 td {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  text-align: right;
+}
+</style>
+<table id="T_29c24" style="border-collapse: collapse; border: 1px solid black;" align="center"; class="sortable">
+  <thead>
+    <tr>
+      <th id="T_29c24_level0_col0" class="col_heading level0 col0" ></th>
+      <th id="T_29c24_level0_col1" class="col_heading level0 col1" >#24</th>
+      <th id="T_29c24_level0_col2" class="col_heading level0 col2" >Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td id="T_29c24_row0_col0" class="data row0 col0" >SAS TOR UTA</td>
+      <td id="T_29c24_row0_col1" class="data row0 col1" >9</td>
+      <td id="T_29c24_row0_col2" class="data row0 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_29c24_row1_col0" class="data row1 col0" >SAC TOR UTA</td>
+      <td id="T_29c24_row1_col1" class="data row1 col1" >9</td>
+      <td id="T_29c24_row1_col2" class="data row1 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_29c24_row2_col0" class="data row2 col0" >SAC SAS UTA</td>
+      <td id="T_29c24_row2_col1" class="data row2 col1" >9</td>
+      <td id="T_29c24_row2_col2" class="data row2 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_29c24_row3_col0" class="data row3 col0" >SAC SAS TOR</td>
+      <td id="T_29c24_row3_col1" class="data row3 col1" >9</td>
+      <td id="T_29c24_row3_col2" class="data row3 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_29c24_row4_col0" class="data row4 col0" >POR TOR UTA</td>
+      <td id="T_29c24_row4_col1" class="data row4 col1" >9</td>
+      <td id="T_29c24_row4_col2" class="data row4 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_29c24_row5_col0" class="data row5 col0" >POR SAS UTA</td>
+      <td id="T_29c24_row5_col1" class="data row5 col1" >9</td>
+      <td id="T_29c24_row5_col2" class="data row5 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_29c24_row6_col0" class="data row6 col0" >POR SAS TOR</td>
+      <td id="T_29c24_row6_col1" class="data row6 col1" >9</td>
+      <td id="T_29c24_row6_col2" class="data row6 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_29c24_row7_col0" class="data row7 col0" >POR SAC TOR</td>
+      <td id="T_29c24_row7_col1" class="data row7 col1" >9</td>
+      <td id="T_29c24_row7_col2" class="data row7 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_29c24_row8_col0" class="data row8 col0" >POR SAC SAS</td>
+      <td id="T_29c24_row8_col1" class="data row8 col1" >9</td>
+      <td id="T_29c24_row8_col2" class="data row8 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_29c24_row9_col0" class="data row9 col0" >PHX TOR UTA</td>
+      <td id="T_29c24_row9_col1" class="data row9 col1" >9</td>
+      <td id="T_29c24_row9_col2" class="data row9 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_29c24_row10_col0" class="data row10 col0" >PHX SAS UTA</td>
+      <td id="T_29c24_row10_col1" class="data row10 col1" >9</td>
+      <td id="T_29c24_row10_col2" class="data row10 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_29c24_row11_col0" class="data row11 col0" >PHX SAC UTA</td>
+      <td id="T_29c24_row11_col1" class="data row11 col1" >9</td>
+      <td id="T_29c24_row11_col2" class="data row11 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_29c24_row12_col0" class="data row12 col0" >PHX SAC TOR</td>
+      <td id="T_29c24_row12_col1" class="data row12 col1" >9</td>
+      <td id="T_29c24_row12_col2" class="data row12 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_29c24_row13_col0" class="data row13 col0" >PHX SAC SAS</td>
+      <td id="T_29c24_row13_col1" class="data row13 col1" >9</td>
+      <td id="T_29c24_row13_col2" class="data row13 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_29c24_row14_col0" class="data row14 col0" >PHX POR UTA</td>
+      <td id="T_29c24_row14_col1" class="data row14 col1" >9</td>
+      <td id="T_29c24_row14_col2" class="data row14 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_29c24_row15_col0" class="data row15 col0" >PHX POR TOR</td>
+      <td id="T_29c24_row15_col1" class="data row15 col1" >9</td>
+      <td id="T_29c24_row15_col2" class="data row15 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_29c24_row16_col0" class="data row16 col0" >PHX POR SAS</td>
+      <td id="T_29c24_row16_col1" class="data row16 col1" >9</td>
+      <td id="T_29c24_row16_col2" class="data row16 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_29c24_row17_col0" class="data row17 col0" >PHX POR SAC</td>
+      <td id="T_29c24_row17_col1" class="data row17 col1" >9</td>
+      <td id="T_29c24_row17_col2" class="data row17 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_29c24_row18_col0" class="data row18 col0" >ORL TOR UTA</td>
+      <td id="T_29c24_row18_col1" class="data row18 col1" >9</td>
+      <td id="T_29c24_row18_col2" class="data row18 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_29c24_row19_col0" class="data row19 col0" >ORL SAS UTA</td>
+      <td id="T_29c24_row19_col1" class="data row19 col1" >9</td>
+      <td id="T_29c24_row19_col2" class="data row19 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_29c24_row20_col0" class="data row20 col0" >ORL SAC UTA</td>
+      <td id="T_29c24_row20_col1" class="data row20 col1" >9</td>
+      <td id="T_29c24_row20_col2" class="data row20 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_29c24_row21_col0" class="data row21 col0" >ORL SAC TOR</td>
+      <td id="T_29c24_row21_col1" class="data row21 col1" >9</td>
+      <td id="T_29c24_row21_col2" class="data row21 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_29c24_row22_col0" class="data row22 col0" >ORL SAC SAS</td>
+      <td id="T_29c24_row22_col1" class="data row22 col1" >9</td>
+      <td id="T_29c24_row22_col2" class="data row22 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_29c24_row23_col0" class="data row23 col0" >ORL POR UTA</td>
+      <td id="T_29c24_row23_col1" class="data row23 col1" >9</td>
+      <td id="T_29c24_row23_col2" class="data row23 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_29c24_row24_col0" class="data row24 col0" >ORL POR TOR</td>
+      <td id="T_29c24_row24_col1" class="data row24 col1" >9</td>
+      <td id="T_29c24_row24_col2" class="data row24 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_29c24_row25_col0" class="data row25 col0" >ORL POR SAS</td>
+      <td id="T_29c24_row25_col1" class="data row25 col1" >9</td>
+      <td id="T_29c24_row25_col2" class="data row25 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_29c24_row26_col0" class="data row26 col0" >ORL POR SAC</td>
+      <td id="T_29c24_row26_col1" class="data row26 col1" >9</td>
+      <td id="T_29c24_row26_col2" class="data row26 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_29c24_row27_col0" class="data row27 col0" >ORL PHX UTA</td>
+      <td id="T_29c24_row27_col1" class="data row27 col1" >9</td>
+      <td id="T_29c24_row27_col2" class="data row27 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_29c24_row28_col0" class="data row28 col0" >ORL PHX SAC</td>
+      <td id="T_29c24_row28_col1" class="data row28 col1" >9</td>
+      <td id="T_29c24_row28_col2" class="data row28 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_29c24_row29_col0" class="data row29 col0" >ORL PHX POR</td>
+      <td id="T_29c24_row29_col1" class="data row29 col1" >9</td>
+      <td id="T_29c24_row29_col2" class="data row29 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_29c24_row30_col0" class="data row30 col0" >OKC TOR UTA</td>
+      <td id="T_29c24_row30_col1" class="data row30 col1" >9</td>
+      <td id="T_29c24_row30_col2" class="data row30 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_29c24_row31_col0" class="data row31 col0" >OKC SAS UTA</td>
+      <td id="T_29c24_row31_col1" class="data row31 col1" >9</td>
+      <td id="T_29c24_row31_col2" class="data row31 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_29c24_row32_col0" class="data row32 col0" >OKC SAC UTA</td>
+      <td id="T_29c24_row32_col1" class="data row32 col1" >9</td>
+      <td id="T_29c24_row32_col2" class="data row32 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_29c24_row33_col0" class="data row33 col0" >OKC SAC TOR</td>
+      <td id="T_29c24_row33_col1" class="data row33 col1" >9</td>
+      <td id="T_29c24_row33_col2" class="data row33 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_29c24_row34_col0" class="data row34 col0" >OKC SAC SAS</td>
+      <td id="T_29c24_row34_col1" class="data row34 col1" >9</td>
+      <td id="T_29c24_row34_col2" class="data row34 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_29c24_row35_col0" class="data row35 col0" >OKC POR UTA</td>
+      <td id="T_29c24_row35_col1" class="data row35 col1" >9</td>
+      <td id="T_29c24_row35_col2" class="data row35 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_29c24_row36_col0" class="data row36 col0" >OKC POR TOR</td>
+      <td id="T_29c24_row36_col1" class="data row36 col1" >9</td>
+      <td id="T_29c24_row36_col2" class="data row36 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_29c24_row37_col0" class="data row37 col0" >OKC POR SAS</td>
+      <td id="T_29c24_row37_col1" class="data row37 col1" >9</td>
+      <td id="T_29c24_row37_col2" class="data row37 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_29c24_row38_col0" class="data row38 col0" >OKC POR SAC</td>
+      <td id="T_29c24_row38_col1" class="data row38 col1" >9</td>
+      <td id="T_29c24_row38_col2" class="data row38 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_29c24_row39_col0" class="data row39 col0" >OKC PHX UTA</td>
+      <td id="T_29c24_row39_col1" class="data row39 col1" >9</td>
+      <td id="T_29c24_row39_col2" class="data row39 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_29c24_row40_col0" class="data row40 col0" >OKC PHX SAC</td>
+      <td id="T_29c24_row40_col1" class="data row40 col1" >9</td>
+      <td id="T_29c24_row40_col2" class="data row40 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_29c24_row41_col0" class="data row41 col0" >OKC PHX POR</td>
+      <td id="T_29c24_row41_col1" class="data row41 col1" >9</td>
+      <td id="T_29c24_row41_col2" class="data row41 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_29c24_row42_col0" class="data row42 col0" >OKC ORL UTA</td>
+      <td id="T_29c24_row42_col1" class="data row42 col1" >9</td>
+      <td id="T_29c24_row42_col2" class="data row42 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_29c24_row43_col0" class="data row43 col0" >OKC ORL SAC</td>
+      <td id="T_29c24_row43_col1" class="data row43 col1" >9</td>
+      <td id="T_29c24_row43_col2" class="data row43 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_29c24_row44_col0" class="data row44 col0" >OKC ORL POR</td>
+      <td id="T_29c24_row44_col1" class="data row44 col1" >9</td>
+      <td id="T_29c24_row44_col2" class="data row44 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_29c24_row45_col0" class="data row45 col0" >NYK TOR UTA</td>
+      <td id="T_29c24_row45_col1" class="data row45 col1" >9</td>
+      <td id="T_29c24_row45_col2" class="data row45 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_29c24_row46_col0" class="data row46 col0" >NYK SAS UTA</td>
+      <td id="T_29c24_row46_col1" class="data row46 col1" >9</td>
+      <td id="T_29c24_row46_col2" class="data row46 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_29c24_row47_col0" class="data row47 col0" >NYK SAS TOR</td>
+      <td id="T_29c24_row47_col1" class="data row47 col1" >9</td>
+      <td id="T_29c24_row47_col2" class="data row47 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_29c24_row48_col0" class="data row48 col0" >NYK SAC TOR</td>
+      <td id="T_29c24_row48_col1" class="data row48 col1" >9</td>
+      <td id="T_29c24_row48_col2" class="data row48 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_29c24_row49_col0" class="data row49 col0" >NYK SAC SAS</td>
+      <td id="T_29c24_row49_col1" class="data row49 col1" >9</td>
+      <td id="T_29c24_row49_col2" class="data row49 col2" >9</td>
+    </tr>
+  </tbody>
+</table>
+
+	</div>
+	&nbsp;
+	<button class="collapsible"><h3 title="Допустим, что от каждой команды из комбинации в строке таблицы слева&#10;имеется один игрок, и эти игроки должны быть размещены в составе.&#10;В таблице отображено количество игр, которые сможет получить фентези-игрок,&#10;если у него доступно 2 слотов, по матчапам.&#10;Лучшие значения обозначены зелёным цветом, худшие - красным.&#10;Цвета коррелируют между собой по столбцам таблицы, то есть&#10;цветом отмечаются лучшие и худшие команды для конкретного матчапа.&#10;В таблице представлена worst выборка комбинаций размера 3.">Games with 2 slots: worst - 1 next matchups</h3></button>
+	<div class="content" style="overflow-x:auto;">
+	<style type="text/css">
+#T_7ba71 td:nth-child(1) {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  font-weight: bold;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+#T_7ba71 td:first-child {
+  border-left: none;
+}
+#T_7ba71 td:last-child {
+  border-right: none;
+}
+#T_7ba71 th {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  background: #FFFFFF;
+}
+#T_7ba71 td {
+  text-align: right;
+}
+#T_7ba71 td {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  text-align: right;
+}
+#T_7ba71_row0_col1, #T_7ba71_row0_col2, #T_7ba71_row1_col1, #T_7ba71_row1_col2, #T_7ba71_row2_col1, #T_7ba71_row2_col2, #T_7ba71_row3_col1, #T_7ba71_row3_col2 {
+  background-color: red;
+}
+</style>
+<table id="T_7ba71" style="border-collapse: collapse; border: 1px solid black;" align="center"; class="sortable">
+  <thead>
+    <tr>
+      <th id="T_7ba71_level0_col0" class="col_heading level0 col0" ></th>
+      <th id="T_7ba71_level0_col1" class="col_heading level0 col1" >#24</th>
+      <th id="T_7ba71_level0_col2" class="col_heading level0 col2" >Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td id="T_7ba71_row0_col0" class="data row0 col0" >IND LAL PHI</td>
+      <td id="T_7ba71_row0_col1" class="data row0 col1" >6</td>
+      <td id="T_7ba71_row0_col2" class="data row0 col2" >6</td>
+    </tr>
+    <tr>
+      <td id="T_7ba71_row1_col0" class="data row1 col0" >IND LAL WAS</td>
+      <td id="T_7ba71_row1_col1" class="data row1 col1" >6</td>
+      <td id="T_7ba71_row1_col2" class="data row1 col2" >6</td>
+    </tr>
+    <tr>
+      <td id="T_7ba71_row2_col0" class="data row2 col0" >IND PHI WAS</td>
+      <td id="T_7ba71_row2_col1" class="data row2 col1" >6</td>
+      <td id="T_7ba71_row2_col2" class="data row2 col2" >6</td>
+    </tr>
+    <tr>
+      <td id="T_7ba71_row3_col0" class="data row3 col0" >LAL PHI WAS</td>
+      <td id="T_7ba71_row3_col1" class="data row3 col1" >6</td>
+      <td id="T_7ba71_row3_col2" class="data row3 col2" >6</td>
+    </tr>
+    <tr>
+      <td id="T_7ba71_row4_col0" class="data row4 col0" >ATL BKN CLE</td>
+      <td id="T_7ba71_row4_col1" class="data row4 col1" >7</td>
+      <td id="T_7ba71_row4_col2" class="data row4 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7ba71_row5_col0" class="data row5 col0" >ATL IND LAL</td>
+      <td id="T_7ba71_row5_col1" class="data row5 col1" >7</td>
+      <td id="T_7ba71_row5_col2" class="data row5 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7ba71_row6_col0" class="data row6 col0" >ATL IND PHI</td>
+      <td id="T_7ba71_row6_col1" class="data row6 col1" >7</td>
+      <td id="T_7ba71_row6_col2" class="data row6 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7ba71_row7_col0" class="data row7 col0" >ATL IND WAS</td>
+      <td id="T_7ba71_row7_col1" class="data row7 col1" >7</td>
+      <td id="T_7ba71_row7_col2" class="data row7 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7ba71_row8_col0" class="data row8 col0" >ATL LAL PHI</td>
+      <td id="T_7ba71_row8_col1" class="data row8 col1" >7</td>
+      <td id="T_7ba71_row8_col2" class="data row8 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7ba71_row9_col0" class="data row9 col0" >ATL LAL WAS</td>
+      <td id="T_7ba71_row9_col1" class="data row9 col1" >7</td>
+      <td id="T_7ba71_row9_col2" class="data row9 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7ba71_row10_col0" class="data row10 col0" >ATL PHI WAS</td>
+      <td id="T_7ba71_row10_col1" class="data row10 col1" >7</td>
+      <td id="T_7ba71_row10_col2" class="data row10 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7ba71_row11_col0" class="data row11 col0" >BOS IND LAL</td>
+      <td id="T_7ba71_row11_col1" class="data row11 col1" >7</td>
+      <td id="T_7ba71_row11_col2" class="data row11 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7ba71_row12_col0" class="data row12 col0" >BOS IND PHI</td>
+      <td id="T_7ba71_row12_col1" class="data row12 col1" >7</td>
+      <td id="T_7ba71_row12_col2" class="data row12 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7ba71_row13_col0" class="data row13 col0" >BOS IND WAS</td>
+      <td id="T_7ba71_row13_col1" class="data row13 col1" >7</td>
+      <td id="T_7ba71_row13_col2" class="data row13 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7ba71_row14_col0" class="data row14 col0" >BOS LAL PHI</td>
+      <td id="T_7ba71_row14_col1" class="data row14 col1" >7</td>
+      <td id="T_7ba71_row14_col2" class="data row14 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7ba71_row15_col0" class="data row15 col0" >BOS LAL WAS</td>
+      <td id="T_7ba71_row15_col1" class="data row15 col1" >7</td>
+      <td id="T_7ba71_row15_col2" class="data row15 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7ba71_row16_col0" class="data row16 col0" >BOS PHI WAS</td>
+      <td id="T_7ba71_row16_col1" class="data row16 col1" >7</td>
+      <td id="T_7ba71_row16_col2" class="data row16 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7ba71_row17_col0" class="data row17 col0" >BKN CHA CLE</td>
+      <td id="T_7ba71_row17_col1" class="data row17 col1" >7</td>
+      <td id="T_7ba71_row17_col2" class="data row17 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7ba71_row18_col0" class="data row18 col0" >BKN CLE DAL</td>
+      <td id="T_7ba71_row18_col1" class="data row18 col1" >7</td>
+      <td id="T_7ba71_row18_col2" class="data row18 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7ba71_row19_col0" class="data row19 col0" >BKN CLE DEN</td>
+      <td id="T_7ba71_row19_col1" class="data row19 col1" >7</td>
+      <td id="T_7ba71_row19_col2" class="data row19 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7ba71_row20_col0" class="data row20 col0" >BKN CLE IND</td>
+      <td id="T_7ba71_row20_col1" class="data row20 col1" >7</td>
+      <td id="T_7ba71_row20_col2" class="data row20 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7ba71_row21_col0" class="data row21 col0" >BKN CLE LAC</td>
+      <td id="T_7ba71_row21_col1" class="data row21 col1" >7</td>
+      <td id="T_7ba71_row21_col2" class="data row21 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7ba71_row22_col0" class="data row22 col0" >BKN CLE LAL</td>
+      <td id="T_7ba71_row22_col1" class="data row22 col1" >7</td>
+      <td id="T_7ba71_row22_col2" class="data row22 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7ba71_row23_col0" class="data row23 col0" >BKN CLE MEM</td>
+      <td id="T_7ba71_row23_col1" class="data row23 col1" >7</td>
+      <td id="T_7ba71_row23_col2" class="data row23 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7ba71_row24_col0" class="data row24 col0" >BKN CLE MIA</td>
+      <td id="T_7ba71_row24_col1" class="data row24 col1" >7</td>
+      <td id="T_7ba71_row24_col2" class="data row24 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7ba71_row25_col0" class="data row25 col0" >BKN CLE MIL</td>
+      <td id="T_7ba71_row25_col1" class="data row25 col1" >7</td>
+      <td id="T_7ba71_row25_col2" class="data row25 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7ba71_row26_col0" class="data row26 col0" >BKN CLE MIN</td>
+      <td id="T_7ba71_row26_col1" class="data row26 col1" >7</td>
+      <td id="T_7ba71_row26_col2" class="data row26 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7ba71_row27_col0" class="data row27 col0" >BKN CLE OKC</td>
+      <td id="T_7ba71_row27_col1" class="data row27 col1" >7</td>
+      <td id="T_7ba71_row27_col2" class="data row27 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7ba71_row28_col0" class="data row28 col0" >BKN CLE ORL</td>
+      <td id="T_7ba71_row28_col1" class="data row28 col1" >7</td>
+      <td id="T_7ba71_row28_col2" class="data row28 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7ba71_row29_col0" class="data row29 col0" >BKN CLE PHI</td>
+      <td id="T_7ba71_row29_col1" class="data row29 col1" >7</td>
+      <td id="T_7ba71_row29_col2" class="data row29 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7ba71_row30_col0" class="data row30 col0" >BKN CLE PHX</td>
+      <td id="T_7ba71_row30_col1" class="data row30 col1" >7</td>
+      <td id="T_7ba71_row30_col2" class="data row30 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7ba71_row31_col0" class="data row31 col0" >BKN CLE SAS</td>
+      <td id="T_7ba71_row31_col1" class="data row31 col1" >7</td>
+      <td id="T_7ba71_row31_col2" class="data row31 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7ba71_row32_col0" class="data row32 col0" >BKN CLE TOR</td>
+      <td id="T_7ba71_row32_col1" class="data row32 col1" >7</td>
+      <td id="T_7ba71_row32_col2" class="data row32 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7ba71_row33_col0" class="data row33 col0" >BKN CLE WAS</td>
+      <td id="T_7ba71_row33_col1" class="data row33 col1" >7</td>
+      <td id="T_7ba71_row33_col2" class="data row33 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7ba71_row34_col0" class="data row34 col0" >BKN IND LAL</td>
+      <td id="T_7ba71_row34_col1" class="data row34 col1" >7</td>
+      <td id="T_7ba71_row34_col2" class="data row34 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7ba71_row35_col0" class="data row35 col0" >BKN IND PHI</td>
+      <td id="T_7ba71_row35_col1" class="data row35 col1" >7</td>
+      <td id="T_7ba71_row35_col2" class="data row35 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7ba71_row36_col0" class="data row36 col0" >BKN IND WAS</td>
+      <td id="T_7ba71_row36_col1" class="data row36 col1" >7</td>
+      <td id="T_7ba71_row36_col2" class="data row36 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7ba71_row37_col0" class="data row37 col0" >BKN LAL PHI</td>
+      <td id="T_7ba71_row37_col1" class="data row37 col1" >7</td>
+      <td id="T_7ba71_row37_col2" class="data row37 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7ba71_row38_col0" class="data row38 col0" >BKN LAL WAS</td>
+      <td id="T_7ba71_row38_col1" class="data row38 col1" >7</td>
+      <td id="T_7ba71_row38_col2" class="data row38 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7ba71_row39_col0" class="data row39 col0" >BKN PHI WAS</td>
+      <td id="T_7ba71_row39_col1" class="data row39 col1" >7</td>
+      <td id="T_7ba71_row39_col2" class="data row39 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7ba71_row40_col0" class="data row40 col0" >CHA IND LAL</td>
+      <td id="T_7ba71_row40_col1" class="data row40 col1" >7</td>
+      <td id="T_7ba71_row40_col2" class="data row40 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7ba71_row41_col0" class="data row41 col0" >CHA IND PHI</td>
+      <td id="T_7ba71_row41_col1" class="data row41 col1" >7</td>
+      <td id="T_7ba71_row41_col2" class="data row41 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7ba71_row42_col0" class="data row42 col0" >CHA IND WAS</td>
+      <td id="T_7ba71_row42_col1" class="data row42 col1" >7</td>
+      <td id="T_7ba71_row42_col2" class="data row42 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7ba71_row43_col0" class="data row43 col0" >CHA LAL PHI</td>
+      <td id="T_7ba71_row43_col1" class="data row43 col1" >7</td>
+      <td id="T_7ba71_row43_col2" class="data row43 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7ba71_row44_col0" class="data row44 col0" >CHA LAL WAS</td>
+      <td id="T_7ba71_row44_col1" class="data row44 col1" >7</td>
+      <td id="T_7ba71_row44_col2" class="data row44 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7ba71_row45_col0" class="data row45 col0" >CHA PHI WAS</td>
+      <td id="T_7ba71_row45_col1" class="data row45 col1" >7</td>
+      <td id="T_7ba71_row45_col2" class="data row45 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7ba71_row46_col0" class="data row46 col0" >CHI IND LAL</td>
+      <td id="T_7ba71_row46_col1" class="data row46 col1" >7</td>
+      <td id="T_7ba71_row46_col2" class="data row46 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7ba71_row47_col0" class="data row47 col0" >CHI IND PHI</td>
+      <td id="T_7ba71_row47_col1" class="data row47 col1" >7</td>
+      <td id="T_7ba71_row47_col2" class="data row47 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7ba71_row48_col0" class="data row48 col0" >CHI IND WAS</td>
+      <td id="T_7ba71_row48_col1" class="data row48 col1" >7</td>
+      <td id="T_7ba71_row48_col2" class="data row48 col2" >7</td>
+    </tr>
+    <tr>
+      <td id="T_7ba71_row49_col0" class="data row49 col0" >CHI LAL PHI</td>
+      <td id="T_7ba71_row49_col1" class="data row49 col1" >7</td>
+      <td id="T_7ba71_row49_col2" class="data row49 col2" >7</td>
+    </tr>
+  </tbody>
+</table>
+
+	</div>
+	&nbsp;
+	<button class="collapsible"><h3 title="Допустим, что от каждой команды из комбинации в строке таблицы слева&#10;имеется один игрок, и эти игроки должны быть размещены в составе.&#10;В таблице отображено количество игр, которые сможет получить фентези-игрок,&#10;если у него доступно 3 слотов, по матчапам.&#10;Лучшие значения обозначены зелёным цветом, худшие - красным.&#10;Цвета коррелируют между собой по столбцам таблицы, то есть&#10;цветом отмечаются лучшие и худшие команды для конкретного матчапа.&#10;В таблице представлена best выборка комбинаций размера 3.">Games with 3 slots: best - 1 next matchups</h3></button>
+	<div class="content" style="overflow-x:auto;">
+	<style type="text/css">
+#T_cb62d td:nth-child(1) {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  font-weight: bold;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+#T_cb62d td:first-child {
+  border-left: none;
+}
+#T_cb62d td:last-child {
+  border-right: none;
+}
+#T_cb62d th {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  background: #FFFFFF;
+}
+#T_cb62d td {
+  text-align: right;
+}
+#T_cb62d td {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  text-align: right;
+}
+</style>
+<table id="T_cb62d" style="border-collapse: collapse; border: 1px solid black;" align="center"; class="sortable">
+  <thead>
+    <tr>
+      <th id="T_cb62d_level0_col0" class="col_heading level0 col0" ></th>
+      <th id="T_cb62d_level0_col1" class="col_heading level0 col1" >#24</th>
+      <th id="T_cb62d_level0_col2" class="col_heading level0 col2" >Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td id="T_cb62d_row0_col0" class="data row0 col0" >SAS TOR UTA</td>
+      <td id="T_cb62d_row0_col1" class="data row0 col1" >12</td>
+      <td id="T_cb62d_row0_col2" class="data row0 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_cb62d_row1_col0" class="data row1 col0" >SAC TOR UTA</td>
+      <td id="T_cb62d_row1_col1" class="data row1 col1" >12</td>
+      <td id="T_cb62d_row1_col2" class="data row1 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_cb62d_row2_col0" class="data row2 col0" >SAC SAS UTA</td>
+      <td id="T_cb62d_row2_col1" class="data row2 col1" >12</td>
+      <td id="T_cb62d_row2_col2" class="data row2 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_cb62d_row3_col0" class="data row3 col0" >SAC SAS TOR</td>
+      <td id="T_cb62d_row3_col1" class="data row3 col1" >12</td>
+      <td id="T_cb62d_row3_col2" class="data row3 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_cb62d_row4_col0" class="data row4 col0" >POR TOR UTA</td>
+      <td id="T_cb62d_row4_col1" class="data row4 col1" >12</td>
+      <td id="T_cb62d_row4_col2" class="data row4 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_cb62d_row5_col0" class="data row5 col0" >POR SAS UTA</td>
+      <td id="T_cb62d_row5_col1" class="data row5 col1" >12</td>
+      <td id="T_cb62d_row5_col2" class="data row5 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_cb62d_row6_col0" class="data row6 col0" >POR SAS TOR</td>
+      <td id="T_cb62d_row6_col1" class="data row6 col1" >12</td>
+      <td id="T_cb62d_row6_col2" class="data row6 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_cb62d_row7_col0" class="data row7 col0" >POR SAC UTA</td>
+      <td id="T_cb62d_row7_col1" class="data row7 col1" >12</td>
+      <td id="T_cb62d_row7_col2" class="data row7 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_cb62d_row8_col0" class="data row8 col0" >POR SAC TOR</td>
+      <td id="T_cb62d_row8_col1" class="data row8 col1" >12</td>
+      <td id="T_cb62d_row8_col2" class="data row8 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_cb62d_row9_col0" class="data row9 col0" >POR SAC SAS</td>
+      <td id="T_cb62d_row9_col1" class="data row9 col1" >12</td>
+      <td id="T_cb62d_row9_col2" class="data row9 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_cb62d_row10_col0" class="data row10 col0" >PHX TOR UTA</td>
+      <td id="T_cb62d_row10_col1" class="data row10 col1" >12</td>
+      <td id="T_cb62d_row10_col2" class="data row10 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_cb62d_row11_col0" class="data row11 col0" >PHX SAS UTA</td>
+      <td id="T_cb62d_row11_col1" class="data row11 col1" >12</td>
+      <td id="T_cb62d_row11_col2" class="data row11 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_cb62d_row12_col0" class="data row12 col0" >PHX SAS TOR</td>
+      <td id="T_cb62d_row12_col1" class="data row12 col1" >12</td>
+      <td id="T_cb62d_row12_col2" class="data row12 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_cb62d_row13_col0" class="data row13 col0" >PHX SAC UTA</td>
+      <td id="T_cb62d_row13_col1" class="data row13 col1" >12</td>
+      <td id="T_cb62d_row13_col2" class="data row13 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_cb62d_row14_col0" class="data row14 col0" >PHX SAC TOR</td>
+      <td id="T_cb62d_row14_col1" class="data row14 col1" >12</td>
+      <td id="T_cb62d_row14_col2" class="data row14 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_cb62d_row15_col0" class="data row15 col0" >PHX SAC SAS</td>
+      <td id="T_cb62d_row15_col1" class="data row15 col1" >12</td>
+      <td id="T_cb62d_row15_col2" class="data row15 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_cb62d_row16_col0" class="data row16 col0" >PHX POR UTA</td>
+      <td id="T_cb62d_row16_col1" class="data row16 col1" >12</td>
+      <td id="T_cb62d_row16_col2" class="data row16 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_cb62d_row17_col0" class="data row17 col0" >PHX POR TOR</td>
+      <td id="T_cb62d_row17_col1" class="data row17 col1" >12</td>
+      <td id="T_cb62d_row17_col2" class="data row17 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_cb62d_row18_col0" class="data row18 col0" >PHX POR SAS</td>
+      <td id="T_cb62d_row18_col1" class="data row18 col1" >12</td>
+      <td id="T_cb62d_row18_col2" class="data row18 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_cb62d_row19_col0" class="data row19 col0" >PHX POR SAC</td>
+      <td id="T_cb62d_row19_col1" class="data row19 col1" >12</td>
+      <td id="T_cb62d_row19_col2" class="data row19 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_cb62d_row20_col0" class="data row20 col0" >ORL TOR UTA</td>
+      <td id="T_cb62d_row20_col1" class="data row20 col1" >12</td>
+      <td id="T_cb62d_row20_col2" class="data row20 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_cb62d_row21_col0" class="data row21 col0" >ORL SAS UTA</td>
+      <td id="T_cb62d_row21_col1" class="data row21 col1" >12</td>
+      <td id="T_cb62d_row21_col2" class="data row21 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_cb62d_row22_col0" class="data row22 col0" >ORL SAS TOR</td>
+      <td id="T_cb62d_row22_col1" class="data row22 col1" >12</td>
+      <td id="T_cb62d_row22_col2" class="data row22 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_cb62d_row23_col0" class="data row23 col0" >ORL SAC UTA</td>
+      <td id="T_cb62d_row23_col1" class="data row23 col1" >12</td>
+      <td id="T_cb62d_row23_col2" class="data row23 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_cb62d_row24_col0" class="data row24 col0" >ORL SAC TOR</td>
+      <td id="T_cb62d_row24_col1" class="data row24 col1" >12</td>
+      <td id="T_cb62d_row24_col2" class="data row24 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_cb62d_row25_col0" class="data row25 col0" >ORL SAC SAS</td>
+      <td id="T_cb62d_row25_col1" class="data row25 col1" >12</td>
+      <td id="T_cb62d_row25_col2" class="data row25 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_cb62d_row26_col0" class="data row26 col0" >ORL POR UTA</td>
+      <td id="T_cb62d_row26_col1" class="data row26 col1" >12</td>
+      <td id="T_cb62d_row26_col2" class="data row26 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_cb62d_row27_col0" class="data row27 col0" >ORL POR TOR</td>
+      <td id="T_cb62d_row27_col1" class="data row27 col1" >12</td>
+      <td id="T_cb62d_row27_col2" class="data row27 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_cb62d_row28_col0" class="data row28 col0" >ORL POR SAS</td>
+      <td id="T_cb62d_row28_col1" class="data row28 col1" >12</td>
+      <td id="T_cb62d_row28_col2" class="data row28 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_cb62d_row29_col0" class="data row29 col0" >ORL POR SAC</td>
+      <td id="T_cb62d_row29_col1" class="data row29 col1" >12</td>
+      <td id="T_cb62d_row29_col2" class="data row29 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_cb62d_row30_col0" class="data row30 col0" >ORL PHX UTA</td>
+      <td id="T_cb62d_row30_col1" class="data row30 col1" >12</td>
+      <td id="T_cb62d_row30_col2" class="data row30 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_cb62d_row31_col0" class="data row31 col0" >ORL PHX TOR</td>
+      <td id="T_cb62d_row31_col1" class="data row31 col1" >12</td>
+      <td id="T_cb62d_row31_col2" class="data row31 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_cb62d_row32_col0" class="data row32 col0" >ORL PHX SAS</td>
+      <td id="T_cb62d_row32_col1" class="data row32 col1" >12</td>
+      <td id="T_cb62d_row32_col2" class="data row32 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_cb62d_row33_col0" class="data row33 col0" >ORL PHX SAC</td>
+      <td id="T_cb62d_row33_col1" class="data row33 col1" >12</td>
+      <td id="T_cb62d_row33_col2" class="data row33 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_cb62d_row34_col0" class="data row34 col0" >ORL PHX POR</td>
+      <td id="T_cb62d_row34_col1" class="data row34 col1" >12</td>
+      <td id="T_cb62d_row34_col2" class="data row34 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_cb62d_row35_col0" class="data row35 col0" >OKC TOR UTA</td>
+      <td id="T_cb62d_row35_col1" class="data row35 col1" >12</td>
+      <td id="T_cb62d_row35_col2" class="data row35 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_cb62d_row36_col0" class="data row36 col0" >OKC SAS UTA</td>
+      <td id="T_cb62d_row36_col1" class="data row36 col1" >12</td>
+      <td id="T_cb62d_row36_col2" class="data row36 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_cb62d_row37_col0" class="data row37 col0" >OKC SAS TOR</td>
+      <td id="T_cb62d_row37_col1" class="data row37 col1" >12</td>
+      <td id="T_cb62d_row37_col2" class="data row37 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_cb62d_row38_col0" class="data row38 col0" >OKC SAC UTA</td>
+      <td id="T_cb62d_row38_col1" class="data row38 col1" >12</td>
+      <td id="T_cb62d_row38_col2" class="data row38 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_cb62d_row39_col0" class="data row39 col0" >OKC SAC TOR</td>
+      <td id="T_cb62d_row39_col1" class="data row39 col1" >12</td>
+      <td id="T_cb62d_row39_col2" class="data row39 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_cb62d_row40_col0" class="data row40 col0" >OKC SAC SAS</td>
+      <td id="T_cb62d_row40_col1" class="data row40 col1" >12</td>
+      <td id="T_cb62d_row40_col2" class="data row40 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_cb62d_row41_col0" class="data row41 col0" >OKC POR UTA</td>
+      <td id="T_cb62d_row41_col1" class="data row41 col1" >12</td>
+      <td id="T_cb62d_row41_col2" class="data row41 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_cb62d_row42_col0" class="data row42 col0" >OKC POR TOR</td>
+      <td id="T_cb62d_row42_col1" class="data row42 col1" >12</td>
+      <td id="T_cb62d_row42_col2" class="data row42 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_cb62d_row43_col0" class="data row43 col0" >OKC POR SAS</td>
+      <td id="T_cb62d_row43_col1" class="data row43 col1" >12</td>
+      <td id="T_cb62d_row43_col2" class="data row43 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_cb62d_row44_col0" class="data row44 col0" >OKC POR SAC</td>
+      <td id="T_cb62d_row44_col1" class="data row44 col1" >12</td>
+      <td id="T_cb62d_row44_col2" class="data row44 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_cb62d_row45_col0" class="data row45 col0" >OKC PHX UTA</td>
+      <td id="T_cb62d_row45_col1" class="data row45 col1" >12</td>
+      <td id="T_cb62d_row45_col2" class="data row45 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_cb62d_row46_col0" class="data row46 col0" >OKC PHX TOR</td>
+      <td id="T_cb62d_row46_col1" class="data row46 col1" >12</td>
+      <td id="T_cb62d_row46_col2" class="data row46 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_cb62d_row47_col0" class="data row47 col0" >OKC PHX SAS</td>
+      <td id="T_cb62d_row47_col1" class="data row47 col1" >12</td>
+      <td id="T_cb62d_row47_col2" class="data row47 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_cb62d_row48_col0" class="data row48 col0" >OKC PHX SAC</td>
+      <td id="T_cb62d_row48_col1" class="data row48 col1" >12</td>
+      <td id="T_cb62d_row48_col2" class="data row48 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_cb62d_row49_col0" class="data row49 col0" >OKC PHX POR</td>
+      <td id="T_cb62d_row49_col1" class="data row49 col1" >12</td>
+      <td id="T_cb62d_row49_col2" class="data row49 col2" >12</td>
+    </tr>
+  </tbody>
+</table>
+
+	</div>
+	&nbsp;
+	<button class="collapsible"><h3 title="Допустим, что от каждой команды из комбинации в строке таблицы слева&#10;имеется один игрок, и эти игроки должны быть размещены в составе.&#10;В таблице отображено количество игр, которые сможет получить фентези-игрок,&#10;если у него доступно 3 слотов, по матчапам.&#10;Лучшие значения обозначены зелёным цветом, худшие - красным.&#10;Цвета коррелируют между собой по столбцам таблицы, то есть&#10;цветом отмечаются лучшие и худшие команды для конкретного матчапа.&#10;В таблице представлена worst выборка комбинаций размера 3.">Games with 3 slots: worst - 1 next matchups</h3></button>
+	<div class="content" style="overflow-x:auto;">
+	<style type="text/css">
+#T_83aff td:nth-child(1) {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  font-weight: bold;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+#T_83aff td:first-child {
+  border-left: none;
+}
+#T_83aff td:last-child {
+  border-right: none;
+}
+#T_83aff th {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  background: #FFFFFF;
+}
+#T_83aff td {
+  text-align: right;
+}
+#T_83aff td {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  text-align: right;
+}
+#T_83aff_row0_col1, #T_83aff_row0_col2, #T_83aff_row1_col1, #T_83aff_row1_col2, #T_83aff_row2_col1, #T_83aff_row2_col2, #T_83aff_row3_col1, #T_83aff_row3_col2, #T_83aff_row4_col1, #T_83aff_row4_col2, #T_83aff_row5_col1, #T_83aff_row5_col2, #T_83aff_row6_col1, #T_83aff_row6_col2, #T_83aff_row7_col1, #T_83aff_row7_col2, #T_83aff_row8_col1, #T_83aff_row8_col2, #T_83aff_row9_col1, #T_83aff_row9_col2, #T_83aff_row10_col1, #T_83aff_row10_col2, #T_83aff_row11_col1, #T_83aff_row11_col2, #T_83aff_row12_col1, #T_83aff_row12_col2, #T_83aff_row13_col1, #T_83aff_row13_col2, #T_83aff_row14_col1, #T_83aff_row14_col2, #T_83aff_row15_col1, #T_83aff_row15_col2, #T_83aff_row16_col1, #T_83aff_row16_col2, #T_83aff_row17_col1, #T_83aff_row17_col2, #T_83aff_row18_col1, #T_83aff_row18_col2, #T_83aff_row19_col1, #T_83aff_row19_col2 {
+  background-color: red;
+}
+</style>
+<table id="T_83aff" style="border-collapse: collapse; border: 1px solid black;" align="center"; class="sortable">
+  <thead>
+    <tr>
+      <th id="T_83aff_level0_col0" class="col_heading level0 col0" ></th>
+      <th id="T_83aff_level0_col1" class="col_heading level0 col1" >#24</th>
+      <th id="T_83aff_level0_col2" class="col_heading level0 col2" >Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td id="T_83aff_row0_col0" class="data row0 col0" >BKN CLE IND</td>
+      <td id="T_83aff_row0_col1" class="data row0 col1" >9</td>
+      <td id="T_83aff_row0_col2" class="data row0 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_83aff_row1_col0" class="data row1 col0" >BKN CLE LAL</td>
+      <td id="T_83aff_row1_col1" class="data row1 col1" >9</td>
+      <td id="T_83aff_row1_col2" class="data row1 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_83aff_row2_col0" class="data row2 col0" >BKN CLE PHI</td>
+      <td id="T_83aff_row2_col1" class="data row2 col1" >9</td>
+      <td id="T_83aff_row2_col2" class="data row2 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_83aff_row3_col0" class="data row3 col0" >BKN CLE WAS</td>
+      <td id="T_83aff_row3_col1" class="data row3 col1" >9</td>
+      <td id="T_83aff_row3_col2" class="data row3 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_83aff_row4_col0" class="data row4 col0" >BKN IND LAL</td>
+      <td id="T_83aff_row4_col1" class="data row4 col1" >9</td>
+      <td id="T_83aff_row4_col2" class="data row4 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_83aff_row5_col0" class="data row5 col0" >BKN IND PHI</td>
+      <td id="T_83aff_row5_col1" class="data row5 col1" >9</td>
+      <td id="T_83aff_row5_col2" class="data row5 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_83aff_row6_col0" class="data row6 col0" >BKN IND WAS</td>
+      <td id="T_83aff_row6_col1" class="data row6 col1" >9</td>
+      <td id="T_83aff_row6_col2" class="data row6 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_83aff_row7_col0" class="data row7 col0" >BKN LAL PHI</td>
+      <td id="T_83aff_row7_col1" class="data row7 col1" >9</td>
+      <td id="T_83aff_row7_col2" class="data row7 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_83aff_row8_col0" class="data row8 col0" >BKN LAL WAS</td>
+      <td id="T_83aff_row8_col1" class="data row8 col1" >9</td>
+      <td id="T_83aff_row8_col2" class="data row8 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_83aff_row9_col0" class="data row9 col0" >BKN PHI WAS</td>
+      <td id="T_83aff_row9_col1" class="data row9 col1" >9</td>
+      <td id="T_83aff_row9_col2" class="data row9 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_83aff_row10_col0" class="data row10 col0" >CLE IND LAL</td>
+      <td id="T_83aff_row10_col1" class="data row10 col1" >9</td>
+      <td id="T_83aff_row10_col2" class="data row10 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_83aff_row11_col0" class="data row11 col0" >CLE IND PHI</td>
+      <td id="T_83aff_row11_col1" class="data row11 col1" >9</td>
+      <td id="T_83aff_row11_col2" class="data row11 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_83aff_row12_col0" class="data row12 col0" >CLE IND WAS</td>
+      <td id="T_83aff_row12_col1" class="data row12 col1" >9</td>
+      <td id="T_83aff_row12_col2" class="data row12 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_83aff_row13_col0" class="data row13 col0" >CLE LAL PHI</td>
+      <td id="T_83aff_row13_col1" class="data row13 col1" >9</td>
+      <td id="T_83aff_row13_col2" class="data row13 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_83aff_row14_col0" class="data row14 col0" >CLE LAL WAS</td>
+      <td id="T_83aff_row14_col1" class="data row14 col1" >9</td>
+      <td id="T_83aff_row14_col2" class="data row14 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_83aff_row15_col0" class="data row15 col0" >CLE PHI WAS</td>
+      <td id="T_83aff_row15_col1" class="data row15 col1" >9</td>
+      <td id="T_83aff_row15_col2" class="data row15 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_83aff_row16_col0" class="data row16 col0" >IND LAL PHI</td>
+      <td id="T_83aff_row16_col1" class="data row16 col1" >9</td>
+      <td id="T_83aff_row16_col2" class="data row16 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_83aff_row17_col0" class="data row17 col0" >IND LAL WAS</td>
+      <td id="T_83aff_row17_col1" class="data row17 col1" >9</td>
+      <td id="T_83aff_row17_col2" class="data row17 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_83aff_row18_col0" class="data row18 col0" >IND PHI WAS</td>
+      <td id="T_83aff_row18_col1" class="data row18 col1" >9</td>
+      <td id="T_83aff_row18_col2" class="data row18 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_83aff_row19_col0" class="data row19 col0" >LAL PHI WAS</td>
+      <td id="T_83aff_row19_col1" class="data row19 col1" >9</td>
+      <td id="T_83aff_row19_col2" class="data row19 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_83aff_row20_col0" class="data row20 col0" >ATL BKN CLE</td>
+      <td id="T_83aff_row20_col1" class="data row20 col1" >10</td>
+      <td id="T_83aff_row20_col2" class="data row20 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_83aff_row21_col0" class="data row21 col0" >ATL BKN IND</td>
+      <td id="T_83aff_row21_col1" class="data row21 col1" >10</td>
+      <td id="T_83aff_row21_col2" class="data row21 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_83aff_row22_col0" class="data row22 col0" >ATL BKN LAL</td>
+      <td id="T_83aff_row22_col1" class="data row22 col1" >10</td>
+      <td id="T_83aff_row22_col2" class="data row22 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_83aff_row23_col0" class="data row23 col0" >ATL BKN PHI</td>
+      <td id="T_83aff_row23_col1" class="data row23 col1" >10</td>
+      <td id="T_83aff_row23_col2" class="data row23 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_83aff_row24_col0" class="data row24 col0" >ATL BKN WAS</td>
+      <td id="T_83aff_row24_col1" class="data row24 col1" >10</td>
+      <td id="T_83aff_row24_col2" class="data row24 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_83aff_row25_col0" class="data row25 col0" >ATL CLE IND</td>
+      <td id="T_83aff_row25_col1" class="data row25 col1" >10</td>
+      <td id="T_83aff_row25_col2" class="data row25 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_83aff_row26_col0" class="data row26 col0" >ATL CLE LAL</td>
+      <td id="T_83aff_row26_col1" class="data row26 col1" >10</td>
+      <td id="T_83aff_row26_col2" class="data row26 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_83aff_row27_col0" class="data row27 col0" >ATL CLE PHI</td>
+      <td id="T_83aff_row27_col1" class="data row27 col1" >10</td>
+      <td id="T_83aff_row27_col2" class="data row27 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_83aff_row28_col0" class="data row28 col0" >ATL CLE WAS</td>
+      <td id="T_83aff_row28_col1" class="data row28 col1" >10</td>
+      <td id="T_83aff_row28_col2" class="data row28 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_83aff_row29_col0" class="data row29 col0" >ATL IND LAL</td>
+      <td id="T_83aff_row29_col1" class="data row29 col1" >10</td>
+      <td id="T_83aff_row29_col2" class="data row29 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_83aff_row30_col0" class="data row30 col0" >ATL IND PHI</td>
+      <td id="T_83aff_row30_col1" class="data row30 col1" >10</td>
+      <td id="T_83aff_row30_col2" class="data row30 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_83aff_row31_col0" class="data row31 col0" >ATL IND WAS</td>
+      <td id="T_83aff_row31_col1" class="data row31 col1" >10</td>
+      <td id="T_83aff_row31_col2" class="data row31 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_83aff_row32_col0" class="data row32 col0" >ATL LAL PHI</td>
+      <td id="T_83aff_row32_col1" class="data row32 col1" >10</td>
+      <td id="T_83aff_row32_col2" class="data row32 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_83aff_row33_col0" class="data row33 col0" >ATL LAL WAS</td>
+      <td id="T_83aff_row33_col1" class="data row33 col1" >10</td>
+      <td id="T_83aff_row33_col2" class="data row33 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_83aff_row34_col0" class="data row34 col0" >ATL PHI WAS</td>
+      <td id="T_83aff_row34_col1" class="data row34 col1" >10</td>
+      <td id="T_83aff_row34_col2" class="data row34 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_83aff_row35_col0" class="data row35 col0" >BOS BKN CLE</td>
+      <td id="T_83aff_row35_col1" class="data row35 col1" >10</td>
+      <td id="T_83aff_row35_col2" class="data row35 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_83aff_row36_col0" class="data row36 col0" >BOS BKN IND</td>
+      <td id="T_83aff_row36_col1" class="data row36 col1" >10</td>
+      <td id="T_83aff_row36_col2" class="data row36 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_83aff_row37_col0" class="data row37 col0" >BOS BKN LAL</td>
+      <td id="T_83aff_row37_col1" class="data row37 col1" >10</td>
+      <td id="T_83aff_row37_col2" class="data row37 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_83aff_row38_col0" class="data row38 col0" >BOS BKN PHI</td>
+      <td id="T_83aff_row38_col1" class="data row38 col1" >10</td>
+      <td id="T_83aff_row38_col2" class="data row38 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_83aff_row39_col0" class="data row39 col0" >BOS BKN WAS</td>
+      <td id="T_83aff_row39_col1" class="data row39 col1" >10</td>
+      <td id="T_83aff_row39_col2" class="data row39 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_83aff_row40_col0" class="data row40 col0" >BOS CLE IND</td>
+      <td id="T_83aff_row40_col1" class="data row40 col1" >10</td>
+      <td id="T_83aff_row40_col2" class="data row40 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_83aff_row41_col0" class="data row41 col0" >BOS CLE LAL</td>
+      <td id="T_83aff_row41_col1" class="data row41 col1" >10</td>
+      <td id="T_83aff_row41_col2" class="data row41 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_83aff_row42_col0" class="data row42 col0" >BOS CLE PHI</td>
+      <td id="T_83aff_row42_col1" class="data row42 col1" >10</td>
+      <td id="T_83aff_row42_col2" class="data row42 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_83aff_row43_col0" class="data row43 col0" >BOS CLE WAS</td>
+      <td id="T_83aff_row43_col1" class="data row43 col1" >10</td>
+      <td id="T_83aff_row43_col2" class="data row43 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_83aff_row44_col0" class="data row44 col0" >BOS IND LAL</td>
+      <td id="T_83aff_row44_col1" class="data row44 col1" >10</td>
+      <td id="T_83aff_row44_col2" class="data row44 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_83aff_row45_col0" class="data row45 col0" >BOS IND PHI</td>
+      <td id="T_83aff_row45_col1" class="data row45 col1" >10</td>
+      <td id="T_83aff_row45_col2" class="data row45 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_83aff_row46_col0" class="data row46 col0" >BOS IND WAS</td>
+      <td id="T_83aff_row46_col1" class="data row46 col1" >10</td>
+      <td id="T_83aff_row46_col2" class="data row46 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_83aff_row47_col0" class="data row47 col0" >BOS LAL PHI</td>
+      <td id="T_83aff_row47_col1" class="data row47 col1" >10</td>
+      <td id="T_83aff_row47_col2" class="data row47 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_83aff_row48_col0" class="data row48 col0" >BOS LAL WAS</td>
+      <td id="T_83aff_row48_col1" class="data row48 col1" >10</td>
+      <td id="T_83aff_row48_col2" class="data row48 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_83aff_row49_col0" class="data row49 col0" >BOS PHI WAS</td>
+      <td id="T_83aff_row49_col1" class="data row49 col1" >10</td>
+      <td id="T_83aff_row49_col2" class="data row49 col2" >10</td>
+    </tr>
+  </tbody>
+</table>
+
+	</div>
+	&nbsp;
+	<button class="collapsible"><h3 title="Допустим, что от каждой команды из комбинации в строке таблицы слева&#10;имеется один игрок, и эти игроки должны быть размещены в составе.&#10;В таблице отображено количество игр, которые сможет получить фентези-игрок,&#10;если у него доступно 3 слотов, по матчапам.&#10;Лучшие значения обозначены зелёным цветом, худшие - красным.&#10;Цвета коррелируют между собой по столбцам таблицы, то есть&#10;цветом отмечаются лучшие и худшие команды для конкретного матчапа.&#10;В таблице представлена best выборка комбинаций размера 3.">Games with 3 slots: best - 1 next matchups</h3></button>
+	<div class="content" style="overflow-x:auto;">
+	<style type="text/css">
+#T_ec378 td:nth-child(1) {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  font-weight: bold;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+#T_ec378 td:first-child {
+  border-left: none;
+}
+#T_ec378 td:last-child {
+  border-right: none;
+}
+#T_ec378 th {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  background: #FFFFFF;
+}
+#T_ec378 td {
+  text-align: right;
+}
+#T_ec378 td {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  text-align: right;
+}
+</style>
+<table id="T_ec378" style="border-collapse: collapse; border: 1px solid black;" align="center"; class="sortable">
+  <thead>
+    <tr>
+      <th id="T_ec378_level0_col0" class="col_heading level0 col0" ></th>
+      <th id="T_ec378_level0_col1" class="col_heading level0 col1" >#24</th>
+      <th id="T_ec378_level0_col2" class="col_heading level0 col2" >Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td id="T_ec378_row0_col0" class="data row0 col0" >SAS TOR UTA</td>
+      <td id="T_ec378_row0_col1" class="data row0 col1" >12</td>
+      <td id="T_ec378_row0_col2" class="data row0 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_ec378_row1_col0" class="data row1 col0" >SAC TOR UTA</td>
+      <td id="T_ec378_row1_col1" class="data row1 col1" >12</td>
+      <td id="T_ec378_row1_col2" class="data row1 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_ec378_row2_col0" class="data row2 col0" >SAC SAS UTA</td>
+      <td id="T_ec378_row2_col1" class="data row2 col1" >12</td>
+      <td id="T_ec378_row2_col2" class="data row2 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_ec378_row3_col0" class="data row3 col0" >SAC SAS TOR</td>
+      <td id="T_ec378_row3_col1" class="data row3 col1" >12</td>
+      <td id="T_ec378_row3_col2" class="data row3 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_ec378_row4_col0" class="data row4 col0" >POR TOR UTA</td>
+      <td id="T_ec378_row4_col1" class="data row4 col1" >12</td>
+      <td id="T_ec378_row4_col2" class="data row4 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_ec378_row5_col0" class="data row5 col0" >POR SAS UTA</td>
+      <td id="T_ec378_row5_col1" class="data row5 col1" >12</td>
+      <td id="T_ec378_row5_col2" class="data row5 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_ec378_row6_col0" class="data row6 col0" >POR SAS TOR</td>
+      <td id="T_ec378_row6_col1" class="data row6 col1" >12</td>
+      <td id="T_ec378_row6_col2" class="data row6 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_ec378_row7_col0" class="data row7 col0" >POR SAC UTA</td>
+      <td id="T_ec378_row7_col1" class="data row7 col1" >12</td>
+      <td id="T_ec378_row7_col2" class="data row7 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_ec378_row8_col0" class="data row8 col0" >POR SAC TOR</td>
+      <td id="T_ec378_row8_col1" class="data row8 col1" >12</td>
+      <td id="T_ec378_row8_col2" class="data row8 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_ec378_row9_col0" class="data row9 col0" >POR SAC SAS</td>
+      <td id="T_ec378_row9_col1" class="data row9 col1" >12</td>
+      <td id="T_ec378_row9_col2" class="data row9 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_ec378_row10_col0" class="data row10 col0" >PHX TOR UTA</td>
+      <td id="T_ec378_row10_col1" class="data row10 col1" >12</td>
+      <td id="T_ec378_row10_col2" class="data row10 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_ec378_row11_col0" class="data row11 col0" >PHX SAS UTA</td>
+      <td id="T_ec378_row11_col1" class="data row11 col1" >12</td>
+      <td id="T_ec378_row11_col2" class="data row11 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_ec378_row12_col0" class="data row12 col0" >PHX SAS TOR</td>
+      <td id="T_ec378_row12_col1" class="data row12 col1" >12</td>
+      <td id="T_ec378_row12_col2" class="data row12 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_ec378_row13_col0" class="data row13 col0" >PHX SAC UTA</td>
+      <td id="T_ec378_row13_col1" class="data row13 col1" >12</td>
+      <td id="T_ec378_row13_col2" class="data row13 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_ec378_row14_col0" class="data row14 col0" >PHX SAC TOR</td>
+      <td id="T_ec378_row14_col1" class="data row14 col1" >12</td>
+      <td id="T_ec378_row14_col2" class="data row14 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_ec378_row15_col0" class="data row15 col0" >PHX SAC SAS</td>
+      <td id="T_ec378_row15_col1" class="data row15 col1" >12</td>
+      <td id="T_ec378_row15_col2" class="data row15 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_ec378_row16_col0" class="data row16 col0" >PHX POR UTA</td>
+      <td id="T_ec378_row16_col1" class="data row16 col1" >12</td>
+      <td id="T_ec378_row16_col2" class="data row16 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_ec378_row17_col0" class="data row17 col0" >PHX POR TOR</td>
+      <td id="T_ec378_row17_col1" class="data row17 col1" >12</td>
+      <td id="T_ec378_row17_col2" class="data row17 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_ec378_row18_col0" class="data row18 col0" >PHX POR SAS</td>
+      <td id="T_ec378_row18_col1" class="data row18 col1" >12</td>
+      <td id="T_ec378_row18_col2" class="data row18 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_ec378_row19_col0" class="data row19 col0" >PHX POR SAC</td>
+      <td id="T_ec378_row19_col1" class="data row19 col1" >12</td>
+      <td id="T_ec378_row19_col2" class="data row19 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_ec378_row20_col0" class="data row20 col0" >ORL TOR UTA</td>
+      <td id="T_ec378_row20_col1" class="data row20 col1" >12</td>
+      <td id="T_ec378_row20_col2" class="data row20 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_ec378_row21_col0" class="data row21 col0" >ORL SAS UTA</td>
+      <td id="T_ec378_row21_col1" class="data row21 col1" >12</td>
+      <td id="T_ec378_row21_col2" class="data row21 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_ec378_row22_col0" class="data row22 col0" >ORL SAS TOR</td>
+      <td id="T_ec378_row22_col1" class="data row22 col1" >12</td>
+      <td id="T_ec378_row22_col2" class="data row22 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_ec378_row23_col0" class="data row23 col0" >ORL SAC UTA</td>
+      <td id="T_ec378_row23_col1" class="data row23 col1" >12</td>
+      <td id="T_ec378_row23_col2" class="data row23 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_ec378_row24_col0" class="data row24 col0" >ORL SAC TOR</td>
+      <td id="T_ec378_row24_col1" class="data row24 col1" >12</td>
+      <td id="T_ec378_row24_col2" class="data row24 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_ec378_row25_col0" class="data row25 col0" >ORL SAC SAS</td>
+      <td id="T_ec378_row25_col1" class="data row25 col1" >12</td>
+      <td id="T_ec378_row25_col2" class="data row25 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_ec378_row26_col0" class="data row26 col0" >ORL POR UTA</td>
+      <td id="T_ec378_row26_col1" class="data row26 col1" >12</td>
+      <td id="T_ec378_row26_col2" class="data row26 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_ec378_row27_col0" class="data row27 col0" >ORL POR TOR</td>
+      <td id="T_ec378_row27_col1" class="data row27 col1" >12</td>
+      <td id="T_ec378_row27_col2" class="data row27 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_ec378_row28_col0" class="data row28 col0" >ORL POR SAS</td>
+      <td id="T_ec378_row28_col1" class="data row28 col1" >12</td>
+      <td id="T_ec378_row28_col2" class="data row28 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_ec378_row29_col0" class="data row29 col0" >ORL POR SAC</td>
+      <td id="T_ec378_row29_col1" class="data row29 col1" >12</td>
+      <td id="T_ec378_row29_col2" class="data row29 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_ec378_row30_col0" class="data row30 col0" >ORL PHX UTA</td>
+      <td id="T_ec378_row30_col1" class="data row30 col1" >12</td>
+      <td id="T_ec378_row30_col2" class="data row30 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_ec378_row31_col0" class="data row31 col0" >ORL PHX TOR</td>
+      <td id="T_ec378_row31_col1" class="data row31 col1" >12</td>
+      <td id="T_ec378_row31_col2" class="data row31 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_ec378_row32_col0" class="data row32 col0" >ORL PHX SAS</td>
+      <td id="T_ec378_row32_col1" class="data row32 col1" >12</td>
+      <td id="T_ec378_row32_col2" class="data row32 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_ec378_row33_col0" class="data row33 col0" >ORL PHX SAC</td>
+      <td id="T_ec378_row33_col1" class="data row33 col1" >12</td>
+      <td id="T_ec378_row33_col2" class="data row33 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_ec378_row34_col0" class="data row34 col0" >ORL PHX POR</td>
+      <td id="T_ec378_row34_col1" class="data row34 col1" >12</td>
+      <td id="T_ec378_row34_col2" class="data row34 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_ec378_row35_col0" class="data row35 col0" >OKC TOR UTA</td>
+      <td id="T_ec378_row35_col1" class="data row35 col1" >12</td>
+      <td id="T_ec378_row35_col2" class="data row35 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_ec378_row36_col0" class="data row36 col0" >OKC SAS UTA</td>
+      <td id="T_ec378_row36_col1" class="data row36 col1" >12</td>
+      <td id="T_ec378_row36_col2" class="data row36 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_ec378_row37_col0" class="data row37 col0" >OKC SAS TOR</td>
+      <td id="T_ec378_row37_col1" class="data row37 col1" >12</td>
+      <td id="T_ec378_row37_col2" class="data row37 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_ec378_row38_col0" class="data row38 col0" >OKC SAC UTA</td>
+      <td id="T_ec378_row38_col1" class="data row38 col1" >12</td>
+      <td id="T_ec378_row38_col2" class="data row38 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_ec378_row39_col0" class="data row39 col0" >OKC SAC TOR</td>
+      <td id="T_ec378_row39_col1" class="data row39 col1" >12</td>
+      <td id="T_ec378_row39_col2" class="data row39 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_ec378_row40_col0" class="data row40 col0" >OKC SAC SAS</td>
+      <td id="T_ec378_row40_col1" class="data row40 col1" >12</td>
+      <td id="T_ec378_row40_col2" class="data row40 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_ec378_row41_col0" class="data row41 col0" >OKC POR UTA</td>
+      <td id="T_ec378_row41_col1" class="data row41 col1" >12</td>
+      <td id="T_ec378_row41_col2" class="data row41 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_ec378_row42_col0" class="data row42 col0" >OKC POR TOR</td>
+      <td id="T_ec378_row42_col1" class="data row42 col1" >12</td>
+      <td id="T_ec378_row42_col2" class="data row42 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_ec378_row43_col0" class="data row43 col0" >OKC POR SAS</td>
+      <td id="T_ec378_row43_col1" class="data row43 col1" >12</td>
+      <td id="T_ec378_row43_col2" class="data row43 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_ec378_row44_col0" class="data row44 col0" >OKC POR SAC</td>
+      <td id="T_ec378_row44_col1" class="data row44 col1" >12</td>
+      <td id="T_ec378_row44_col2" class="data row44 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_ec378_row45_col0" class="data row45 col0" >OKC PHX UTA</td>
+      <td id="T_ec378_row45_col1" class="data row45 col1" >12</td>
+      <td id="T_ec378_row45_col2" class="data row45 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_ec378_row46_col0" class="data row46 col0" >OKC PHX TOR</td>
+      <td id="T_ec378_row46_col1" class="data row46 col1" >12</td>
+      <td id="T_ec378_row46_col2" class="data row46 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_ec378_row47_col0" class="data row47 col0" >OKC PHX SAS</td>
+      <td id="T_ec378_row47_col1" class="data row47 col1" >12</td>
+      <td id="T_ec378_row47_col2" class="data row47 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_ec378_row48_col0" class="data row48 col0" >OKC PHX SAC</td>
+      <td id="T_ec378_row48_col1" class="data row48 col1" >12</td>
+      <td id="T_ec378_row48_col2" class="data row48 col2" >12</td>
+    </tr>
+    <tr>
+      <td id="T_ec378_row49_col0" class="data row49 col0" >OKC PHX POR</td>
+      <td id="T_ec378_row49_col1" class="data row49 col1" >12</td>
+      <td id="T_ec378_row49_col2" class="data row49 col2" >12</td>
+    </tr>
+  </tbody>
+</table>
+
+	</div>
+	&nbsp;
+	<button class="collapsible"><h3 title="Допустим, что от каждой команды из комбинации в строке таблицы слева&#10;имеется один игрок, и эти игроки должны быть размещены в составе.&#10;В таблице отображено количество игр, которые сможет получить фентези-игрок,&#10;если у него доступно 3 слотов, по матчапам.&#10;Лучшие значения обозначены зелёным цветом, худшие - красным.&#10;Цвета коррелируют между собой по столбцам таблицы, то есть&#10;цветом отмечаются лучшие и худшие команды для конкретного матчапа.&#10;В таблице представлена worst выборка комбинаций размера 3.">Games with 3 slots: worst - 1 next matchups</h3></button>
+	<div class="content" style="overflow-x:auto;">
+	<style type="text/css">
+#T_44603 td:nth-child(1) {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  font-weight: bold;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+#T_44603 td:first-child {
+  border-left: none;
+}
+#T_44603 td:last-child {
+  border-right: none;
+}
+#T_44603 th {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  background: #FFFFFF;
+}
+#T_44603 td {
+  text-align: right;
+}
+#T_44603 td {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  text-align: right;
+}
+#T_44603_row0_col1, #T_44603_row0_col2, #T_44603_row1_col1, #T_44603_row1_col2, #T_44603_row2_col1, #T_44603_row2_col2, #T_44603_row3_col1, #T_44603_row3_col2, #T_44603_row4_col1, #T_44603_row4_col2, #T_44603_row5_col1, #T_44603_row5_col2, #T_44603_row6_col1, #T_44603_row6_col2, #T_44603_row7_col1, #T_44603_row7_col2, #T_44603_row8_col1, #T_44603_row8_col2, #T_44603_row9_col1, #T_44603_row9_col2, #T_44603_row10_col1, #T_44603_row10_col2, #T_44603_row11_col1, #T_44603_row11_col2, #T_44603_row12_col1, #T_44603_row12_col2, #T_44603_row13_col1, #T_44603_row13_col2, #T_44603_row14_col1, #T_44603_row14_col2, #T_44603_row15_col1, #T_44603_row15_col2, #T_44603_row16_col1, #T_44603_row16_col2, #T_44603_row17_col1, #T_44603_row17_col2, #T_44603_row18_col1, #T_44603_row18_col2, #T_44603_row19_col1, #T_44603_row19_col2 {
+  background-color: red;
+}
+</style>
+<table id="T_44603" style="border-collapse: collapse; border: 1px solid black;" align="center"; class="sortable">
+  <thead>
+    <tr>
+      <th id="T_44603_level0_col0" class="col_heading level0 col0" ></th>
+      <th id="T_44603_level0_col1" class="col_heading level0 col1" >#24</th>
+      <th id="T_44603_level0_col2" class="col_heading level0 col2" >Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td id="T_44603_row0_col0" class="data row0 col0" >BKN CLE IND</td>
+      <td id="T_44603_row0_col1" class="data row0 col1" >9</td>
+      <td id="T_44603_row0_col2" class="data row0 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_44603_row1_col0" class="data row1 col0" >BKN CLE LAL</td>
+      <td id="T_44603_row1_col1" class="data row1 col1" >9</td>
+      <td id="T_44603_row1_col2" class="data row1 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_44603_row2_col0" class="data row2 col0" >BKN CLE PHI</td>
+      <td id="T_44603_row2_col1" class="data row2 col1" >9</td>
+      <td id="T_44603_row2_col2" class="data row2 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_44603_row3_col0" class="data row3 col0" >BKN CLE WAS</td>
+      <td id="T_44603_row3_col1" class="data row3 col1" >9</td>
+      <td id="T_44603_row3_col2" class="data row3 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_44603_row4_col0" class="data row4 col0" >BKN IND LAL</td>
+      <td id="T_44603_row4_col1" class="data row4 col1" >9</td>
+      <td id="T_44603_row4_col2" class="data row4 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_44603_row5_col0" class="data row5 col0" >BKN IND PHI</td>
+      <td id="T_44603_row5_col1" class="data row5 col1" >9</td>
+      <td id="T_44603_row5_col2" class="data row5 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_44603_row6_col0" class="data row6 col0" >BKN IND WAS</td>
+      <td id="T_44603_row6_col1" class="data row6 col1" >9</td>
+      <td id="T_44603_row6_col2" class="data row6 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_44603_row7_col0" class="data row7 col0" >BKN LAL PHI</td>
+      <td id="T_44603_row7_col1" class="data row7 col1" >9</td>
+      <td id="T_44603_row7_col2" class="data row7 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_44603_row8_col0" class="data row8 col0" >BKN LAL WAS</td>
+      <td id="T_44603_row8_col1" class="data row8 col1" >9</td>
+      <td id="T_44603_row8_col2" class="data row8 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_44603_row9_col0" class="data row9 col0" >BKN PHI WAS</td>
+      <td id="T_44603_row9_col1" class="data row9 col1" >9</td>
+      <td id="T_44603_row9_col2" class="data row9 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_44603_row10_col0" class="data row10 col0" >CLE IND LAL</td>
+      <td id="T_44603_row10_col1" class="data row10 col1" >9</td>
+      <td id="T_44603_row10_col2" class="data row10 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_44603_row11_col0" class="data row11 col0" >CLE IND PHI</td>
+      <td id="T_44603_row11_col1" class="data row11 col1" >9</td>
+      <td id="T_44603_row11_col2" class="data row11 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_44603_row12_col0" class="data row12 col0" >CLE IND WAS</td>
+      <td id="T_44603_row12_col1" class="data row12 col1" >9</td>
+      <td id="T_44603_row12_col2" class="data row12 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_44603_row13_col0" class="data row13 col0" >CLE LAL PHI</td>
+      <td id="T_44603_row13_col1" class="data row13 col1" >9</td>
+      <td id="T_44603_row13_col2" class="data row13 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_44603_row14_col0" class="data row14 col0" >CLE LAL WAS</td>
+      <td id="T_44603_row14_col1" class="data row14 col1" >9</td>
+      <td id="T_44603_row14_col2" class="data row14 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_44603_row15_col0" class="data row15 col0" >CLE PHI WAS</td>
+      <td id="T_44603_row15_col1" class="data row15 col1" >9</td>
+      <td id="T_44603_row15_col2" class="data row15 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_44603_row16_col0" class="data row16 col0" >IND LAL PHI</td>
+      <td id="T_44603_row16_col1" class="data row16 col1" >9</td>
+      <td id="T_44603_row16_col2" class="data row16 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_44603_row17_col0" class="data row17 col0" >IND LAL WAS</td>
+      <td id="T_44603_row17_col1" class="data row17 col1" >9</td>
+      <td id="T_44603_row17_col2" class="data row17 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_44603_row18_col0" class="data row18 col0" >IND PHI WAS</td>
+      <td id="T_44603_row18_col1" class="data row18 col1" >9</td>
+      <td id="T_44603_row18_col2" class="data row18 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_44603_row19_col0" class="data row19 col0" >LAL PHI WAS</td>
+      <td id="T_44603_row19_col1" class="data row19 col1" >9</td>
+      <td id="T_44603_row19_col2" class="data row19 col2" >9</td>
+    </tr>
+    <tr>
+      <td id="T_44603_row20_col0" class="data row20 col0" >ATL BKN CLE</td>
+      <td id="T_44603_row20_col1" class="data row20 col1" >10</td>
+      <td id="T_44603_row20_col2" class="data row20 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_44603_row21_col0" class="data row21 col0" >ATL BKN IND</td>
+      <td id="T_44603_row21_col1" class="data row21 col1" >10</td>
+      <td id="T_44603_row21_col2" class="data row21 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_44603_row22_col0" class="data row22 col0" >ATL BKN LAL</td>
+      <td id="T_44603_row22_col1" class="data row22 col1" >10</td>
+      <td id="T_44603_row22_col2" class="data row22 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_44603_row23_col0" class="data row23 col0" >ATL BKN PHI</td>
+      <td id="T_44603_row23_col1" class="data row23 col1" >10</td>
+      <td id="T_44603_row23_col2" class="data row23 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_44603_row24_col0" class="data row24 col0" >ATL BKN WAS</td>
+      <td id="T_44603_row24_col1" class="data row24 col1" >10</td>
+      <td id="T_44603_row24_col2" class="data row24 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_44603_row25_col0" class="data row25 col0" >ATL CLE IND</td>
+      <td id="T_44603_row25_col1" class="data row25 col1" >10</td>
+      <td id="T_44603_row25_col2" class="data row25 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_44603_row26_col0" class="data row26 col0" >ATL CLE LAL</td>
+      <td id="T_44603_row26_col1" class="data row26 col1" >10</td>
+      <td id="T_44603_row26_col2" class="data row26 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_44603_row27_col0" class="data row27 col0" >ATL CLE PHI</td>
+      <td id="T_44603_row27_col1" class="data row27 col1" >10</td>
+      <td id="T_44603_row27_col2" class="data row27 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_44603_row28_col0" class="data row28 col0" >ATL CLE WAS</td>
+      <td id="T_44603_row28_col1" class="data row28 col1" >10</td>
+      <td id="T_44603_row28_col2" class="data row28 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_44603_row29_col0" class="data row29 col0" >ATL IND LAL</td>
+      <td id="T_44603_row29_col1" class="data row29 col1" >10</td>
+      <td id="T_44603_row29_col2" class="data row29 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_44603_row30_col0" class="data row30 col0" >ATL IND PHI</td>
+      <td id="T_44603_row30_col1" class="data row30 col1" >10</td>
+      <td id="T_44603_row30_col2" class="data row30 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_44603_row31_col0" class="data row31 col0" >ATL IND WAS</td>
+      <td id="T_44603_row31_col1" class="data row31 col1" >10</td>
+      <td id="T_44603_row31_col2" class="data row31 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_44603_row32_col0" class="data row32 col0" >ATL LAL PHI</td>
+      <td id="T_44603_row32_col1" class="data row32 col1" >10</td>
+      <td id="T_44603_row32_col2" class="data row32 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_44603_row33_col0" class="data row33 col0" >ATL LAL WAS</td>
+      <td id="T_44603_row33_col1" class="data row33 col1" >10</td>
+      <td id="T_44603_row33_col2" class="data row33 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_44603_row34_col0" class="data row34 col0" >ATL PHI WAS</td>
+      <td id="T_44603_row34_col1" class="data row34 col1" >10</td>
+      <td id="T_44603_row34_col2" class="data row34 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_44603_row35_col0" class="data row35 col0" >BOS BKN CLE</td>
+      <td id="T_44603_row35_col1" class="data row35 col1" >10</td>
+      <td id="T_44603_row35_col2" class="data row35 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_44603_row36_col0" class="data row36 col0" >BOS BKN IND</td>
+      <td id="T_44603_row36_col1" class="data row36 col1" >10</td>
+      <td id="T_44603_row36_col2" class="data row36 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_44603_row37_col0" class="data row37 col0" >BOS BKN LAL</td>
+      <td id="T_44603_row37_col1" class="data row37 col1" >10</td>
+      <td id="T_44603_row37_col2" class="data row37 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_44603_row38_col0" class="data row38 col0" >BOS BKN PHI</td>
+      <td id="T_44603_row38_col1" class="data row38 col1" >10</td>
+      <td id="T_44603_row38_col2" class="data row38 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_44603_row39_col0" class="data row39 col0" >BOS BKN WAS</td>
+      <td id="T_44603_row39_col1" class="data row39 col1" >10</td>
+      <td id="T_44603_row39_col2" class="data row39 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_44603_row40_col0" class="data row40 col0" >BOS CLE IND</td>
+      <td id="T_44603_row40_col1" class="data row40 col1" >10</td>
+      <td id="T_44603_row40_col2" class="data row40 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_44603_row41_col0" class="data row41 col0" >BOS CLE LAL</td>
+      <td id="T_44603_row41_col1" class="data row41 col1" >10</td>
+      <td id="T_44603_row41_col2" class="data row41 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_44603_row42_col0" class="data row42 col0" >BOS CLE PHI</td>
+      <td id="T_44603_row42_col1" class="data row42 col1" >10</td>
+      <td id="T_44603_row42_col2" class="data row42 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_44603_row43_col0" class="data row43 col0" >BOS CLE WAS</td>
+      <td id="T_44603_row43_col1" class="data row43 col1" >10</td>
+      <td id="T_44603_row43_col2" class="data row43 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_44603_row44_col0" class="data row44 col0" >BOS IND LAL</td>
+      <td id="T_44603_row44_col1" class="data row44 col1" >10</td>
+      <td id="T_44603_row44_col2" class="data row44 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_44603_row45_col0" class="data row45 col0" >BOS IND PHI</td>
+      <td id="T_44603_row45_col1" class="data row45 col1" >10</td>
+      <td id="T_44603_row45_col2" class="data row45 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_44603_row46_col0" class="data row46 col0" >BOS IND WAS</td>
+      <td id="T_44603_row46_col1" class="data row46 col1" >10</td>
+      <td id="T_44603_row46_col2" class="data row46 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_44603_row47_col0" class="data row47 col0" >BOS LAL PHI</td>
+      <td id="T_44603_row47_col1" class="data row47 col1" >10</td>
+      <td id="T_44603_row47_col2" class="data row47 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_44603_row48_col0" class="data row48 col0" >BOS LAL WAS</td>
+      <td id="T_44603_row48_col1" class="data row48 col1" >10</td>
+      <td id="T_44603_row48_col2" class="data row48 col2" >10</td>
+    </tr>
+    <tr>
+      <td id="T_44603_row49_col0" class="data row49 col0" >BOS PHI WAS</td>
+      <td id="T_44603_row49_col1" class="data row49 col1" >10</td>
+      <td id="T_44603_row49_col2" class="data row49 col2" >10</td>
+    </tr>
+  </tbody>
+</table>
+
+	</div>
+
+	<script>
+		var coll = document.getElementsByClassName("collapsible");
+		var i;
+		
+		for (i = 0; i < coll.length; i++) {
+		coll[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var content = this.nextElementSibling;
+			if (content.style.maxHeight){
+			content.style.maxHeight = null;
+			} else {
+			content.style.maxHeight = (content.scrollHeight + 100000) + "px";
+			}
+		});
+		}
+	</script>
+	<script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+	</body>
+</html>
